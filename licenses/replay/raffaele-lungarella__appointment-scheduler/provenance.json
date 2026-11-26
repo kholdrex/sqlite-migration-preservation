@@ -1,0 +1,28 @@
+{
+  "repo": "raffaele-lungarella/appointment-scheduler",
+  "commit": "116c9371d2ff0679b698cfe8d9d3949fad1d62fa",
+  "migration_file": "migrations/0002_tired_betty_brant.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/raffaele-lungarella/appointment-scheduler/git/trees/116c9371d2ff0679b698cfe8d9d3949fad1d62fa?recursive=1",
+  "tree_sha": "116c9371d2ff0679b698cfe8d9d3949fad1d62fa",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/raffaele-lungarella__appointment-scheduler/LICENSE",
+      "url": "https://raw.githubusercontent.com/raffaele-lungarella/appointment-scheduler/116c9371d2ff0679b698cfe8d9d3949fad1d62fa/LICENSE",
+      "git_blob": "8cc233fb036ed780cc92b421419dd82c2b01af01",
+      "sha256": "ae51d81c99ce58651c03057338b9744acb3e668a6fe28421897f92e52d6bf0cc",
+      "bytes": 1076,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/027-e29fc6931621417f.json.gz",
+      "sha256": "91e20a122716db525fa5da8b4fb040d5ad4b19c104f99d0c31ff28152bcb6b65"
+    }
+  ]
+}

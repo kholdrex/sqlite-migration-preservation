@@ -1,0 +1,28 @@
+{
+  "repo": "dadezzz/events-cash-register",
+  "commit": "25293b8d312ca8075fa064b09988d124c614188e",
+  "migration_file": "migrations/0010_curvy_phalanx.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/dadezzz/events-cash-register/git/trees/25293b8d312ca8075fa064b09988d124c614188e?recursive=1",
+  "tree_sha": "25293b8d312ca8075fa064b09988d124c614188e",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/dadezzz__events-cash-register/LICENSE",
+      "url": "https://raw.githubusercontent.com/dadezzz/events-cash-register/25293b8d312ca8075fa064b09988d124c614188e/LICENSE",
+      "git_blob": "4f497012460c59c98c0e64a5122017779bf1dce8",
+      "sha256": "c4c39be740d61df453f644301a47555716dae6beb5f50f4914126e17fddd5321",
+      "bytes": 1075,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/043-53134a585e2435ee.json.gz",
+      "sha256": "6fc62c25257e80bab6ff4a4328dece66a5a0f877e327934b0a9340caf1361340"
+    }
+  ]
+}

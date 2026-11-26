@@ -1,0 +1,696 @@
+{
+  "case": "drizzle_add_index",
+  "role": "control",
+  "path": "raw-tx",
+  "version_label": "before",
+  "pins": {
+    "drizzle-orm": "0.44.2",
+    "drizzle-kit": "0.31.4",
+    "better-sqlite3": "12.4.1"
+  },
+  "sqlite_doctor_sha256": "d5452ff61987601c7c10727f173ac897574fed1aa5273c03ee40461d78e3cb09",
+  "provenance": "control",
+  "description": "Add an index without rebuilding the parent.",
+  "artifacts": "results/runs/drizzle_add_index--raw-tx--before",
+  "trials": {
+    "populated": {
+      "execution": {
+        "python": "3.11.5",
+        "sqlite": "3.41.2",
+        "foreign_keys_before": 1,
+        "success": true,
+        "foreign_keys_after": 1
+      },
+      "before": {
+        "counts": {
+          "tenants": 2,
+          "parents": 2,
+          "children": 3,
+          "audit": 1
+        },
+        "columns": {
+          "tenants": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "parents": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "tenant_id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": "'a'",
+              "pk": 0
+            }
+          ],
+          "children": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "parent_id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "payload",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "audit": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "message",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        },
+        "foreign_keys": {
+          "tenants": [],
+          "parents": [],
+          "children": [
+            [
+              0,
+              0,
+              "parents",
+              "parent_id",
+              "id",
+              "NO ACTION",
+              "CASCADE",
+              "NONE"
+            ]
+          ],
+          "audit": []
+        },
+        "objects": {
+          "index:idx_children_parent": {
+            "type": "index",
+            "name": "idx_children_parent",
+            "table": "children",
+            "sql": "CREATE INDEX idx_children_parent ON children(parent_id)"
+          },
+          "index:idx_parents_name": {
+            "type": "index",
+            "name": "idx_parents_name",
+            "table": "parents",
+            "sql": "CREATE INDEX idx_parents_name ON parents(name)"
+          },
+          "trigger:trg_children_update": {
+            "type": "trigger",
+            "name": "trg_children_update",
+            "table": "children",
+            "sql": "CREATE TRIGGER trg_children_update AFTER UPDATE ON children\nBEGIN INSERT INTO audit(message) VALUES ('updated'); END"
+          },
+          "view:child_payloads": {
+            "type": "view",
+            "name": "child_payloads",
+            "table": "child_payloads",
+            "sql": "CREATE VIEW child_payloads AS SELECT id, payload FROM children"
+          }
+        },
+        "foreign_key_check": [],
+        "integrity_check": [
+          "ok"
+        ],
+        "errors": [],
+        "view_errors": [],
+        "observer_sqlite": "3.41.2"
+      },
+      "after": {
+        "counts": {
+          "tenants": 2,
+          "parents": 2,
+          "children": 3,
+          "audit": 1
+        },
+        "columns": {
+          "tenants": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "parents": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "tenant_id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": "'a'",
+              "pk": 0
+            }
+          ],
+          "children": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "parent_id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "payload",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "audit": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "message",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        },
+        "foreign_keys": {
+          "tenants": [],
+          "parents": [],
+          "children": [
+            [
+              0,
+              0,
+              "parents",
+              "parent_id",
+              "id",
+              "NO ACTION",
+              "CASCADE",
+              "NONE"
+            ]
+          ],
+          "audit": []
+        },
+        "objects": {
+          "index:idx_children_parent": {
+            "type": "index",
+            "name": "idx_children_parent",
+            "table": "children",
+            "sql": "CREATE INDEX idx_children_parent ON children(parent_id)"
+          },
+          "index:idx_parents_name": {
+            "type": "index",
+            "name": "idx_parents_name",
+            "table": "parents",
+            "sql": "CREATE INDEX idx_parents_name ON parents(name)"
+          },
+          "index:idx_parents_tenant": {
+            "type": "index",
+            "name": "idx_parents_tenant",
+            "table": "parents",
+            "sql": "CREATE INDEX `idx_parents_tenant` ON `parents` (`tenant_id`)"
+          },
+          "trigger:trg_children_update": {
+            "type": "trigger",
+            "name": "trg_children_update",
+            "table": "children",
+            "sql": "CREATE TRIGGER trg_children_update AFTER UPDATE ON children\nBEGIN INSERT INTO audit(message) VALUES ('updated'); END"
+          },
+          "view:child_payloads": {
+            "type": "view",
+            "name": "child_payloads",
+            "table": "child_payloads",
+            "sql": "CREATE VIEW child_payloads AS SELECT id, payload FROM children"
+          }
+        },
+        "foreign_key_check": [],
+        "integrity_check": [
+          "ok"
+        ],
+        "errors": [],
+        "view_errors": [],
+        "observer_sqlite": "3.41.2"
+      },
+      "violations": []
+    },
+    "empty": {
+      "execution": {
+        "python": "3.11.5",
+        "sqlite": "3.41.2",
+        "foreign_keys_before": 1,
+        "success": true,
+        "foreign_keys_after": 1
+      },
+      "before": {
+        "counts": {
+          "tenants": 0,
+          "parents": 0,
+          "children": 0,
+          "audit": 0
+        },
+        "columns": {
+          "tenants": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "parents": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "tenant_id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": "'a'",
+              "pk": 0
+            }
+          ],
+          "children": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "parent_id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "payload",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "audit": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "message",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        },
+        "foreign_keys": {
+          "tenants": [],
+          "parents": [],
+          "children": [
+            [
+              0,
+              0,
+              "parents",
+              "parent_id",
+              "id",
+              "NO ACTION",
+              "CASCADE",
+              "NONE"
+            ]
+          ],
+          "audit": []
+        },
+        "objects": {
+          "index:idx_children_parent": {
+            "type": "index",
+            "name": "idx_children_parent",
+            "table": "children",
+            "sql": "CREATE INDEX idx_children_parent ON children(parent_id)"
+          },
+          "index:idx_parents_name": {
+            "type": "index",
+            "name": "idx_parents_name",
+            "table": "parents",
+            "sql": "CREATE INDEX idx_parents_name ON parents(name)"
+          },
+          "trigger:trg_children_update": {
+            "type": "trigger",
+            "name": "trg_children_update",
+            "table": "children",
+            "sql": "CREATE TRIGGER trg_children_update AFTER UPDATE ON children\nBEGIN INSERT INTO audit(message) VALUES ('updated'); END"
+          },
+          "view:child_payloads": {
+            "type": "view",
+            "name": "child_payloads",
+            "table": "child_payloads",
+            "sql": "CREATE VIEW child_payloads AS SELECT id, payload FROM children"
+          }
+        },
+        "foreign_key_check": [],
+        "integrity_check": [
+          "ok"
+        ],
+        "errors": [],
+        "view_errors": [],
+        "observer_sqlite": "3.41.2"
+      },
+      "after": {
+        "counts": {
+          "tenants": 0,
+          "parents": 0,
+          "children": 0,
+          "audit": 0
+        },
+        "columns": {
+          "tenants": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "parents": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "tenant_id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": "'a'",
+              "pk": 0
+            }
+          ],
+          "children": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "parent_id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "payload",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "audit": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "message",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        },
+        "foreign_keys": {
+          "tenants": [],
+          "parents": [],
+          "children": [
+            [
+              0,
+              0,
+              "parents",
+              "parent_id",
+              "id",
+              "NO ACTION",
+              "CASCADE",
+              "NONE"
+            ]
+          ],
+          "audit": []
+        },
+        "objects": {
+          "index:idx_children_parent": {
+            "type": "index",
+            "name": "idx_children_parent",
+            "table": "children",
+            "sql": "CREATE INDEX idx_children_parent ON children(parent_id)"
+          },
+          "index:idx_parents_name": {
+            "type": "index",
+            "name": "idx_parents_name",
+            "table": "parents",
+            "sql": "CREATE INDEX idx_parents_name ON parents(name)"
+          },
+          "index:idx_parents_tenant": {
+            "type": "index",
+            "name": "idx_parents_tenant",
+            "table": "parents",
+            "sql": "CREATE INDEX `idx_parents_tenant` ON `parents` (`tenant_id`)"
+          },
+          "trigger:trg_children_update": {
+            "type": "trigger",
+            "name": "trg_children_update",
+            "table": "children",
+            "sql": "CREATE TRIGGER trg_children_update AFTER UPDATE ON children\nBEGIN INSERT INTO audit(message) VALUES ('updated'); END"
+          },
+          "view:child_payloads": {
+            "type": "view",
+            "name": "child_payloads",
+            "table": "child_payloads",
+            "sql": "CREATE VIEW child_payloads AS SELECT id, payload FROM children"
+          }
+        },
+        "foreign_key_check": [],
+        "integrity_check": [
+          "ok"
+        ],
+        "errors": [],
+        "view_errors": [],
+        "observer_sqlite": "3.41.2"
+      },
+      "violations": []
+    }
+  },
+  "detectors": {
+    "empty_db": {
+      "detected": false
+    },
+    "lint": {
+      "executed": {
+        "available": true,
+        "detected": false,
+        "returncode": 0,
+        "output": {
+          "findings": [],
+          "source": "/study/harness/results/runs/drizzle_add_index--raw-tx--before/lint_executed.sql",
+          "version": 1
+        },
+        "stderr": ""
+      },
+      "migration_only": {
+        "available": true,
+        "detected": false,
+        "returncode": 0,
+        "output": {
+          "findings": [],
+          "source": "/study/harness/results/runs/drizzle_add_index--raw-tx--before/lint_migration_only.sql",
+          "version": 1
+        },
+        "stderr": ""
+      },
+      "schema_and_executed": {
+        "available": true,
+        "detected": false,
+        "returncode": 0,
+        "output": {
+          "findings": [],
+          "source": "/study/harness/results/runs/drizzle_add_index--raw-tx--before/lint_schema_and_executed.sql",
+          "version": 1
+        },
+        "stderr": ""
+      },
+      "schema_and_migration": {
+        "available": true,
+        "detected": false,
+        "returncode": 0,
+        "output": {
+          "findings": [],
+          "source": "/study/harness/results/runs/drizzle_add_index--raw-tx--before/lint_schema_and_migration.sql",
+          "version": 1
+        },
+        "stderr": ""
+      }
+    },
+    "populated_invariants": {
+      "detected": false,
+      "violations": []
+    }
+  }
+}

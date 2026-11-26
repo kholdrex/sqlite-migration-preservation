@@ -1,0 +1,37 @@
+{
+  "repo": "skyfallwastaken/at-channel",
+  "commit": "aa486b2dbf7515136bb8385e970500c74f67b646",
+  "migration_file": "migrations/0001_flimsy_zzzax.sql",
+  "recorded_license": "Apache-2.0",
+  "tree_url": "https://api.github.com/repos/skyfallwastaken/at-channel/git/trees/aa486b2dbf7515136bb8385e970500c74f67b646?recursive=1",
+  "tree_sha": "aa486b2dbf7515136bb8385e970500c74f67b646",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE-APACHE",
+      "file": "licenses/replay/skyfallwastaken__at-channel/LICENSE-APACHE",
+      "url": "https://raw.githubusercontent.com/skyfallwastaken/at-channel/aa486b2dbf7515136bb8385e970500c74f67b646/LICENSE-APACHE",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "ancestor_of_migration": true
+    },
+    {
+      "path": "LICENSE-MIT",
+      "file": "licenses/replay/skyfallwastaken__at-channel/LICENSE-MIT",
+      "url": "https://raw.githubusercontent.com/skyfallwastaken/at-channel/aa486b2dbf7515136bb8385e970500c74f67b646/LICENSE-MIT",
+      "git_blob": "00e72948d5975686b4779b17c4786b86143afcca",
+      "sha256": "a7023358d83406104a171ab9c776f61ac1edf8e2b743bb23aea9b2d84c129684",
+      "bytes": 1068,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/023-1655d886336c9736.json.gz",
+      "sha256": "95abc80d45121854c585d0d94e677d3d16b7b1f99ab0ce217e33bd53d4312128"
+    }
+  ]
+}

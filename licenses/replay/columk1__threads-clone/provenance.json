@@ -1,0 +1,28 @@
+{
+  "repo": "columk1/threads-clone",
+  "commit": "41d9bcb92c9d414417e0da2d4175c171ee26ecab",
+  "migration_file": "migrations/0002_gray_molly_hayes.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/columk1/threads-clone/git/trees/41d9bcb92c9d414417e0da2d4175c171ee26ecab?recursive=1",
+  "tree_sha": "41d9bcb92c9d414417e0da2d4175c171ee26ecab",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/columk1__threads-clone/LICENSE",
+      "url": "https://raw.githubusercontent.com/columk1/threads-clone/41d9bcb92c9d414417e0da2d4175c171ee26ecab/LICENSE",
+      "git_blob": "9751235ffb966ed367aa96de033350fab4f199bf",
+      "sha256": "b86ce4304b75f6d5458d651b9e3ed5639410f89080dd7b3501d86d6cb107b5ea",
+      "bytes": 1067,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/080-062ed98d6f5da7ff.json.gz",
+      "sha256": "c0176ce254a4a5c7bf9a6feaab1b4fcee9ccc0f543b4bf1553d55f2e2dbd9daa"
+    }
+  ]
+}

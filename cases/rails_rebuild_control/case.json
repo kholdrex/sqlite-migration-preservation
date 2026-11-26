@@ -1,0 +1,25 @@
+{
+  "id": "rails_rebuild_control",
+  "framework": "rails",
+  "role": "control",
+  "schema": "schema.sql",
+  "seed": "seed.sql",
+  "tables": [
+    "tenants",
+    "parents",
+    "children",
+    "audit"
+  ],
+  "expected": {
+    "kind": "column",
+    "table": "parents",
+    "name": "name",
+    "attributes": {
+      "default": "'b'"
+    }
+  },
+  "provenance": "control",
+  "description": "Change a parent default with no foreign keys or triggers depending on the rebuilt table.",
+  "migration": "migrations",
+  "supplemental": true
+}

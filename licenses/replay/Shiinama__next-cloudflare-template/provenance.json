@@ -1,0 +1,28 @@
+{
+  "repo": "Shiinama/next-cloudflare-template",
+  "commit": "a35f20e9f251fa6a3dfc1f9bd139fc24d983f8f4",
+  "migration_file": "migrations/0009_clever_fallen_one.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/Shiinama/next-cloudflare-template/git/trees/a35f20e9f251fa6a3dfc1f9bd139fc24d983f8f4?recursive=1",
+  "tree_sha": "a35f20e9f251fa6a3dfc1f9bd139fc24d983f8f4",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/Shiinama__next-cloudflare-template/LICENSE",
+      "url": "https://raw.githubusercontent.com/Shiinama/next-cloudflare-template/a35f20e9f251fa6a3dfc1f9bd139fc24d983f8f4/LICENSE",
+      "git_blob": "8c2e109f4cb8643f186b43f15b0295980acc455f",
+      "sha256": "a43888f3c1c437388ad6781fe5fbaf6717ab3fbebd97fa110f0004e63f13b6c8",
+      "bytes": 1091,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/022-cf74bf650f14bc3a.json.gz",
+      "sha256": "ec20b72cb3539916bfaf1c82c7f264ab61e91c7bad738cdd116ba7ec9d7db74e"
+    }
+  ]
+}

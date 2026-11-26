@@ -1,0 +1,28 @@
+{
+  "repo": "realmroot/realmroot",
+  "commit": "be7ab7472f1b73675670a4ce03a7a6cb84130e90",
+  "migration_file": "migrations/0030_agent_management_actor.sql",
+  "recorded_license": "Apache-2.0",
+  "tree_url": "https://api.github.com/repos/realmroot/realmroot/git/trees/be7ab7472f1b73675670a4ce03a7a6cb84130e90?recursive=1",
+  "tree_sha": "be7ab7472f1b73675670a4ce03a7a6cb84130e90",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/realmroot__realmroot/LICENSE",
+      "url": "https://raw.githubusercontent.com/realmroot/realmroot/be7ab7472f1b73675670a4ce03a7a6cb84130e90/LICENSE",
+      "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/039-5c0758975dca49a0.json.gz",
+      "sha256": "666942e3809a6107d60d7d36ce7dab7a3c9e5c9db3e59b9ccd7630cd0517cf34"
+    }
+  ]
+}

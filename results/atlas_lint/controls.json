@@ -1,0 +1,27 @@
+{
+  "negative": {
+    "available": true,
+    "diagnostics": [],
+    "flagged": false,
+    "matches": [],
+    "names_lost_dependent": false
+  },
+  "positive": {
+    "available": true,
+    "diagnostics": [
+      {
+        "Code": "DS102",
+        "Pos": 0,
+        "SuggestedFixes": [
+          {
+            "Message": "Add a pre-migration check to ensure table \"users\" is empty before dropping it"
+          }
+        ],
+        "Text": "Dropping table \"users\""
+      }
+    ],
+    "flagged": true,
+    "matches": [],
+    "names_lost_dependent": false
+  }
+}

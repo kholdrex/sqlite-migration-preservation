@@ -1,0 +1,193 @@
+diff --git a/activerecord/CHANGELOG.md b/activerecord/CHANGELOG.md
+index 032dd9942..71b61d60f 100644
+--- a/activerecord/CHANGELOG.md
++++ b/activerecord/CHANGELOG.md
+@@ -1,3 +1,13 @@
++*   SQLite3: Preserve triggers on a table when altering it.
++
++    Previously, triggers on a SQLite3 table were silently dropped when
++    the table was altered (e.g., adding/removing columns, foreign keys).
++    This happened because SQLite requires table recreation for many ALTER
++    operations, and triggers are automatically dropped when the original
++    table is dropped.
++
++    *Viacheslav Nepomniashchikh*
++
+ *   Preserve rows referenced by cascading foreign keys when SQLite rebuilds a
+     table inside a transactional migration.
+ 
+diff --git a/activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb b/activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb
+index 64b1bad83..465fc8285 100644
+--- a/activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb
++++ b/activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb
+@@ -43,6 +43,16 @@ def check_constraints(table_name)
+           table_name.is_a?(Array) ? result : result[table_name.to_s]
+         end
+ 
++        def triggers(table_name)
++          query_values(<<~SQL, "SCHEMA")
++            SELECT sql FROM sqlite_master
++            WHERE type = 'trigger' AND tbl_name = #{quote(table_name)}
++            UNION ALL
++            SELECT sql FROM sqlite_temp_master
++            WHERE type = 'trigger' AND tbl_name = #{quote(table_name)}
++          SQL
++        end
++
+         def add_check_constraint(table_name, expression, if_not_exists: false, **options)
+           return if if_not_exists && check_constraint_exists?(table_name, expression: expression, **options)
+ 
+diff --git a/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb b/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb
+index f08490e4a..ffcc28779 100644
+--- a/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb
++++ b/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb
+@@ -682,6 +682,7 @@ def alter_table(
+           table_name,
+           foreign_keys = foreign_keys(table_name),
+           check_constraints = check_constraints(table_name),
++          triggers = triggers(table_name),
+           **options
+         )
+           altered_table_name = "a#{table_name}"
+@@ -707,6 +708,7 @@ def alter_table(
+             transaction do
+               move_table(table_name, altered_table_name, options.merge(temporary: true))
+               move_table(altered_table_name, table_name, &caller)
++              triggers.each { |trigger_sql| execute(trigger_sql) if trigger_sql.present? }
+             end
+           end
+         end
+diff --git a/activerecord/test/cases/adapters/sqlite3/sqlite3_adapter_test.rb b/activerecord/test/cases/adapters/sqlite3/sqlite3_adapter_test.rb
+index 09d8e3606..7d2263c68 100644
+--- a/activerecord/test/cases/adapters/sqlite3/sqlite3_adapter_test.rb
++++ b/activerecord/test/cases/adapters/sqlite3/sqlite3_adapter_test.rb
+@@ -1461,6 +1461,129 @@ def test_rename_table_with_cascade_fk_preserves_referencing_data
+         conn.disconnect! if conn
+       end
+ 
++      def test_alter_table_preserves_triggers
++        conn = SQLite3Adapter.new(database: ":memory:", adapter: "sqlite3", strict: false)
++
++        conn.create_table :posts do |t|
++          t.string :title, null: false
++          t.string :subtitle
++          t.integer :view_count, default: 0
++        end
++
++        conn.execute(<<~SQL)
++          CREATE TRIGGER increment_view_count AFTER INSERT ON posts
++          BEGIN
++            UPDATE posts SET view_count = view_count + 1 WHERE id = NEW.id;
++          END
++        SQL
++
++        trigger_count_before = conn.select_value("SELECT COUNT(*) FROM sqlite_master WHERE type = 'trigger' AND tbl_name = 'posts'")
++        assert_equal 1, trigger_count_before
++
++        conn.remove_column :posts, :subtitle
++
++        trigger_count_after = conn.select_value("SELECT COUNT(*) FROM sqlite_master WHERE type = 'trigger' AND tbl_name = 'posts'")
++        assert_equal 1, trigger_count_after, "Trigger was dropped when column was removed!"
++
++        trigger_name = conn.select_value("SELECT name FROM sqlite_master WHERE type = 'trigger' AND tbl_name = 'posts'")
++        assert_equal "increment_view_count", trigger_name
++      ensure
++        conn.disconnect! if conn
++      end
++
++      def test_alter_table_preserves_triggers_on_remove_column
++        conn = SQLite3Adapter.new(database: ":memory:", adapter: "sqlite3", strict: false)
++
++        conn.create_table :posts do |t|
++          t.string :title, null: false
++          t.string :subtitle
++          t.integer :view_count, default: 0
++        end
++
++        conn.execute(<<~SQL)
++          CREATE TRIGGER increment_view_count AFTER INSERT ON posts
++          BEGIN
++            UPDATE posts SET view_count = view_count + 1 WHERE id = NEW.id;
++          END
++        SQL
++
++        conn.remove_column :posts, :subtitle
++
++        trigger_count = conn.select_value("SELECT COUNT(*) FROM sqlite_master WHERE type = 'trigger' AND tbl_name = 'posts'")
++        assert_equal 1, trigger_count, "Trigger was dropped when column was removed!"
++      ensure
++        conn.disconnect! if conn
++      end
++
++      def test_alter_table_preserves_multiple_triggers
++        conn = SQLite3Adapter.new(database: ":memory:", adapter: "sqlite3", strict: false)
++
++        conn.create_table :posts do |t|
++          t.string :title, null: false
++          t.string :subtitle
++          t.integer :view_count, default: 0
++          t.string :updated_by
++        end
++
++        conn.execute(<<~SQL)
++          CREATE TRIGGER increment_view_count AFTER INSERT ON posts
++          BEGIN
++            UPDATE posts SET view_count = view_count + 1 WHERE id = NEW.id;
++          END
++        SQL
++
++        conn.execute(<<~SQL)
++          CREATE TRIGGER track_updates AFTER UPDATE ON posts
++          BEGIN
++            UPDATE posts SET updated_by = 'system' WHERE id = NEW.id;
++          END
++        SQL
++
++        trigger_count_before = conn.select_value("SELECT COUNT(*) FROM sqlite_master WHERE type = 'trigger' AND tbl_name = 'posts'")
++        assert_equal 2, trigger_count_before
++
++        conn.remove_column :posts, :subtitle
++
++        trigger_count_after = conn.select_value("SELECT COUNT(*) FROM sqlite_master WHERE type = 'trigger' AND tbl_name = 'posts'")
++        assert_equal 2, trigger_count_after, "Triggers were dropped when column was removed!"
++
++        trigger_names = conn.select_values("SELECT name FROM sqlite_master WHERE type = 'trigger' AND tbl_name = 'posts' ORDER BY name")
++        assert_equal ["increment_view_count", "track_updates"], trigger_names
++      ensure
++        conn.disconnect! if conn
++      end
++
++      def test_alter_table_preserves_trigger_with_add_foreign_key
++        conn = SQLite3Adapter.new(database: ":memory:", adapter: "sqlite3", strict: false)
++
++        conn.create_table :authors do |t|
++          t.string :name, null: false
++        end
++
++        conn.create_table :posts do |t|
++          t.string :title, null: false
++          t.integer :author_id
++          t.integer :view_count, default: 0
++        end
++
++        conn.execute(<<~SQL)
++          CREATE TRIGGER increment_view_count AFTER INSERT ON posts
++          BEGIN
++            UPDATE posts SET view_count = view_count + 1 WHERE id = NEW.id;
++          END
++        SQL
++
++        conn.add_foreign_key :posts, :authors
++
++        trigger_count = conn.select_value("SELECT COUNT(*) FROM sqlite_master WHERE type = 'trigger' AND tbl_name = 'posts'")
++        assert_equal 1, trigger_count, "Trigger was dropped when foreign key was added!"
++
++        fk_count = conn.foreign_keys(:posts).size
++        assert_equal 1, fk_count, "Foreign key was not added!"
++      ensure
++        conn.disconnect! if conn
++      end
++
+       private
+         def with_rails_root(&block)
+           mod = Module.new do

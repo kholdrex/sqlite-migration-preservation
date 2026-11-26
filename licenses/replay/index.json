@@ -1,0 +1,711 @@
+[
+  {
+    "repo": "pitzzahh/powertrackr",
+    "commit": "2b907ed3614de56ab19205c32f9660376787f9f1",
+    "migration_file": "migrations/20260307051734_youthful_mongu/migration.sql",
+    "recorded_license": "BSD-3-Clause",
+    "tree_url": "https://api.github.com/repos/pitzzahh/powertrackr/git/trees/2b907ed3614de56ab19205c32f9660376787f9f1?recursive=1",
+    "tree_sha": "2b907ed3614de56ab19205c32f9660376787f9f1",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/pitzzahh__powertrackr/LICENSE",
+        "url": "https://raw.githubusercontent.com/pitzzahh/powertrackr/2b907ed3614de56ab19205c32f9660376787f9f1/LICENSE",
+        "git_blob": "7ce3a45945391eb20d2c992f7b9602143ea600da",
+        "sha256": "8fce6334371b7df5ac1aead4c090bfcd2b5a2047e6663e163c718762bc665a23",
+        "bytes": 1502,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/011-e6db0a2ec7c2453e.json.gz",
+        "sha256": "93da10ae3e9da2b672bb84c8fff75980cc05077e59b51eaa1b204cd5ee190118"
+      }
+    ]
+  },
+  {
+    "repo": "XeinTDM/MeatFlicks",
+    "commit": "c0bd316872ec36b47ce8135f0faa0a1868382511",
+    "migration_file": "migrations/0001_unique_ghost_rider.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/XeinTDM/MeatFlicks/git/trees/c0bd316872ec36b47ce8135f0faa0a1868382511?recursive=1",
+    "tree_sha": "c0bd316872ec36b47ce8135f0faa0a1868382511",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/XeinTDM__MeatFlicks/LICENSE",
+        "url": "https://raw.githubusercontent.com/XeinTDM/MeatFlicks/c0bd316872ec36b47ce8135f0faa0a1868382511/LICENSE",
+        "git_blob": "adfe338939d04c2063142426afc60a0bd36807ff",
+        "sha256": "837af3a93253c7498c24b1c02c796b4e1f99b74c385c6261f115a69847add768",
+        "bytes": 1064,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/012-e49015a0cfc50c34.json.gz",
+        "sha256": "01dc009aeaf21105041138186da95199ad1ef416acc891ee38ea3ef10f67d6ed"
+      }
+    ]
+  },
+  {
+    "repo": "ncvyn/adu-tutor",
+    "commit": "96475068d8ba7455f742e98d6f2ae149039f3ea0",
+    "migration_file": "migrations/0001_good_mister_fear.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/ncvyn/adu-tutor/git/trees/96475068d8ba7455f742e98d6f2ae149039f3ea0?recursive=1",
+    "tree_sha": "96475068d8ba7455f742e98d6f2ae149039f3ea0",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/ncvyn__adu-tutor/LICENSE",
+        "url": "https://raw.githubusercontent.com/ncvyn/adu-tutor/96475068d8ba7455f742e98d6f2ae149039f3ea0/LICENSE",
+        "git_blob": "22397a43e2c58f11564480bb7f1d27b8d01b9d92",
+        "sha256": "509babe68bc84cf0b3a2563be9b05351d6d9362f227a0c11f5260e442dfe7c2f",
+        "bytes": 1075,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/014-82e717ab52d6d32b.json.gz",
+        "sha256": "b05695110e9c87337b3be644e47768ba3c5f53bf050cb7e74cd0fc04faf94823"
+      }
+    ]
+  },
+  {
+    "repo": "choyiny/saasmail",
+    "commit": "1be56eb77246b3f355469983a970265f63b7c47c",
+    "migration_file": "migrations/0017_windy_sister_grimm.sql",
+    "recorded_license": "Apache-2.0",
+    "tree_url": "https://api.github.com/repos/choyiny/saasmail/git/trees/1be56eb77246b3f355469983a970265f63b7c47c?recursive=1",
+    "tree_sha": "1be56eb77246b3f355469983a970265f63b7c47c",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/choyiny__saasmail/LICENSE",
+        "url": "https://raw.githubusercontent.com/choyiny/saasmail/1be56eb77246b3f355469983a970265f63b7c47c/LICENSE",
+        "git_blob": "43aaabe2bbcd98fb5bebfaabd35033f1658e3f57",
+        "sha256": "393e1d8078f62d0b7be541c1e1608bea37ad128c6440f89ff6d590d0796a5af7",
+        "bytes": 10772,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/016-d1d1b5ae9956b911.json.gz",
+        "sha256": "e72e14123825a401f964dd603652e05f64b87e8667985486c9d2c13b3a2da276"
+      }
+    ]
+  },
+  {
+    "repo": "alteran-social/alteran",
+    "commit": "6bfa4be0fc79aaee55fb35d48dada5f70788d360",
+    "migration_file": "migrations/0005_odd_bishop.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/alteran-social/alteran/git/trees/6bfa4be0fc79aaee55fb35d48dada5f70788d360?recursive=1",
+    "tree_sha": "6bfa4be0fc79aaee55fb35d48dada5f70788d360",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/alteran-social__alteran/LICENSE",
+        "url": "https://raw.githubusercontent.com/alteran-social/alteran/6bfa4be0fc79aaee55fb35d48dada5f70788d360/LICENSE",
+        "git_blob": "696b7b56c9143cd15e4abe572a3406b23f562dbd",
+        "sha256": "6802a0e402a45d3f9bba5e86b3bc3696b9bef1e36b9ac9ca5cf65439f1cc9f47",
+        "bytes": 1072,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/019-e0d64e55a73b9915.json.gz",
+        "sha256": "35812705d55cca2e8faeded00a64c9287ed135438ccb3d8e856ad0f35cba1083"
+      }
+    ]
+  },
+  {
+    "repo": "flyaltitudeapp/altitude",
+    "commit": "4ddaf5625d1211d6eac706188a9809ab9716163e",
+    "migration_file": "migrations/0026_daffy_plazm.sql",
+    "recorded_license": "Apache-2.0",
+    "tree_url": "https://api.github.com/repos/flyaltitudeapp/altitude/git/trees/4ddaf5625d1211d6eac706188a9809ab9716163e?recursive=1",
+    "tree_sha": "4ddaf5625d1211d6eac706188a9809ab9716163e",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENCE",
+        "file": "licenses/replay/flyaltitudeapp__altitude/LICENCE",
+        "url": "https://raw.githubusercontent.com/flyaltitudeapp/altitude/4ddaf5625d1211d6eac706188a9809ab9716163e/LICENCE",
+        "git_blob": "004d67aff35d05d06650d50bf14a7ac789557e7c",
+        "sha256": "2245a990b635558be210fb3eb4f8a6f7a49aebc0fefbf5859146a65ddc7ddcf3",
+        "bytes": 11750,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/020-b7d8b530fdc11e8e.json.gz",
+        "sha256": "01bfdb01862437295bde14dc31e6c70b90b41e8f4bfdde34e3943c0b09990d7f"
+      }
+    ]
+  },
+  {
+    "repo": "Shiinama/next-cloudflare-template",
+    "commit": "a35f20e9f251fa6a3dfc1f9bd139fc24d983f8f4",
+    "migration_file": "migrations/0009_clever_fallen_one.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/Shiinama/next-cloudflare-template/git/trees/a35f20e9f251fa6a3dfc1f9bd139fc24d983f8f4?recursive=1",
+    "tree_sha": "a35f20e9f251fa6a3dfc1f9bd139fc24d983f8f4",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/Shiinama__next-cloudflare-template/LICENSE",
+        "url": "https://raw.githubusercontent.com/Shiinama/next-cloudflare-template/a35f20e9f251fa6a3dfc1f9bd139fc24d983f8f4/LICENSE",
+        "git_blob": "8c2e109f4cb8643f186b43f15b0295980acc455f",
+        "sha256": "a43888f3c1c437388ad6781fe5fbaf6717ab3fbebd97fa110f0004e63f13b6c8",
+        "bytes": 1091,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/022-cf74bf650f14bc3a.json.gz",
+        "sha256": "ec20b72cb3539916bfaf1c82c7f264ab61e91c7bad738cdd116ba7ec9d7db74e"
+      }
+    ]
+  },
+  {
+    "repo": "skyfallwastaken/at-channel",
+    "commit": "aa486b2dbf7515136bb8385e970500c74f67b646",
+    "migration_file": "migrations/0001_flimsy_zzzax.sql",
+    "recorded_license": "Apache-2.0",
+    "tree_url": "https://api.github.com/repos/skyfallwastaken/at-channel/git/trees/aa486b2dbf7515136bb8385e970500c74f67b646?recursive=1",
+    "tree_sha": "aa486b2dbf7515136bb8385e970500c74f67b646",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE-APACHE",
+        "file": "licenses/replay/skyfallwastaken__at-channel/LICENSE-APACHE",
+        "url": "https://raw.githubusercontent.com/skyfallwastaken/at-channel/aa486b2dbf7515136bb8385e970500c74f67b646/LICENSE-APACHE",
+        "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "bytes": 11357,
+        "ancestor_of_migration": true
+      },
+      {
+        "path": "LICENSE-MIT",
+        "file": "licenses/replay/skyfallwastaken__at-channel/LICENSE-MIT",
+        "url": "https://raw.githubusercontent.com/skyfallwastaken/at-channel/aa486b2dbf7515136bb8385e970500c74f67b646/LICENSE-MIT",
+        "git_blob": "00e72948d5975686b4779b17c4786b86143afcca",
+        "sha256": "a7023358d83406104a171ab9c776f61ac1edf8e2b743bb23aea9b2d84c129684",
+        "bytes": 1068,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/023-1655d886336c9736.json.gz",
+        "sha256": "95abc80d45121854c585d0d94e677d3d16b7b1f99ab0ce217e33bd53d4312128"
+      }
+    ]
+  },
+  {
+    "repo": "raffaele-lungarella/appointment-scheduler",
+    "commit": "116c9371d2ff0679b698cfe8d9d3949fad1d62fa",
+    "migration_file": "migrations/0002_tired_betty_brant.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/raffaele-lungarella/appointment-scheduler/git/trees/116c9371d2ff0679b698cfe8d9d3949fad1d62fa?recursive=1",
+    "tree_sha": "116c9371d2ff0679b698cfe8d9d3949fad1d62fa",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/raffaele-lungarella__appointment-scheduler/LICENSE",
+        "url": "https://raw.githubusercontent.com/raffaele-lungarella/appointment-scheduler/116c9371d2ff0679b698cfe8d9d3949fad1d62fa/LICENSE",
+        "git_blob": "8cc233fb036ed780cc92b421419dd82c2b01af01",
+        "sha256": "ae51d81c99ce58651c03057338b9744acb3e668a6fe28421897f92e52d6bf0cc",
+        "bytes": 1076,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/027-e29fc6931621417f.json.gz",
+        "sha256": "91e20a122716db525fa5da8b4fb040d5ad4b19c104f99d0c31ff28152bcb6b65"
+      }
+    ]
+  },
+  {
+    "repo": "bradymholt/snoozer",
+    "commit": "71b56c1b2ff1c264ba2af4737368f4dc5c50a2e9",
+    "migration_file": "migrations/0003_green_ink.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/bradymholt/snoozer/git/trees/71b56c1b2ff1c264ba2af4737368f4dc5c50a2e9?recursive=1",
+    "tree_sha": "71b56c1b2ff1c264ba2af4737368f4dc5c50a2e9",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/bradymholt__snoozer/LICENSE",
+        "url": "https://raw.githubusercontent.com/bradymholt/snoozer/71b56c1b2ff1c264ba2af4737368f4dc5c50a2e9/LICENSE",
+        "git_blob": "e6c98f85933634278fc38d5c243ba60693c44b23",
+        "sha256": "6987e0aabf1034eda728d5875ea143201fbfe2c7c86521f5dad5690422ccf87d",
+        "bytes": 1067,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/031-87a996f7b17ef7fc.json.gz",
+        "sha256": "27325651bdefee612b5b181130300cfdcd9aea3afccaff736c4b08f1ae01bae1"
+      }
+    ]
+  },
+  {
+    "repo": "vaibhavrxj/-vaibhav-asset-intelligence",
+    "commit": "10d799c850557a3303809a3375be6182dceaf197",
+    "migration_file": "migrations/0001_windy_blizzard.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/vaibhavrxj/-vaibhav-asset-intelligence/git/trees/10d799c850557a3303809a3375be6182dceaf197?recursive=1",
+    "tree_sha": "10d799c850557a3303809a3375be6182dceaf197",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/vaibhavrxj__-vaibhav-asset-intelligence/LICENSE",
+        "url": "https://raw.githubusercontent.com/vaibhavrxj/-vaibhav-asset-intelligence/10d799c850557a3303809a3375be6182dceaf197/LICENSE",
+        "git_blob": "87f4d3ec2122322a1a7e6fe492262c083287ad51",
+        "sha256": "2e8ea958322e29e85167ded69366e08ba232a72a03b81a65bc063e05ca27c4cd",
+        "bytes": 1063,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/038-e9abb3238db7bbb8.json.gz",
+        "sha256": "26611e7fb4c8ebe35b149420ce40fffe661d132ca8c8f6842913e663b120a30b"
+      }
+    ]
+  },
+  {
+    "repo": "realmroot/realmroot",
+    "commit": "be7ab7472f1b73675670a4ce03a7a6cb84130e90",
+    "migration_file": "migrations/0030_agent_management_actor.sql",
+    "recorded_license": "Apache-2.0",
+    "tree_url": "https://api.github.com/repos/realmroot/realmroot/git/trees/be7ab7472f1b73675670a4ce03a7a6cb84130e90?recursive=1",
+    "tree_sha": "be7ab7472f1b73675670a4ce03a7a6cb84130e90",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/realmroot__realmroot/LICENSE",
+        "url": "https://raw.githubusercontent.com/realmroot/realmroot/be7ab7472f1b73675670a4ce03a7a6cb84130e90/LICENSE",
+        "git_blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "bytes": 11357,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/039-5c0758975dca49a0.json.gz",
+        "sha256": "666942e3809a6107d60d7d36ce7dab7a3c9e5c9db3e59b9ccd7630cd0517cf34"
+      }
+    ]
+  },
+  {
+    "repo": "dadezzz/events-cash-register",
+    "commit": "25293b8d312ca8075fa064b09988d124c614188e",
+    "migration_file": "migrations/0010_curvy_phalanx.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/dadezzz/events-cash-register/git/trees/25293b8d312ca8075fa064b09988d124c614188e?recursive=1",
+    "tree_sha": "25293b8d312ca8075fa064b09988d124c614188e",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/dadezzz__events-cash-register/LICENSE",
+        "url": "https://raw.githubusercontent.com/dadezzz/events-cash-register/25293b8d312ca8075fa064b09988d124c614188e/LICENSE",
+        "git_blob": "4f497012460c59c98c0e64a5122017779bf1dce8",
+        "sha256": "c4c39be740d61df453f644301a47555716dae6beb5f50f4914126e17fddd5321",
+        "bytes": 1075,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/043-53134a585e2435ee.json.gz",
+        "sha256": "6fc62c25257e80bab6ff4a4328dece66a5a0f877e327934b0a9340caf1361340"
+      }
+    ]
+  },
+  {
+    "repo": "trevclev0/terminal-quiz",
+    "commit": "5a92afeed96c25df83ed6d1b7ece80e391f090a3",
+    "migration_file": "migrations/0003_melodic_jane_foster.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/trevclev0/terminal-quiz/git/trees/5a92afeed96c25df83ed6d1b7ece80e391f090a3?recursive=1",
+    "tree_sha": "5a92afeed96c25df83ed6d1b7ece80e391f090a3",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/trevclev0__terminal-quiz/LICENSE",
+        "url": "https://raw.githubusercontent.com/trevclev0/terminal-quiz/5a92afeed96c25df83ed6d1b7ece80e391f090a3/LICENSE",
+        "git_blob": "339fa5673f3bea0b60bbd7eac9cc1a34e8800bed",
+        "sha256": "6a71e44c36b53ff323ae62993d70e4f65d1b1941aa0148512d5926c53208fec5",
+        "bytes": 1066,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/047-07a4ec8080a4da23.json.gz",
+        "sha256": "a051cd973ea3d18cb4d3f18ad9b1fec91295b963aca13a46b2d15f99b93e24e4"
+      }
+    ]
+  },
+  {
+    "repo": "tijptjik/hype",
+    "commit": "6ee39e249f1b42013b8b49530509b0f2e74dd2d4",
+    "migration_file": "migrations/0007_capabilities.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/tijptjik/hype/git/trees/6ee39e249f1b42013b8b49530509b0f2e74dd2d4?recursive=1",
+    "tree_sha": "6ee39e249f1b42013b8b49530509b0f2e74dd2d4",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE.md",
+        "file": "licenses/replay/tijptjik__hype/LICENSE.md",
+        "url": "https://raw.githubusercontent.com/tijptjik/hype/6ee39e249f1b42013b8b49530509b0f2e74dd2d4/LICENSE.md",
+        "git_blob": "d7d2e89671f9eaea010169b26e65ae65bbd530fb",
+        "sha256": "c6bc196fb05cad396f05c70e7f071a074766a2606134dfc7d0ec7b14c02b1116",
+        "bytes": 1063,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/048-72af059ff8e213aa.json.gz",
+        "sha256": "844fac7bff94e378a452b2040224fbf72f0657ab609255301f5925aed0e7d468"
+      }
+    ]
+  },
+  {
+    "repo": "BatthewZ/cadence-public",
+    "commit": "0f07383719c43fb55acc97c6fc6d942d6d785716",
+    "migration_file": "migrations/0016_shocking_kabuki.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/BatthewZ/cadence-public/git/trees/0f07383719c43fb55acc97c6fc6d942d6d785716?recursive=1",
+    "tree_sha": "0f07383719c43fb55acc97c6fc6d942d6d785716",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/BatthewZ__cadence-public/LICENSE",
+        "url": "https://raw.githubusercontent.com/BatthewZ/cadence-public/0f07383719c43fb55acc97c6fc6d942d6d785716/LICENSE",
+        "git_blob": "f5d614a26c86f94fa564db99c9e77fbdb5229b73",
+        "sha256": "296a6cf706c3e2a70448f07a7dce29d470c6870bf3ea03b4572d16abacb3aa9c",
+        "bytes": 1069,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/055-dfd2ea7cd9e34106.json.gz",
+        "sha256": "aa91e118f405cab9f6a67c87dced577f53cbd40630507c55c785b834093389a6"
+      }
+    ]
+  },
+  {
+    "repo": "VesperQuartz/payhub",
+    "commit": "23b58005cc121af5c0dfef8de853b56d40456442",
+    "migration_file": "migrations/0009_violet_black_tarantula.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/VesperQuartz/payhub/git/trees/23b58005cc121af5c0dfef8de853b56d40456442?recursive=1",
+    "tree_sha": "23b58005cc121af5c0dfef8de853b56d40456442",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/VesperQuartz__payhub/LICENSE",
+        "url": "https://raw.githubusercontent.com/VesperQuartz/payhub/23b58005cc121af5c0dfef8de853b56d40456442/LICENSE",
+        "git_blob": "98cb6f3ebd5b929f7f0370f5880328f526fd710c",
+        "sha256": "106b0c64fd2e4ad0d688a5688261979153f870d1be668282cc08217944d67947",
+        "bytes": 1068,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/059-6b20ac1360f6f0d0.json.gz",
+        "sha256": "0bdcac7c9c2528998a4d51822d1671f2ca3b64f8d86cb8b6b2cdfcdcd674467a"
+      }
+    ]
+  },
+  {
+    "repo": "syahrulfadli/kanban-app",
+    "commit": "f3b42a93eaabb2dae9a5987e7638318cec4568da",
+    "migration_file": "migrations/0016_mushy_martin_li.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/syahrulfadli/kanban-app/git/trees/f3b42a93eaabb2dae9a5987e7638318cec4568da?recursive=1",
+    "tree_sha": "f3b42a93eaabb2dae9a5987e7638318cec4568da",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/syahrulfadli__kanban-app/LICENSE",
+        "url": "https://raw.githubusercontent.com/syahrulfadli/kanban-app/f3b42a93eaabb2dae9a5987e7638318cec4568da/LICENSE",
+        "git_blob": "79fb48f70b2840c2af732d5b15c71e9b74224cea",
+        "sha256": "b70261e509e256d03cf03a1173a1c329e4a700f219ed3bced3728b7b306128b0",
+        "bytes": 1069,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/061-bed324e0e13a12a7.json.gz",
+        "sha256": "219e02197b6c8101041e5449e8b07e5b6f95ae3aa38545d1537bf1184e1d761b"
+      }
+    ]
+  },
+  {
+    "repo": "Ankit-Maurya-12223197/Ai-Powered-Inventory",
+    "commit": "da6ab17911f9bbf6276255650e27489cc109d21a",
+    "migration_file": "migrations/0001_windy_blizzard.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/Ankit-Maurya-12223197/Ai-Powered-Inventory/git/trees/da6ab17911f9bbf6276255650e27489cc109d21a?recursive=1",
+    "tree_sha": "da6ab17911f9bbf6276255650e27489cc109d21a",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/Ankit-Maurya-12223197__Ai-Powered-Inventory/LICENSE",
+        "url": "https://raw.githubusercontent.com/Ankit-Maurya-12223197/Ai-Powered-Inventory/da6ab17911f9bbf6276255650e27489cc109d21a/LICENSE",
+        "git_blob": "4a18740ba7befbf2ea2838fd45f35d076f690ccf",
+        "sha256": "9f4756a6d108f51fd928ece13bb89471e8afd0ef4a79d28ca76f6850880e9512",
+        "bytes": 1083,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/065-4f4599c45d269b02.json.gz",
+        "sha256": "f7c44b669ef62430c0ed3fbe7bf5a18d70f24c7468188d9c66568ca46334666d"
+      }
+    ]
+  },
+  {
+    "repo": "srvo/saasmail",
+    "commit": "b287dcbff2cf151b722a015f93a86f4253dacc14",
+    "migration_file": "migrations/0017_windy_sister_grimm.sql",
+    "recorded_license": "Apache-2.0",
+    "tree_url": "https://api.github.com/repos/srvo/saasmail/git/trees/b287dcbff2cf151b722a015f93a86f4253dacc14?recursive=1",
+    "tree_sha": "b287dcbff2cf151b722a015f93a86f4253dacc14",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/srvo__saasmail/LICENSE",
+        "url": "https://raw.githubusercontent.com/srvo/saasmail/b287dcbff2cf151b722a015f93a86f4253dacc14/LICENSE",
+        "git_blob": "43aaabe2bbcd98fb5bebfaabd35033f1658e3f57",
+        "sha256": "393e1d8078f62d0b7be541c1e1608bea37ad128c6440f89ff6d590d0796a5af7",
+        "bytes": 10772,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/067-f247ea62a37293d8.json.gz",
+        "sha256": "1ee64da6426916abcbfbff069fad103b29ffd927ab96e8390efba5dcde403911"
+      }
+    ]
+  },
+  {
+    "repo": "jtk5aw/committed",
+    "commit": "82b97fa333e7872440a5322c2b469054085d2ffc",
+    "migration_file": "migrations/0004_reflective_argent.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/jtk5aw/committed/git/trees/82b97fa333e7872440a5322c2b469054085d2ffc?recursive=1",
+    "tree_sha": "82b97fa333e7872440a5322c2b469054085d2ffc",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/jtk5aw__committed/LICENSE",
+        "url": "https://raw.githubusercontent.com/jtk5aw/committed/82b97fa333e7872440a5322c2b469054085d2ffc/LICENSE",
+        "git_blob": "f001752edfb6e83648681a6f3230c6438ef36e6f",
+        "sha256": "0bfd9b622fbe4ebd9f242bbd16011be8187c7e6f72bf0668458229c36ce4e7fa",
+        "bytes": 1072,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/071-24b6c3efb6af74f9.json.gz",
+        "sha256": "fb3fc509288e27457596bc7ffb4a030eb757550efd3b759158c33ff5dcc3355c"
+      }
+    ]
+  },
+  {
+    "repo": "kuranai/dovari",
+    "commit": "89af16260e71e0d0f6a46981da2c188dfafab2f1",
+    "migration_file": "migrations/0009_aromatic_the_order.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/kuranai/dovari/git/trees/89af16260e71e0d0f6a46981da2c188dfafab2f1?recursive=1",
+    "tree_sha": "89af16260e71e0d0f6a46981da2c188dfafab2f1",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/kuranai__dovari/LICENSE",
+        "url": "https://raw.githubusercontent.com/kuranai/dovari/89af16260e71e0d0f6a46981da2c188dfafab2f1/LICENSE",
+        "git_blob": "27f2933c785bcb8e5bdb2fe75e7d68e1355be479",
+        "sha256": "2f7a1f631215f0b61666fd828ef3faa0af320cd9ed7f57eaabdcfd8faad96c39",
+        "bytes": 1076,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/076-95022638ed17e463.json.gz",
+        "sha256": "e0c57698df8d7987aaf93a741d4fa3b811ec3a06ba62a3051c0086350b77032f"
+      }
+    ]
+  },
+  {
+    "repo": "kuranai/kuranai-com",
+    "commit": "f0d47bb4f6618901dc3f7873b5388fe726ba6bc6",
+    "migration_file": "migrations/0009_aromatic_the_order.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/kuranai/kuranai-com/git/trees/f0d47bb4f6618901dc3f7873b5388fe726ba6bc6?recursive=1",
+    "tree_sha": "f0d47bb4f6618901dc3f7873b5388fe726ba6bc6",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/kuranai__kuranai-com/LICENSE",
+        "url": "https://raw.githubusercontent.com/kuranai/kuranai-com/f0d47bb4f6618901dc3f7873b5388fe726ba6bc6/LICENSE",
+        "git_blob": "27f2933c785bcb8e5bdb2fe75e7d68e1355be479",
+        "sha256": "2f7a1f631215f0b61666fd828ef3faa0af320cd9ed7f57eaabdcfd8faad96c39",
+        "bytes": 1076,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/077-e1bd1fa24a85927b.json.gz",
+        "sha256": "441e6f07e77b01f152141707696f4d5a8a9f377b978eefe6ee5bfbd6f938f817"
+      }
+    ]
+  },
+  {
+    "repo": "columk1/threads-clone",
+    "commit": "41d9bcb92c9d414417e0da2d4175c171ee26ecab",
+    "migration_file": "migrations/0002_gray_molly_hayes.sql",
+    "recorded_license": "MIT",
+    "tree_url": "https://api.github.com/repos/columk1/threads-clone/git/trees/41d9bcb92c9d414417e0da2d4175c171ee26ecab?recursive=1",
+    "tree_sha": "41d9bcb92c9d414417e0da2d4175c171ee26ecab",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/columk1__threads-clone/LICENSE",
+        "url": "https://raw.githubusercontent.com/columk1/threads-clone/41d9bcb92c9d414417e0da2d4175c171ee26ecab/LICENSE",
+        "git_blob": "9751235ffb966ed367aa96de033350fab4f199bf",
+        "sha256": "b86ce4304b75f6d5458d651b9e3ed5639410f89080dd7b3501d86d6cb107b5ea",
+        "bytes": 1067,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/080-062ed98d6f5da7ff.json.gz",
+        "sha256": "c0176ce254a4a5c7bf9a6feaab1b4fcee9ccc0f543b4bf1553d55f2e2dbd9daa"
+      }
+    ]
+  },
+  {
+    "repo": "dynamicagents/slack-gatekeeper",
+    "commit": "c28aaf2c253533d92afdca567548238d30d8ce69",
+    "migration_file": "migrations/0004_agents_endpoint_notnull.sql",
+    "recorded_license": "Apache-2.0",
+    "tree_url": "https://api.github.com/repos/dynamicagents/slack-gatekeeper/git/trees/c28aaf2c253533d92afdca567548238d30d8ce69?recursive=1",
+    "tree_sha": "c28aaf2c253533d92afdca567548238d30d8ce69",
+    "tree_truncated": false,
+    "files": [
+      {
+        "path": "LICENSE",
+        "file": "licenses/replay/dynamicagents__slack-gatekeeper/LICENSE",
+        "url": "https://raw.githubusercontent.com/dynamicagents/slack-gatekeeper/c28aaf2c253533d92afdca567548238d30d8ce69/LICENSE",
+        "git_blob": "a26f82253fa7d6d21a36caa2917ab5e664374420",
+        "sha256": "013341087b8732edc78c134edfb6650e9f5932cb391bb7b5c00f8450ab935d9a",
+        "bytes": 10934,
+        "ancestor_of_migration": true
+      }
+    ],
+    "mode": "full",
+    "reason": "Pinned license text accompanies project SQL",
+    "artifacts": [
+      {
+        "file": "results/realworld-rerun-2026-11-02/evidence/084-20a0c663a43f43cf.json.gz",
+        "sha256": "9cf9001f96420600d62c923fca0f5b6a0cf75d20ee4b7001accee9c079661f4e"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+source "https://rubygems.org"
+gem "activerecord", git: File.expand_path("../../../.cache/rails-pr58709+56811.git", __dir__), ref: "bec5f3e1d7ec75a43f65af23b7b58e65b20caf9e", glob: "{activerecord,activemodel,activesupport}/*.gemspec"
+gem "sqlite3", "2.9.6"

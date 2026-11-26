@@ -1,0 +1,256 @@
+[
+  {
+    "name": "generated_rebuild",
+    "execution": {
+      "success": true,
+      "returncode": 0,
+      "error": null,
+      "prisma": "7.10.0",
+      "foreign_keys_before": 1,
+      "foreign_keys_after": 1,
+      "sqlite": "3.46.0",
+      "connection_observations": [
+        [
+          "before",
+          1,
+          0,
+          "3.46.0"
+        ],
+        [
+          "after",
+          1,
+          0,
+          "3.46.0"
+        ]
+      ],
+      "trace_available": false
+    },
+    "generated_sql": "-- RedefineTables\nPRAGMA defer_foreign_keys=ON;\nPRAGMA foreign_keys=OFF;\nCREATE TABLE \"new_parents\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"payload\" TEXT,\n    \"tenant_id\" INTEGER,\n    \"value\" TEXT DEFAULT '9'\n);\nINSERT INTO \"new_parents\" (\"id\", \"payload\", \"tenant_id\", \"value\") SELECT \"id\", \"payload\", \"tenant_id\", \"value\" FROM \"parents\";\nDROP TABLE \"parents\";\nALTER TABLE \"new_parents\" RENAME TO \"parents\";\nCREATE INDEX \"idx_declared\" ON \"parents\"(\"payload\");\nPRAGMA foreign_keys=ON;\nPRAGMA defer_foreign_keys=OFF;\n\n",
+    "probe_sql": "INSERT INTO probe_observations SELECT 'before', foreign_keys, defer_foreign_keys, sqlite_version() FROM pragma_foreign_keys, pragma_defer_foreign_keys;\n-- RedefineTables\nPRAGMA defer_foreign_keys=ON;\nPRAGMA foreign_keys=OFF;\nCREATE TABLE \"new_parents\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"payload\" TEXT,\n    \"tenant_id\" INTEGER,\n    \"value\" TEXT DEFAULT '9'\n);\nINSERT INTO \"new_parents\" (\"id\", \"payload\", \"tenant_id\", \"value\") SELECT \"id\", \"payload\", \"tenant_id\", \"value\" FROM \"parents\";\nDROP TABLE \"parents\";\nALTER TABLE \"new_parents\" RENAME TO \"parents\";\nCREATE INDEX \"idx_declared\" ON \"parents\"(\"payload\");\nPRAGMA foreign_keys=ON;\nPRAGMA defer_foreign_keys=OFF;\n\nINSERT INTO probe_observations SELECT 'after', foreign_keys, defer_foreign_keys, sqlite_version() FROM pragma_foreign_keys, pragma_defer_foreign_keys;\n",
+    "observations": [
+      [
+        "before",
+        1,
+        0,
+        "3.46.0"
+      ],
+      [
+        "after",
+        1,
+        0,
+        "3.46.0"
+      ]
+    ],
+    "columns_after": [
+      [
+        0,
+        "id",
+        "INTEGER",
+        1,
+        null,
+        1
+      ],
+      [
+        1,
+        "payload",
+        "TEXT",
+        0,
+        null,
+        0
+      ],
+      [
+        2,
+        "tenant_id",
+        "INTEGER",
+        0,
+        null,
+        0
+      ],
+      [
+        3,
+        "value",
+        "TEXT",
+        0,
+        "'9'",
+        0
+      ]
+    ],
+    "ledger": [
+      [
+        "0001_baseline",
+        1791595301648,
+        null
+      ],
+      [
+        "0002_change",
+        1791595302587,
+        null
+      ]
+    ],
+    "stdout": "Datasource \"db\": SQLite database \"database.db\" at \"file:/study/harness/.cache/orm/prisma-probes/generated_rebuild/database.db\"\n\nMigration 0001_baseline marked as applied.\n\nDatasource \"db\": SQLite database \"database.db\" at \"file:/study/harness/.cache/orm/prisma-probes/generated_rebuild/database.db\"\n\n2 migrations found in prisma/migrations\n\nApplying migration `0002_change`\n\nThe following migration(s) have been applied:\n\nmigrations/\n  \u2514\u2500 0002_change/\n    \u2514\u2500 migration.sql\n\nAll migrations have been successfully applied.\n",
+    "stderr": "Loaded Prisma config from prisma.config.ts.\n\nPrisma schema loaded from after.prisma.\nLoaded Prisma config from prisma.config.ts.\n\nPrisma schema loaded from after.prisma.\n"
+  },
+  {
+    "name": "failure_no_begin",
+    "execution": {
+      "success": false,
+      "returncode": 1,
+      "error": "Loaded Prisma config from prisma.config.ts.\n\nPrisma schema loaded from after.prisma.\nError: P3018\n\nA migration failed to apply. New migrations cannot be applied before the error is recovered from. Read more about how to resolve migration issues in a production database: https://pris.ly/d/migrate-resolve\n\nMigration name: 0002_change\n\nDatabase error code: 1\n\nDatabase error:\nno such table: deliberately_missing_probe_table\n\n\n",
+      "prisma": "7.10.0",
+      "foreign_keys_before": 1,
+      "foreign_keys_after": 1,
+      "sqlite": "3.46.0",
+      "connection_observations": [
+        [
+          "before",
+          1,
+          0,
+          "3.46.0"
+        ],
+        [
+          "failure",
+          1,
+          0,
+          "3.46.0"
+        ]
+      ],
+      "trace_available": false
+    },
+    "generated_sql": "-- RedefineTables\nPRAGMA defer_foreign_keys=ON;\nPRAGMA foreign_keys=OFF;\nCREATE TABLE \"new_parents\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"payload\" TEXT,\n    \"tenant_id\" INTEGER,\n    \"value\" TEXT DEFAULT '9'\n);\nINSERT INTO \"new_parents\" (\"id\", \"payload\", \"tenant_id\", \"value\") SELECT \"id\", \"payload\", \"tenant_id\", \"value\" FROM \"parents\";\nDROP TABLE \"parents\";\nALTER TABLE \"new_parents\" RENAME TO \"parents\";\nCREATE INDEX \"idx_declared\" ON \"parents\"(\"payload\");\nPRAGMA foreign_keys=ON;\nPRAGMA defer_foreign_keys=OFF;\n\n",
+    "probe_sql": "INSERT INTO probe_observations SELECT 'before', foreign_keys, defer_foreign_keys, sqlite_version() FROM pragma_foreign_keys, pragma_defer_foreign_keys;\n-- RedefineTables\nPRAGMA defer_foreign_keys=ON;\nPRAGMA foreign_keys=OFF;\nCREATE TABLE \"new_parents\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"payload\" TEXT,\n    \"tenant_id\" INTEGER,\n    \"value\" TEXT DEFAULT '9'\n);\nINSERT INTO \"new_parents\" (\"id\", \"payload\", \"tenant_id\", \"value\") SELECT \"id\", \"payload\", \"tenant_id\", \"value\" FROM \"parents\";\nDROP TABLE \"parents\";\nALTER TABLE \"new_parents\" RENAME TO \"parents\";\nCREATE INDEX \"idx_declared\" ON \"parents\"(\"payload\");\nPRAGMA foreign_keys=ON;\nPRAGMA defer_foreign_keys=OFF;\n\nINSERT INTO probe_observations SELECT 'after', foreign_keys, defer_foreign_keys, sqlite_version() FROM pragma_foreign_keys, pragma_defer_foreign_keys;\nSELECT * FROM deliberately_missing_probe_table;\n",
+    "observations": [
+      [
+        "before",
+        1,
+        0,
+        "3.46.0"
+      ],
+      [
+        "after",
+        1,
+        0,
+        "3.46.0"
+      ]
+    ],
+    "columns_after": [
+      [
+        0,
+        "id",
+        "INTEGER",
+        1,
+        null,
+        1
+      ],
+      [
+        1,
+        "payload",
+        "TEXT",
+        0,
+        null,
+        0
+      ],
+      [
+        2,
+        "tenant_id",
+        "INTEGER",
+        0,
+        null,
+        0
+      ],
+      [
+        3,
+        "value",
+        "TEXT",
+        0,
+        "'9'",
+        0
+      ]
+    ],
+    "ledger": [
+      [
+        "0001_baseline",
+        1791595304592,
+        null
+      ],
+      [
+        "0002_change",
+        null,
+        null
+      ]
+    ],
+    "stdout": "Datasource \"db\": SQLite database \"database.db\" at \"file:/study/harness/.cache/orm/prisma-probes/failure_no_begin/database.db\"\n\nMigration 0001_baseline marked as applied.\n\nDatasource \"db\": SQLite database \"database.db\" at \"file:/study/harness/.cache/orm/prisma-probes/failure_no_begin/database.db\"\n\n2 migrations found in prisma/migrations\n\nApplying migration `0002_change`\n",
+    "stderr": "Loaded Prisma config from prisma.config.ts.\n\nPrisma schema loaded from after.prisma.\nLoaded Prisma config from prisma.config.ts.\n\nPrisma schema loaded from after.prisma.\nError: P3018\n\nA migration failed to apply. New migrations cannot be applied before the error is recovered from. Read more about how to resolve migration issues in a production database: https://pris.ly/d/migrate-resolve\n\nMigration name: 0002_change\n\nDatabase error code: 1\n\nDatabase error:\nno such table: deliberately_missing_probe_table\n\n\n"
+  },
+  {
+    "name": "failure_explicit_begin",
+    "execution": {
+      "success": false,
+      "returncode": 1,
+      "error": "Loaded Prisma config from prisma.config.ts.\n\nPrisma schema loaded from after.prisma.\nError: P3018\n\nA migration failed to apply. New migrations cannot be applied before the error is recovered from. Read more about how to resolve migration issues in a production database: https://pris.ly/d/migrate-resolve\n\nMigration name: 0002_change\n\nDatabase error code: 1\n\nDatabase error:\nno such table: deliberately_missing_probe_table\n\n\n",
+      "prisma": "7.10.0",
+      "foreign_keys_before": 1,
+      "foreign_keys_after": null,
+      "sqlite": "3.46.0",
+      "connection_observations": [
+        [
+          "before",
+          1,
+          0,
+          "3.46.0"
+        ]
+      ],
+      "trace_available": false
+    },
+    "generated_sql": "-- RedefineTables\nPRAGMA defer_foreign_keys=ON;\nPRAGMA foreign_keys=OFF;\nCREATE TABLE \"new_parents\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"payload\" TEXT,\n    \"tenant_id\" INTEGER,\n    \"value\" TEXT DEFAULT '9'\n);\nINSERT INTO \"new_parents\" (\"id\", \"payload\", \"tenant_id\", \"value\") SELECT \"id\", \"payload\", \"tenant_id\", \"value\" FROM \"parents\";\nDROP TABLE \"parents\";\nALTER TABLE \"new_parents\" RENAME TO \"parents\";\nCREATE INDEX \"idx_declared\" ON \"parents\"(\"payload\");\nPRAGMA foreign_keys=ON;\nPRAGMA defer_foreign_keys=OFF;\n\n",
+    "probe_sql": "BEGIN;\nINSERT INTO probe_observations SELECT 'before', foreign_keys, defer_foreign_keys, sqlite_version() FROM pragma_foreign_keys, pragma_defer_foreign_keys;\n-- RedefineTables\nPRAGMA defer_foreign_keys=ON;\nPRAGMA foreign_keys=OFF;\nCREATE TABLE \"new_parents\" (\n    \"id\" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,\n    \"payload\" TEXT,\n    \"tenant_id\" INTEGER,\n    \"value\" TEXT DEFAULT '9'\n);\nINSERT INTO \"new_parents\" (\"id\", \"payload\", \"tenant_id\", \"value\") SELECT \"id\", \"payload\", \"tenant_id\", \"value\" FROM \"parents\";\nDROP TABLE \"parents\";\nALTER TABLE \"new_parents\" RENAME TO \"parents\";\nCREATE INDEX \"idx_declared\" ON \"parents\"(\"payload\");\nPRAGMA foreign_keys=ON;\nPRAGMA defer_foreign_keys=OFF;\n\nINSERT INTO probe_observations SELECT 'after', foreign_keys, defer_foreign_keys, sqlite_version() FROM pragma_foreign_keys, pragma_defer_foreign_keys;\nSELECT * FROM deliberately_missing_probe_table;\nCOMMIT;\n",
+    "observations": [],
+    "columns_after": [
+      [
+        0,
+        "id",
+        "INTEGER",
+        0,
+        null,
+        1
+      ],
+      [
+        1,
+        "payload",
+        "TEXT",
+        0,
+        null,
+        0
+      ],
+      [
+        2,
+        "value",
+        "TEXT",
+        0,
+        null,
+        0
+      ],
+      [
+        3,
+        "tenant_id",
+        "INTEGER",
+        0,
+        null,
+        0
+      ]
+    ],
+    "ledger": [
+      [
+        "0001_baseline",
+        1791595307720,
+        null
+      ],
+      [
+        "0002_change",
+        null,
+        null
+      ]
+    ],
+    "stdout": "Datasource \"db\": SQLite database \"database.db\" at \"file:/study/harness/.cache/orm/prisma-probes/failure_explicit_begin/database.db\"\n\nMigration 0001_baseline marked as applied.\n\nDatasource \"db\": SQLite database \"database.db\" at \"file:/study/harness/.cache/orm/prisma-probes/failure_explicit_begin/database.db\"\n\n2 migrations found in prisma/migrations\n\nApplying migration `0002_change`\n",
+    "stderr": "Loaded Prisma config from prisma.config.ts.\n\nPrisma schema loaded from after.prisma.\nLoaded Prisma config from prisma.config.ts.\n\nPrisma schema loaded from after.prisma.\nError: P3018\n\nA migration failed to apply. New migrations cannot be applied before the error is recovered from. Read more about how to resolve migration issues in a production database: https://pris.ly/d/migrate-resolve\n\nMigration name: 0002_change\n\nDatabase error code: 1\n\nDatabase error:\nno such table: deliberately_missing_probe_table\n\n\n"
+  }
+]

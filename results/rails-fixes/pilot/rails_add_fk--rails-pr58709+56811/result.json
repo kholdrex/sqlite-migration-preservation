@@ -1,0 +1,862 @@
+{
+  "case": "rails_add_fk",
+  "role": "hazard",
+  "path": "rails",
+  "version_label": "rails-pr58709+56811",
+  "pins": {
+    "activerecord": "8.2.0.alpha",
+    "sqlite3": "2.9.6"
+  },
+  "sqlite_doctor_sha256": "d5452ff61987601c7c10727f173ac897574fed1aa5273c03ee40461d78e3cb09",
+  "provenance": "https://github.com/rails/rails/issues/55866",
+  "description": "Add a foreign key to a parent with cascade children.",
+  "artifacts": "results/rails-fixes/pilot/rails_add_fk--rails-pr58709+56811",
+  "trials": {
+    "populated": {
+      "execution": {
+        "ruby": "3.4.3",
+        "activerecord": "8.2.0.alpha",
+        "sqlite3_gem": "2.9.6",
+        "sqlite": "3.53.2",
+        "foreign_keys_before": 1,
+        "gems": {
+          "pathname": "0.4.0",
+          "base64": "0.3.0",
+          "bigdecimal": "4.1.3",
+          "concurrent-ruby": "1.3.8",
+          "connection_pool": "3.0.2",
+          "drb": "2.2.3",
+          "i18n": "1.15.2",
+          "json": "3.0.2",
+          "logger": "1.7.0",
+          "prism": "1.9.0",
+          "minitest": "6.0.6",
+          "date": "3.6.0",
+          "stringio": "3.2.0",
+          "psych": "5.5.0",
+          "ractor-dispatch": "0.3.0",
+          "securerandom": "0.4.1",
+          "tzinfo": "2.0.6",
+          "uri": "1.1.2",
+          "activesupport": "8.2.0.alpha",
+          "activemodel": "8.2.0.alpha",
+          "timeout": "0.6.1",
+          "activerecord": "8.2.0.alpha",
+          "bundler": "2.6.7",
+          "sqlite3": "2.9.6"
+        },
+        "activerecord_revision": "bec5f3e1d7ec75a43f65af23b7b58e65b20caf9e",
+        "adapter_sha256": "2755a1e844ac04931777305ad20fb4c586165d3902e6f4d1c67f57c2b5c18e38",
+        "adapter_source": "/study/harness/vendor/bundle/ruby/3.4.0/bundler/gems/rails-pr58709+56811-bec5f3e1d7ec/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb",
+        "success": true,
+        "foreign_keys_after": 1,
+        "returncode": 0
+      },
+      "before": {
+        "counts": {
+          "tenants": 2,
+          "parents": 2,
+          "children": 3,
+          "audit": 1
+        },
+        "columns": {
+          "tenants": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "parents": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "tenant_id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": "'a'",
+              "pk": 0
+            }
+          ],
+          "children": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "parent_id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "payload",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "audit": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "message",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        },
+        "foreign_keys": {
+          "tenants": [],
+          "parents": [],
+          "children": [
+            [
+              0,
+              0,
+              "parents",
+              "parent_id",
+              "id",
+              "NO ACTION",
+              "CASCADE",
+              "NONE"
+            ]
+          ],
+          "audit": []
+        },
+        "objects": {
+          "index:idx_children_parent": {
+            "type": "index",
+            "name": "idx_children_parent",
+            "table": "children",
+            "sql": "CREATE INDEX idx_children_parent ON children(parent_id)"
+          },
+          "index:idx_parents_name": {
+            "type": "index",
+            "name": "idx_parents_name",
+            "table": "parents",
+            "sql": "CREATE INDEX idx_parents_name ON parents(name)"
+          },
+          "trigger:trg_children_update": {
+            "type": "trigger",
+            "name": "trg_children_update",
+            "table": "children",
+            "sql": "CREATE TRIGGER trg_children_update AFTER UPDATE ON children\nBEGIN INSERT INTO audit(message) VALUES ('updated'); END"
+          },
+          "view:child_payloads": {
+            "type": "view",
+            "name": "child_payloads",
+            "table": "child_payloads",
+            "sql": "CREATE VIEW child_payloads AS SELECT id, payload FROM children"
+          }
+        },
+        "foreign_key_check": [],
+        "integrity_check": [
+          "ok"
+        ],
+        "errors": [],
+        "view_errors": [],
+        "observer_sqlite": "3.41.2"
+      },
+      "after": {
+        "counts": {
+          "tenants": 2,
+          "parents": 2,
+          "children": 3,
+          "audit": 1
+        },
+        "columns": {
+          "tenants": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "parents": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "tenant_id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": "'a'",
+              "pk": 0
+            }
+          ],
+          "children": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "parent_id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "payload",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "audit": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "message",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        },
+        "foreign_keys": {
+          "tenants": [],
+          "parents": [
+            [
+              0,
+              0,
+              "tenants",
+              "tenant_id",
+              "id",
+              "NO ACTION",
+              "NO ACTION",
+              "NONE"
+            ]
+          ],
+          "children": [
+            [
+              0,
+              0,
+              "parents",
+              "parent_id",
+              "id",
+              "NO ACTION",
+              "CASCADE",
+              "NONE"
+            ]
+          ],
+          "audit": []
+        },
+        "objects": {
+          "index:idx_children_parent": {
+            "type": "index",
+            "name": "idx_children_parent",
+            "table": "children",
+            "sql": "CREATE INDEX idx_children_parent ON children(parent_id)"
+          },
+          "index:idx_parents_name": {
+            "type": "index",
+            "name": "idx_parents_name",
+            "table": "parents",
+            "sql": "CREATE INDEX \"idx_parents_name\" ON \"parents\" (\"name\")"
+          },
+          "index:sqlite_autoindex_ar_internal_metadata_1": {
+            "type": "index",
+            "name": "sqlite_autoindex_ar_internal_metadata_1",
+            "table": "ar_internal_metadata",
+            "sql": null
+          },
+          "index:sqlite_autoindex_schema_migrations_1": {
+            "type": "index",
+            "name": "sqlite_autoindex_schema_migrations_1",
+            "table": "schema_migrations",
+            "sql": null
+          },
+          "trigger:trg_children_update": {
+            "type": "trigger",
+            "name": "trg_children_update",
+            "table": "children",
+            "sql": "CREATE TRIGGER trg_children_update AFTER UPDATE ON children\nBEGIN INSERT INTO audit(message) VALUES ('updated'); END"
+          },
+          "view:child_payloads": {
+            "type": "view",
+            "name": "child_payloads",
+            "table": "child_payloads",
+            "sql": "CREATE VIEW child_payloads AS SELECT id, payload FROM children"
+          }
+        },
+        "foreign_key_check": [],
+        "integrity_check": [
+          "ok"
+        ],
+        "errors": [],
+        "view_errors": [],
+        "observer_sqlite": "3.41.2"
+      },
+      "violations": []
+    },
+    "empty": {
+      "execution": {
+        "ruby": "3.4.3",
+        "activerecord": "8.2.0.alpha",
+        "sqlite3_gem": "2.9.6",
+        "sqlite": "3.53.2",
+        "foreign_keys_before": 1,
+        "gems": {
+          "pathname": "0.4.0",
+          "base64": "0.3.0",
+          "bigdecimal": "4.1.3",
+          "concurrent-ruby": "1.3.8",
+          "connection_pool": "3.0.2",
+          "drb": "2.2.3",
+          "i18n": "1.15.2",
+          "json": "3.0.2",
+          "logger": "1.7.0",
+          "prism": "1.9.0",
+          "minitest": "6.0.6",
+          "date": "3.6.0",
+          "stringio": "3.2.0",
+          "psych": "5.5.0",
+          "ractor-dispatch": "0.3.0",
+          "securerandom": "0.4.1",
+          "tzinfo": "2.0.6",
+          "uri": "1.1.2",
+          "activesupport": "8.2.0.alpha",
+          "activemodel": "8.2.0.alpha",
+          "timeout": "0.6.1",
+          "activerecord": "8.2.0.alpha",
+          "bundler": "2.6.7",
+          "sqlite3": "2.9.6"
+        },
+        "activerecord_revision": "bec5f3e1d7ec75a43f65af23b7b58e65b20caf9e",
+        "adapter_sha256": "2755a1e844ac04931777305ad20fb4c586165d3902e6f4d1c67f57c2b5c18e38",
+        "adapter_source": "/study/harness/vendor/bundle/ruby/3.4.0/bundler/gems/rails-pr58709+56811-bec5f3e1d7ec/activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb",
+        "success": true,
+        "foreign_keys_after": 1,
+        "returncode": 0
+      },
+      "before": {
+        "counts": {
+          "tenants": 0,
+          "parents": 0,
+          "children": 0,
+          "audit": 0
+        },
+        "columns": {
+          "tenants": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "parents": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "tenant_id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": "'a'",
+              "pk": 0
+            }
+          ],
+          "children": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "parent_id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "payload",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "audit": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "message",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        },
+        "foreign_keys": {
+          "tenants": [],
+          "parents": [],
+          "children": [
+            [
+              0,
+              0,
+              "parents",
+              "parent_id",
+              "id",
+              "NO ACTION",
+              "CASCADE",
+              "NONE"
+            ]
+          ],
+          "audit": []
+        },
+        "objects": {
+          "index:idx_children_parent": {
+            "type": "index",
+            "name": "idx_children_parent",
+            "table": "children",
+            "sql": "CREATE INDEX idx_children_parent ON children(parent_id)"
+          },
+          "index:idx_parents_name": {
+            "type": "index",
+            "name": "idx_parents_name",
+            "table": "parents",
+            "sql": "CREATE INDEX idx_parents_name ON parents(name)"
+          },
+          "trigger:trg_children_update": {
+            "type": "trigger",
+            "name": "trg_children_update",
+            "table": "children",
+            "sql": "CREATE TRIGGER trg_children_update AFTER UPDATE ON children\nBEGIN INSERT INTO audit(message) VALUES ('updated'); END"
+          },
+          "view:child_payloads": {
+            "type": "view",
+            "name": "child_payloads",
+            "table": "child_payloads",
+            "sql": "CREATE VIEW child_payloads AS SELECT id, payload FROM children"
+          }
+        },
+        "foreign_key_check": [],
+        "integrity_check": [
+          "ok"
+        ],
+        "errors": [],
+        "view_errors": [],
+        "observer_sqlite": "3.41.2"
+      },
+      "after": {
+        "counts": {
+          "tenants": 0,
+          "parents": 0,
+          "children": 0,
+          "audit": 0
+        },
+        "columns": {
+          "tenants": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "parents": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "tenant_id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "name",
+              "type": "TEXT",
+              "notnull": 0,
+              "default": "'a'",
+              "pk": 0
+            }
+          ],
+          "children": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "parent_id",
+              "type": "INTEGER",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            },
+            {
+              "cid": 2,
+              "name": "payload",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ],
+          "audit": [
+            {
+              "cid": 0,
+              "name": "id",
+              "type": "INTEGER",
+              "notnull": 0,
+              "default": null,
+              "pk": 1
+            },
+            {
+              "cid": 1,
+              "name": "message",
+              "type": "TEXT",
+              "notnull": 1,
+              "default": null,
+              "pk": 0
+            }
+          ]
+        },
+        "foreign_keys": {
+          "tenants": [],
+          "parents": [
+            [
+              0,
+              0,
+              "tenants",
+              "tenant_id",
+              "id",
+              "NO ACTION",
+              "NO ACTION",
+              "NONE"
+            ]
+          ],
+          "children": [
+            [
+              0,
+              0,
+              "parents",
+              "parent_id",
+              "id",
+              "NO ACTION",
+              "CASCADE",
+              "NONE"
+            ]
+          ],
+          "audit": []
+        },
+        "objects": {
+          "index:idx_children_parent": {
+            "type": "index",
+            "name": "idx_children_parent",
+            "table": "children",
+            "sql": "CREATE INDEX idx_children_parent ON children(parent_id)"
+          },
+          "index:idx_parents_name": {
+            "type": "index",
+            "name": "idx_parents_name",
+            "table": "parents",
+            "sql": "CREATE INDEX \"idx_parents_name\" ON \"parents\" (\"name\")"
+          },
+          "index:sqlite_autoindex_ar_internal_metadata_1": {
+            "type": "index",
+            "name": "sqlite_autoindex_ar_internal_metadata_1",
+            "table": "ar_internal_metadata",
+            "sql": null
+          },
+          "index:sqlite_autoindex_schema_migrations_1": {
+            "type": "index",
+            "name": "sqlite_autoindex_schema_migrations_1",
+            "table": "schema_migrations",
+            "sql": null
+          },
+          "trigger:trg_children_update": {
+            "type": "trigger",
+            "name": "trg_children_update",
+            "table": "children",
+            "sql": "CREATE TRIGGER trg_children_update AFTER UPDATE ON children\nBEGIN INSERT INTO audit(message) VALUES ('updated'); END"
+          },
+          "view:child_payloads": {
+            "type": "view",
+            "name": "child_payloads",
+            "table": "child_payloads",
+            "sql": "CREATE VIEW child_payloads AS SELECT id, payload FROM children"
+          }
+        },
+        "foreign_key_check": [],
+        "integrity_check": [
+          "ok"
+        ],
+        "errors": [],
+        "view_errors": [],
+        "observer_sqlite": "3.41.2"
+      },
+      "violations": []
+    }
+  },
+  "detectors": {
+    "empty_db": {
+      "detected": false
+    },
+    "lint": {
+      "executed": {
+        "available": true,
+        "detected": true,
+        "returncode": 1,
+        "output": {
+          "findings": [
+            {
+              "code": "SQLD002",
+              "detail": "SQLite ignores attempts to turn PRAGMA foreign_keys OFF while a transaction is active.",
+              "line": 77,
+              "related_line": null,
+              "remediation": "Set PRAGMA foreign_keys=OFF before starting the transaction, restore it after the migration, and run PRAGMA foreign_key_check.",
+              "title": "PRAGMA foreign_keys inside a transaction is a no-op"
+            },
+            {
+              "code": "SQLD002",
+              "detail": "SQLite ignores attempts to turn PRAGMA foreign_keys OFF while a transaction is active.",
+              "line": 256,
+              "related_line": null,
+              "remediation": "Set PRAGMA foreign_keys=OFF before starting the transaction, restore it after the migration, and run PRAGMA foreign_key_check.",
+              "title": "PRAGMA foreign_keys inside a transaction is a no-op"
+            }
+          ],
+          "source": "/study/harness/results/rails-fixes/pilot/rails_add_fk--rails-pr58709+56811/lint_executed.sql",
+          "version": 1
+        },
+        "stderr": ""
+      },
+      "migration_only": {
+        "available": true,
+        "detected": false,
+        "returncode": 0,
+        "output": {
+          "findings": [],
+          "source": "/study/harness/results/rails-fixes/pilot/rails_add_fk--rails-pr58709+56811/lint_migration_only.sql",
+          "version": 1
+        },
+        "stderr": ""
+      },
+      "schema_and_executed": {
+        "available": true,
+        "detected": true,
+        "returncode": 1,
+        "output": {
+          "findings": [
+            {
+              "code": "SQLD002",
+              "detail": "SQLite ignores attempts to turn PRAGMA foreign_keys OFF while a transaction is active.",
+              "line": 87,
+              "related_line": null,
+              "remediation": "Set PRAGMA foreign_keys=OFF before starting the transaction, restore it after the migration, and run PRAGMA foreign_key_check.",
+              "title": "PRAGMA foreign_keys inside a transaction is a no-op"
+            },
+            {
+              "code": "SQLD002",
+              "detail": "SQLite ignores attempts to turn PRAGMA foreign_keys OFF while a transaction is active.",
+              "line": 266,
+              "related_line": null,
+              "remediation": "Set PRAGMA foreign_keys=OFF before starting the transaction, restore it after the migration, and run PRAGMA foreign_key_check.",
+              "title": "PRAGMA foreign_keys inside a transaction is a no-op"
+            }
+          ],
+          "source": "/study/harness/results/rails-fixes/pilot/rails_add_fk--rails-pr58709+56811/lint_schema_and_executed.sql",
+          "version": 1
+        },
+        "stderr": ""
+      },
+      "schema_and_migration": {
+        "available": true,
+        "detected": false,
+        "returncode": 0,
+        "output": {
+          "findings": [],
+          "source": "/study/harness/results/rails-fixes/pilot/rails_add_fk--rails-pr58709+56811/lint_schema_and_migration.sql",
+          "version": 1
+        },
+        "stderr": ""
+      }
+    },
+    "populated_invariants": {
+      "detected": false,
+      "violations": []
+    }
+  },
+  "upstream_fixes": {
+    "rails-pr58709+56811": {
+      "html_url": [
+        "https://github.com/rails/rails/pull/58709",
+        "https://github.com/rails/rails/pull/56811"
+      ],
+      "repository": "local derived merge",
+      "commit": "bec5f3e1d7ec75a43f65af23b7b58e65b20caf9e",
+      "tree": "bbff35ff671eb8345a92d393ac775415c4912bad",
+      "parents": [
+        "428884a88b3a42c914f5227819b6b672325b3312",
+        "7ddc17783418454c0e406181ae442d0aaf558ad8"
+      ],
+      "merge_base": "3faf056f240966b268dd6fa52c559e241a370d06",
+      "approach": "git Gemfile at deterministic local merge object",
+      "ruby": "3.4.3",
+      "version": "8.2.0.alpha",
+      "adapter_sha256": "2755a1e844ac04931777305ad20fb4c586165d3902e6f4d1c67f57c2b5c18e38",
+      "source_sha256": {
+        "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb": "2755a1e844ac04931777305ad20fb4c586165d3902e6f4d1c67f57c2b5c18e38",
+        "activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb": "0d67c75a7e7997b4c9d1cb7e0df88236764240d0663cfd5391a8cf3cba1003e6",
+        "activerecord/lib/active_record/migration.rb": "ef6d1619bd7d6ef89da3d9ef1288224bd8d891b28433e694c1fc75d6144896ac",
+        "activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb": "3c9cd56c2c626f6ada00a7ece8815892f9b52ffb6c9db7ed592605da0cecd53b"
+      },
+      "resolution_patch": "sources/rails-pr58709+56811-resolution.patch",
+      "resolution_patch_sha256": "cbb23c0e62546ab2bb1e8238ffd1353abe171021c829908a34bf139642718b3e",
+      "conflicts": [
+        "activerecord/CHANGELOG.md",
+        "activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb"
+      ],
+      "commit_identity": "SQLite preservation harness <smp@example.invalid> 1791676800 +0000",
+      "commit_message": "Merge Rails #58709 and #56811 for preservation measurements\n",
+      "local_git": ".cache/rails-pr58709+56811.git"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "url": "https://api.github.com/repos/emirn/rails/compare/b8725ee9a90988129738197fecdb3eacb8b2e138...8823c1370c7bc8910e609d1b6f27f4fc34f3d81d",
+  "status": "ahead",
+  "ahead_by": 12,
+  "behind_by": 0,
+  "total_commits": 12,
+  "base_commit": {
+    "sha": "b8725ee9a90988129738197fecdb3eacb8b2e138"
+  },
+  "merge_base_commit": {
+    "sha": "b8725ee9a90988129738197fecdb3eacb8b2e138"
+  },
+  "commits": [
+    {
+      "sha": "dfec2ed0da7fee21cb310f5c0efc59b5aaaee5a1",
+      "parents": [
+        "8041099b68f0a44fe9051a35fc15b91882273404"
+      ]
+    },
+    {
+      "sha": "cbd34461112c2674c51d3ddf67d1eb7174233efb",
+      "parents": [
+        "dfec2ed0da7fee21cb310f5c0efc59b5aaaee5a1"
+      ]
+    },
+    {
+      "sha": "ab2d3e0b9c3b9ac58e4454b050724042c29f7210",
+      "parents": [
+        "cbd34461112c2674c51d3ddf67d1eb7174233efb"
+      ]
+    },
+    {
+      "sha": "055489b07fdd77b2069dc7ac2e2ed3c9732afc05",
+      "parents": [
+        "ab2d3e0b9c3b9ac58e4454b050724042c29f7210",
+        "db4bd562d90427c21a4525412c25372dd6994a65"
+      ]
+    },
+    {
+      "sha": "a05da79568d6ea7e584cf3947c3cd0a92b05f2bd",
+      "parents": [
+        "055489b07fdd77b2069dc7ac2e2ed3c9732afc05",
+        "1f4a1d6e139d720705503ee17741426657423436"
+      ]
+    },
+    {
+      "sha": "3428c9d2a7e2a4ffe7a76f4988e42e5371492152",
+      "parents": [
+        "a05da79568d6ea7e584cf3947c3cd0a92b05f2bd",
+        "2d670320f7b02ae879545d5202f0633841b8f196"
+      ]
+    },
+    {
+      "sha": "7a14b12bf38205e0cf93c6bc3246dfdc18e1f0d7",
+      "parents": [
+        "3428c9d2a7e2a4ffe7a76f4988e42e5371492152",
+        "89a0c5d5f6c903810dd945ee803e563f689ac23a"
+      ]
+    },
+    {
+      "sha": "169d2e0f98d0f522ea935f6e599f40b0636db037",
+      "parents": [
+        "7a14b12bf38205e0cf93c6bc3246dfdc18e1f0d7",
+        "de9381cd1b977f8e60f75b145d15e8adb608bfe5"
+      ]
+    },
+    {
+      "sha": "50db5a7d208679ecda5b2a274d41c825f4b05fd1",
+      "parents": [
+        "169d2e0f98d0f522ea935f6e599f40b0636db037"
+      ]
+    },
+    {
+      "sha": "187662f0d79b24c43fc5c3d2bb6ec4e106e9a9d1",
+      "parents": [
+        "50db5a7d208679ecda5b2a274d41c825f4b05fd1"
+      ]
+    },
+    {
+      "sha": "96bfa256dfc8fad7cd21f32b66b3b84e3364071e",
+      "parents": [
+        "187662f0d79b24c43fc5c3d2bb6ec4e106e9a9d1",
+        "b6cb9ea7657ea46eb35fdd73b9b2174f7a93a8c0"
+      ]
+    },
+    {
+      "sha": "8823c1370c7bc8910e609d1b6f27f4fc34f3d81d",
+      "parents": [
+        "96bfa256dfc8fad7cd21f32b66b3b84e3364071e",
+        "b8725ee9a90988129738197fecdb3eacb8b2e138"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "filename": "activerecord/CHANGELOG.md",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 0,
+      "changes": 8,
+      "sha": "1d38f6eced0c3faa1fd808a6cb91f82aea016c61"
+    },
+    {
+      "filename": "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb",
+      "status": "modified",
+      "additions": 27,
+      "deletions": 4,
+      "changes": 31,
+      "sha": "122e342b56dca1f8d809411fb6815fbb13a84b1b"
+    },
+    {
+      "filename": "activerecord/test/cases/adapters/sqlite3/sqlite3_adapter_test.rb",
+      "status": "modified",
+      "additions": 60,
+      "deletions": 0,
+      "changes": 60,
+      "sha": "292b181caed7f1538e704dd9dfce1df5e5f45c9c"
+    }
+  ],
+  "response": {
+    "sha256": "cf85aeaa7c2a9fce15e5008b95d92fbcc4eb1eb48667c672242a44a6ec66a25d",
+    "bytes": 78608
+  }
+}

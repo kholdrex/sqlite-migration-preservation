@@ -1,0 +1,28 @@
+{
+  "repo": "pitzzahh/powertrackr",
+  "commit": "2b907ed3614de56ab19205c32f9660376787f9f1",
+  "migration_file": "migrations/20260307051734_youthful_mongu/migration.sql",
+  "recorded_license": "BSD-3-Clause",
+  "tree_url": "https://api.github.com/repos/pitzzahh/powertrackr/git/trees/2b907ed3614de56ab19205c32f9660376787f9f1?recursive=1",
+  "tree_sha": "2b907ed3614de56ab19205c32f9660376787f9f1",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/pitzzahh__powertrackr/LICENSE",
+      "url": "https://raw.githubusercontent.com/pitzzahh/powertrackr/2b907ed3614de56ab19205c32f9660376787f9f1/LICENSE",
+      "git_blob": "7ce3a45945391eb20d2c992f7b9602143ea600da",
+      "sha256": "8fce6334371b7df5ac1aead4c090bfcd2b5a2047e6663e163c718762bc665a23",
+      "bytes": 1502,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/011-e6db0a2ec7c2453e.json.gz",
+      "sha256": "93da10ae3e9da2b672bb84c8fff75980cc05077e59b51eaa1b204cd5ee190118"
+    }
+  ]
+}

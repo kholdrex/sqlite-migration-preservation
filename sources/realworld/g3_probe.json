@@ -1,0 +1,484 @@
+[
+ {
+  "repo": "dakohhh/cf_ai_speakscribe",
+  "path": "migrations/0005_fat_nightcrawler.sql",
+  "rebuilt": [
+   "transcription"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "transcription": 3
+  }
+ },
+ {
+  "repo": "RobotEdward/makethe-team",
+  "path": "migrations/0027_email_quota_provider.sql",
+  "rebuilt": [
+   "email_quota"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "email_quota": 0
+  }
+ },
+ {
+  "repo": "gerukin/ai-tester",
+  "path": "migrations/0003_foamy_dracula.sql",
+  "rebuilt": [
+   "currency_rates",
+   "model_costs"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "currency_rates": 0,
+   "model_costs": 0
+  }
+ },
+ {
+  "repo": "srvo/saasmail",
+  "path": "migrations/0017_windy_sister_grimm.sql",
+  "rebuilt": [
+   "sender_identities"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "sender_identities": 0
+  }
+ },
+ {
+  "repo": "CinatitBR/usp-acessivel-backend",
+  "path": "migrations/0001_aberrant_randall_flagg.sql",
+  "rebuilt": [
+   "buildings",
+   "map_reports",
+   "poi_evaluations",
+   "pois",
+   "visual_route_steps"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "buildings": 3,
+   "map_reports": 0,
+   "poi_evaluations": 0
+  }
+ },
+ {
+  "repo": "DynacomSolutions/Cloudwarden",
+  "path": "migrations/0005_organizations.sql",
+  "rebuilt": [
+   "users_collections",
+   "users_organizations"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "users_collections": 0,
+   "users_organizations": 4
+  }
+ },
+ {
+  "repo": "maxstue/veo",
+  "path": "migrations/0001_clean_snowbird.sql",
+  "rebuilt": [
+   "bingo_card_cell"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "bingo_card_cell": 0
+  }
+ },
+ {
+  "repo": "JackTheButler/JackTheButler",
+  "path": "migrations/0007_slow_morph.sql",
+  "rebuilt": [
+   "webchat_sessions"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "webchat_sessions": 0
+  }
+ },
+ {
+  "repo": "eremiltonribeiro/VehicleTracker",
+  "path": "migrations/0001_init.sql",
+  "rebuilt": [
+   "checklist_templates",
+   "users",
+   "vehicle_checklists",
+   "vehicle_registrations"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "checklist_templates": 0,
+   "users": 0,
+   "vehicle_checklists": 0
+  }
+ },
+ {
+  "repo": "raffaele-lungarella/appointment-scheduler",
+  "path": "migrations/0002_tired_betty_brant.sql",
+  "rebuilt": [
+   "password_recover"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "password_recover": 0
+  }
+ },
+ {
+  "repo": "CrashVibe/FGateNexus",
+  "path": "migrations/0002_broken_eternity.sql",
+  "rebuilt": [
+   "player",
+   "player_server",
+   "server",
+   "target"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "player": 1,
+   "player_server": 0,
+   "server": 4
+  }
+ },
+ {
+  "repo": "loadchange/cherry-lite",
+  "path": "migrations/sqlite-drizzle/0001_tan_cerise.sql",
+  "rebuilt": [
+   "agent_channel"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "agent_channel": 1
+  }
+ },
+ {
+  "repo": "Vinay-786/reviewsite",
+  "path": "migrations/0001_premium_prima.sql",
+  "rebuilt": [
+   "users"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "users": 3
+  }
+ },
+ {
+  "repo": "CMD-world/platform",
+  "path": "migrations/0004_busy_lethal_legion.sql",
+  "rebuilt": [
+   "apiKey",
+   "command",
+   "workflow"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "apiKey": 0,
+   "command": 1,
+   "workflow": 0
+  }
+ },
+ {
+  "repo": "JDMurphy7/AffluentEdgeBetaLaunch",
+  "path": "migrations/0001_naive_sunspot.sql",
+  "rebuilt": [
+   "portfolio_snapshots",
+   "strategies",
+   "trades",
+   "users"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "portfolio_snapshots": 0,
+   "strategies": 0,
+   "trades": 0
+  }
+ },
+ {
+  "repo": "hwiseongahn/portfolio-sitev2",
+  "path": "migrations/0001_swift_brood.sql",
+  "rebuilt": [
+   "posts"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "posts": 0
+  }
+ },
+ {
+  "repo": "hanumanman/lucia-demo",
+  "path": "migrations/0004_melodic_scalphunter.sql",
+  "rebuilt": [
+   "sessions"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "sessions": 0
+  }
+ },
+ {
+  "repo": "DrOlu/SuperAgent",
+  "path": "migrations/sqlite-drizzle/0001_tan_cerise.sql",
+  "rebuilt": [
+   "agent_channel"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "agent_channel": 2
+  }
+ },
+ {
+  "repo": "alteran-social/alteran",
+  "path": "migrations/0005_odd_bishop.sql",
+  "rebuilt": [
+   "blob_usage"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "blob_usage": 0
+  }
+ },
+ {
+  "repo": "JMRhodes/quizzle-server",
+  "path": "migrations/0002_bent_may_parker.sql",
+  "rebuilt": [
+   "categories"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "categories": 0
+  }
+ },
+ {
+  "repo": "myers268/wedding-site",
+  "path": "migrations/0005_many_rage.sql",
+  "rebuilt": [
+   "guest"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "guest": 0
+  }
+ },
+ {
+  "repo": "hb-robo/theshelf.blog",
+  "path": "migrations/0001_rainy_starjammers.sql",
+  "rebuilt": [
+   "events",
+   "media_items"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "events": 0,
+   "media_items": 1
+  }
+ },
+ {
+  "repo": "DOOduneye/portfolio",
+  "path": "migrations/0008_odd_shadow_king.sql",
+  "rebuilt": [
+   "posts"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "posts": 0
+  }
+ },
+ {
+  "repo": "noelserdna/colonias-felinas",
+  "path": "migrations/0008_fotos_r2.sql",
+  "rebuilt": [
+   "photos"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "photos": 0
+  }
+ },
+ {
+  "repo": "MdMuntasir/lintweb-cf",
+  "path": "migrations/0004_calm_omega_flight.sql",
+  "rebuilt": [
+   "user_model_providers"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "user_model_providers": 0
+  }
+ },
+ {
+  "repo": "ahmedcalif/CraftersConnect",
+  "path": "migrations/0001_shiny_queen_noir.sql",
+  "rebuilt": [
+   "likes"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "likes": 0
+  }
+ },
+ {
+  "repo": "shanuflash/laddr",
+  "path": "migrations/0003_melted_cassandra_nova.sql",
+  "rebuilt": [
+   "tournament"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "tournament": 1
+  }
+ },
+ {
+  "repo": "sfxpers/artisanconnect",
+  "path": "migrations/0019_payouts-stopped.sql",
+  "rebuilt": [
+   "audit_log",
+   "payouts"
+  ],
+  "explicit_tx": true,
+  "cascade_children_files": {
+   "audit_log": 0,
+   "payouts": 0
+  }
+ },
+ {
+  "repo": "vlbin/glint",
+  "path": "migrations/0003_loving_proemial_gods.sql",
+  "rebuilt": [
+   "direct_messages",
+   "friendships",
+   "posts",
+   "users"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "direct_messages": 0,
+   "friendships": 0,
+   "posts": 0
+  }
+ },
+ {
+  "repo": "yogesh-dhande/greenroom",
+  "path": "migrations/0009_file_versions_profile_scope.sql",
+  "rebuilt": [
+   "file_versions"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "file_versions": 0
+  }
+ },
+ {
+  "repo": "pitzzahh/powertrackr",
+  "path": "migrations/20260307051734_youthful_mongu/migration.sql",
+  "rebuilt": [
+   "user"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "user": 6
+  }
+ },
+ {
+  "repo": "shanuflash/nextlevel",
+  "path": "migrations/0005_fat_norrin_radd.sql",
+  "rebuilt": [
+   "user_game"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "user_game": 0
+  }
+ },
+ {
+  "repo": "yorth21/parky",
+  "path": "migrations/0007_open_fat_cobra.sql",
+  "rebuilt": [
+   "payment"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "payment": 0
+  }
+ },
+ {
+  "repo": "yk-lab/payment_service",
+  "path": "migrations/0002_bizarre_peter_parker.sql",
+  "rebuilt": [
+   "transaction_history"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "transaction_history": 0
+  }
+ },
+ {
+  "repo": "XeinTDM/MeatFlicks",
+  "path": "migrations/0001_unique_ghost_rider.sql",
+  "rebuilt": [
+   "episode_watch_status",
+   "movies"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "episode_watch_status": 0,
+   "movies": 3
+  }
+ },
+ {
+  "repo": "CherryHQ/cherry-studio",
+  "path": "migrations/sqlite-drizzle/0001_tan_cerise.sql",
+  "rebuilt": [
+   "agent_channel"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "agent_channel": 2
+  }
+ },
+ {
+  "repo": "ncvyn/adu-tutor",
+  "path": "migrations/0001_good_mister_fear.sql",
+  "rebuilt": [
+   "user"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "user": 7
+  }
+ },
+ {
+  "repo": "Puppetdog/sp-calculator",
+  "path": "migrations/0001_graceful_cyclops.sql",
+  "rebuilt": [
+   "benefit_conditions",
+   "programs"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "benefit_conditions": 0,
+   "programs": 0
+  }
+ },
+ {
+  "repo": "cjpais/dumpster",
+  "path": "migrations/0001_dazzling_alex_wilder.sql",
+  "rebuilt": [
+   "page_contents"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "page_contents": 0
+  }
+ },
+ {
+  "repo": "tijptjik/hype",
+  "path": "migrations/0007_capabilities.sql",
+  "rebuilt": [
+   "projectRole"
+  ],
+  "explicit_tx": false,
+  "cascade_children_files": {
+   "projectRole": 0
+  }
+ }
+]

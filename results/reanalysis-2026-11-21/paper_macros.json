@@ -1,0 +1,25 @@
+{
+ "changed": {
+  "nOrmMatrixOverallRebuildingCells": {
+   "corrected": 1744,
+   "definition": "Cells with an observed populated rebuild",
+   "field": "rows; rebuild",
+   "recorded": 1754
+  },
+  "nOrmMatrixPrismaStableRawRebuildingCells": {
+   "corrected": 103,
+   "definition": "Cells with an observed populated rebuild",
+   "field": "rows[framework,pin,mode,path=('prisma', 'prisma-stable', 'default', 'raw')]; rebuild",
+   "recorded": 108
+  },
+  "nOrmMatrixPrismaStableRawTxRebuildingCells": {
+   "corrected": 102,
+   "definition": "Cells with an observed populated rebuild",
+   "field": "rows[framework,pin,mode,path=('prisma', 'prisma-stable', 'default', 'raw-tx')]; rebuild",
+   "recorded": 107
+  }
+ },
+ "format_version": 1,
+ "macros": 3715,
+ "unchanged": 3712
+}

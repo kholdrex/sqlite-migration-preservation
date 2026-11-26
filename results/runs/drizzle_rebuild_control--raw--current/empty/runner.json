@@ -1,0 +1,7 @@
+{
+  "python": "3.11.5",
+  "sqlite": "3.41.2",
+  "foreign_keys_before": 1,
+  "success": true,
+  "foreign_keys_after": 1
+}

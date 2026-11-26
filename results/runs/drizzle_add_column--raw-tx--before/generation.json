@@ -1,0 +1,14 @@
+[
+  {
+    "revision": "before",
+    "returncode": 0,
+    "stdout": "Reading config file '/study/harness/runners/drizzle/before/generated/drizzle_add_column/drizzle.config.json'\n4 tables\naudit 2 columns 0 indexes 0 fks\nchildren 3 columns 1 indexes 1 fks\nparents 3 columns 1 indexes 0 fks\ntenants 2 columns 0 indexes 0 fks\n\n[\u2713] Your SQL migration file \u279c generated/drizzle_add_column/history/0000_before.sql \ud83d\ude80\n",
+    "stderr": ""
+  },
+  {
+    "revision": "after",
+    "returncode": 0,
+    "stdout": "Reading config file '/study/harness/runners/drizzle/before/generated/drizzle_add_column/drizzle.config.json'\n4 tables\naudit 2 columns 0 indexes 0 fks\nchildren 3 columns 1 indexes 1 fks\nparents 4 columns 1 indexes 0 fks\ntenants 2 columns 0 indexes 0 fks\n\n[\u2713] Your SQL migration file \u279c generated/drizzle_add_column/history/0001_after.sql \ud83d\ude80\n",
+    "stderr": ""
+  }
+]

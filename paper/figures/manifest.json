@@ -1,0 +1,192 @@
+{
+  "width_inches": 4.803149606299212,
+  "minimum_font_pt": 8,
+  "sources": [
+    "results/operation_matrix.json",
+    "results/rails_fixes.json",
+    "results/orm_matrix.json",
+    "results/rails_atomicity.json"
+  ],
+  "operation_aliases": {
+    "remove_column": "drop_column",
+    "remove_foreign_key": "drop_foreign_key",
+    "remove_index": "drop_index",
+    "remove_check_constraint": "drop_check_constraint"
+  },
+  "grid": [
+    {
+      "label": "Rails",
+      "framework": "rails",
+      "pin": "current",
+      "path": "rails",
+      "mode": "default",
+      "outcomes": {
+        "preserved": 96,
+        "silent-loss": 48,
+        "unsupported": 36
+      }
+    },
+    {
+      "label": "Drizzle",
+      "framework": "drizzle",
+      "pin": "current",
+      "path": "drizzle",
+      "mode": "default",
+      "outcomes": {
+        "loud": 14,
+        "preserved": 85,
+        "silent-loss": 36,
+        "unsupported": 45
+      }
+    },
+    {
+      "label": "Django",
+      "framework": "django",
+      "pin": "django-current",
+      "path": "django",
+      "mode": "default",
+      "outcomes": {
+        "loud": 12,
+        "preserved": 144,
+        "silent-loss": 24
+      }
+    },
+    {
+      "label": "Alembic (auto)",
+      "framework": "alembic",
+      "pin": "alembic",
+      "path": "auto",
+      "mode": "auto",
+      "outcomes": {
+        "loud-partial": 28,
+        "preserved": 82,
+        "silent-loss": 70
+      }
+    },
+    {
+      "label": "Prisma 7.10.0",
+      "framework": "prisma",
+      "pin": "prisma-stable",
+      "path": "prisma",
+      "mode": "default",
+      "outcomes": {
+        "loud-partial": 11,
+        "preserved": 114,
+        "silent-loss": 37,
+        "unsupported": 18
+      }
+    }
+  ],
+  "fixes": [
+    {
+      "framework": "rails",
+      "pin": "before",
+      "cells": 144,
+      "silent_loss": 48,
+      "atomicity_tested": 0,
+      "atomicity_failures": null
+    },
+    {
+      "framework": "rails",
+      "pin": "current",
+      "cells": 144,
+      "silent_loss": 48,
+      "atomicity_tested": 4,
+      "atomicity_failures": 0
+    },
+    {
+      "framework": "rails",
+      "pin": "rails-pr57128",
+      "cells": 144,
+      "silent_loss": 12,
+      "atomicity_tested": 4,
+      "atomicity_failures": 4
+    },
+    {
+      "framework": "rails",
+      "pin": "rails-pr56811",
+      "cells": 144,
+      "silent_loss": 36,
+      "atomicity_tested": 4,
+      "atomicity_failures": 0
+    },
+    {
+      "framework": "rails",
+      "pin": "rails-pr58709",
+      "cells": 144,
+      "silent_loss": 12,
+      "atomicity_tested": 4,
+      "atomicity_failures": 0
+    },
+    {
+      "framework": "rails",
+      "pin": "rails-pr57128+56811",
+      "cells": 144,
+      "silent_loss": 0,
+      "atomicity_tested": 4,
+      "atomicity_failures": 4
+    },
+    {
+      "framework": "rails",
+      "pin": "rails-pr58709+56811",
+      "cells": 144,
+      "silent_loss": 0,
+      "atomicity_tested": 4,
+      "atomicity_failures": 0
+    },
+    {
+      "framework": "drizzle",
+      "pin": "before",
+      "cells": 135,
+      "silent_loss": 36,
+      "atomicity_tested": 0,
+      "atomicity_failures": null
+    },
+    {
+      "framework": "drizzle",
+      "pin": "current",
+      "cells": 135,
+      "silent_loss": 36,
+      "atomicity_tested": 0,
+      "atomicity_failures": null
+    },
+    {
+      "framework": "drizzle",
+      "pin": "drizzle-pr5784",
+      "cells": 135,
+      "silent_loss": 14,
+      "atomicity_tested": 0,
+      "atomicity_failures": null
+    },
+    {
+      "framework": "drizzle",
+      "pin": "drizzle-pr5074",
+      "cells": 135,
+      "silent_loss": 21,
+      "atomicity_tested": 0,
+      "atomicity_failures": null
+    },
+    {
+      "framework": "drizzle",
+      "pin": "drizzle-pr5784+5074",
+      "cells": 135,
+      "silent_loss": 14,
+      "atomicity_tested": 0,
+      "atomicity_failures": null
+    }
+  ],
+  "notes": [
+    "Grid uses populated outcomes and native framework paths; Alembic uses auto mode.",
+    "Absent operations in the union are unsupported by the retained matrix, not assertions about all framework capabilities.",
+    "Five panels in a 3+2 layout; Prisma 7.10.0 is the executable stable pin. The unsupported latest tag is omitted.",
+    "Bar annotations mark partial commits only in transactional probes; unmarked pins may be untested (see atomicity_tested).",
+    "Numeric fix labels are PR numbers; combined labels denote retained local merge pins."
+  ],
+  "source_sha256": {
+    "results/operation_matrix.json": "836c8a15ba40cea5cdd557628d9e8fa29f6acb8e6a188b5391f4767a4c65959b",
+    "results/rails_fixes.json": "518de12da65deac2f92884dd50c12bbf7bfc9daaba9a04fd06d006f638885a7a",
+    "results/orm_matrix.json": "7badd1ee6077d896a3e2628c5a84f6285fdae5fa5a02cbbdc57d28c5cd4c9236",
+    "results/rails_atomicity.json": "c0e86c4a3ef7d0c7b298464b814cf5991dad6759256f241bcd7e2b783bdf3882"
+  },
+  "matplotlib_version": "3.10.9"
+}

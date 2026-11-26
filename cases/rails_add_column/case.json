@@ -1,0 +1,21 @@
+{
+  "id": "rails_add_column",
+  "framework": "rails",
+  "role": "control",
+  "schema": "schema.sql",
+  "seed": "seed.sql",
+  "tables": [
+    "tenants",
+    "parents",
+    "children",
+    "audit"
+  ],
+  "expected": {
+    "kind": "column",
+    "table": "parents",
+    "name": "note"
+  },
+  "provenance": "control",
+  "description": "Add a nullable column without rebuilding the parent.",
+  "migration": "migrations"
+}

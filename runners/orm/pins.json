@@ -1,0 +1,14 @@
+{
+  "Django": "6.1.2",
+  "Django_previous": "6.0.9",
+  "Django_source": "https://pypi.org/pypi/Django/json",
+  "alembic": "1.20.0",
+  "alembic_source": "https://pypi.org/pypi/alembic/json",
+  "SQLAlchemy": "2.1.4",
+  "SQLAlchemy_source": "https://pypi.org/pypi/SQLAlchemy/json",
+  "prisma": "8.0.0-rc.22",
+  "prisma_source": "https://registry.npmjs.org/prisma",
+  "resolved_at": "2026-10-10T01:11:12.474327+00:00",
+  "prisma_latest_tag": "8.0.0-rc.22",
+  "prisma_stable": "7.10.0"
+}

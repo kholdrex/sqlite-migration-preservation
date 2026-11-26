@@ -1,0 +1,28 @@
+{
+  "repo": "flyaltitudeapp/altitude",
+  "commit": "4ddaf5625d1211d6eac706188a9809ab9716163e",
+  "migration_file": "migrations/0026_daffy_plazm.sql",
+  "recorded_license": "Apache-2.0",
+  "tree_url": "https://api.github.com/repos/flyaltitudeapp/altitude/git/trees/4ddaf5625d1211d6eac706188a9809ab9716163e?recursive=1",
+  "tree_sha": "4ddaf5625d1211d6eac706188a9809ab9716163e",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENCE",
+      "file": "licenses/replay/flyaltitudeapp__altitude/LICENCE",
+      "url": "https://raw.githubusercontent.com/flyaltitudeapp/altitude/4ddaf5625d1211d6eac706188a9809ab9716163e/LICENCE",
+      "git_blob": "004d67aff35d05d06650d50bf14a7ac789557e7c",
+      "sha256": "2245a990b635558be210fb3eb4f8a6f7a49aebc0fefbf5859146a65ddc7ddcf3",
+      "bytes": 11750,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/020-b7d8b530fdc11e8e.json.gz",
+      "sha256": "01bfdb01862437295bde14dc31e6c70b90b41e8f4bfdde34e3943c0b09990d7f"
+    }
+  ]
+}

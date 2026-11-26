@@ -1,0 +1,28 @@
+{
+  "name": "smp-build-drizzle",
+  "private": true,
+  "version": "0.0.0",
+  "dependencies": {
+    "@aws-sdk/client-rds-data": "^3.556.0",
+    "@drizzle-team/brocli": "^0.10.2",
+    "@hono/node-server": "^1.9.0",
+    "@hono/zod-validator": "^0.2.1",
+    "camelcase": "^7.0.1",
+    "chalk": "^5.2.0",
+    "dotenv": "16.6.1",
+    "env-paths": "^3.0.0",
+    "esbuild": "0.25.4",
+    "esbuild-register": "^3.5.0",
+    "gel": "^2.0.0",
+    "glob": "^8.1.0",
+    "hanji": "^0.0.5",
+    "hono": "^4.7.9",
+    "json-diff": "1.0.6",
+    "minimatch": "^7.4.3",
+    "node-fetch": "^3.3.2",
+    "pluralize": "^8.0.0",
+    "semver": "^7.7.2",
+    "ws": "^8.18.2",
+    "zod": "^3.20.2"
+  }
+}

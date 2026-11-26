@@ -1,0 +1,2 @@
+SELECT name FROM pragma_table_list WHERE schema <> 'temp' AND name NOT IN ('sqlite_sequence', 'sqlite_schema') AND type IN ('table','view');
+ALTER TABLE "parents" ADD "note" text;

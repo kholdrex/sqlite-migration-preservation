@@ -1,0 +1,28 @@
+{
+  "repo": "syahrulfadli/kanban-app",
+  "commit": "f3b42a93eaabb2dae9a5987e7638318cec4568da",
+  "migration_file": "migrations/0016_mushy_martin_li.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/syahrulfadli/kanban-app/git/trees/f3b42a93eaabb2dae9a5987e7638318cec4568da?recursive=1",
+  "tree_sha": "f3b42a93eaabb2dae9a5987e7638318cec4568da",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/syahrulfadli__kanban-app/LICENSE",
+      "url": "https://raw.githubusercontent.com/syahrulfadli/kanban-app/f3b42a93eaabb2dae9a5987e7638318cec4568da/LICENSE",
+      "git_blob": "79fb48f70b2840c2af732d5b15c71e9b74224cea",
+      "sha256": "b70261e509e256d03cf03a1173a1c329e4a700f219ed3bced3728b7b306128b0",
+      "bytes": 1069,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/061-bed324e0e13a12a7.json.gz",
+      "sha256": "219e02197b6c8101041e5449e8b07e5b6f95ae3aa38545d1537bf1184e1d761b"
+    }
+  ]
+}

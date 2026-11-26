@@ -1,0 +1,22 @@
+{
+  "id": "drizzle_add_column",
+  "framework": "drizzle",
+  "role": "control",
+  "schema": "schema.sql",
+  "seed": "seed.sql",
+  "tables": [
+    "tenants",
+    "parents",
+    "children",
+    "audit"
+  ],
+  "expected": {
+    "kind": "column",
+    "table": "parents",
+    "name": "note"
+  },
+  "provenance": "control",
+  "description": "Add a nullable column without rebuilding the parent.",
+  "before": "before.ts",
+  "after": "after.ts"
+}

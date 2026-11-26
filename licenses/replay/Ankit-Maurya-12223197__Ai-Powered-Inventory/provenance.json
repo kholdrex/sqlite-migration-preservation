@@ -1,0 +1,28 @@
+{
+  "repo": "Ankit-Maurya-12223197/Ai-Powered-Inventory",
+  "commit": "da6ab17911f9bbf6276255650e27489cc109d21a",
+  "migration_file": "migrations/0001_windy_blizzard.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/Ankit-Maurya-12223197/Ai-Powered-Inventory/git/trees/da6ab17911f9bbf6276255650e27489cc109d21a?recursive=1",
+  "tree_sha": "da6ab17911f9bbf6276255650e27489cc109d21a",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/Ankit-Maurya-12223197__Ai-Powered-Inventory/LICENSE",
+      "url": "https://raw.githubusercontent.com/Ankit-Maurya-12223197/Ai-Powered-Inventory/da6ab17911f9bbf6276255650e27489cc109d21a/LICENSE",
+      "git_blob": "4a18740ba7befbf2ea2838fd45f35d076f690ccf",
+      "sha256": "9f4756a6d108f51fd928ece13bb89471e8afd0ef4a79d28ca76f6850880e9512",
+      "bytes": 1083,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/065-4f4599c45d269b02.json.gz",
+      "sha256": "f7c44b669ef62430c0ed3fbe7bf5a18d70f24c7468188d9c66568ca46334666d"
+    }
+  ]
+}

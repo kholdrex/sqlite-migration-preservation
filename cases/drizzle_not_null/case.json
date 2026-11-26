@@ -1,0 +1,25 @@
+{
+  "id": "drizzle_not_null",
+  "framework": "drizzle",
+  "role": "hazard",
+  "schema": "schema.sql",
+  "seed": "seed.sql",
+  "tables": [
+    "tenants",
+    "parents",
+    "children",
+    "audit"
+  ],
+  "expected": {
+    "kind": "column",
+    "table": "parents",
+    "name": "name",
+    "attributes": {
+      "notnull": 1
+    }
+  },
+  "provenance": "https://github.com/drizzle-team/drizzle-orm/issues/4938",
+  "description": "Make a populated parent column NOT NULL while retaining cascade children.",
+  "before": "before.ts",
+  "after": "after.ts"
+}

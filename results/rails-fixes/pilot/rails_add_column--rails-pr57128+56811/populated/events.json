@@ -1,0 +1,67 @@
+[
+  {
+    "sql": "SELECT name FROM pragma_table_list WHERE schema <> 'temp' AND name NOT IN ('sqlite_sequence', 'sqlite_schema') AND name = 'schema_migrations' AND type IN ('table')",
+    "name": "SCHEMA",
+    "exception": null
+  },
+  {
+    "sql": "CREATE TABLE \"schema_migrations\" (\"version\" varchar NOT NULL PRIMARY KEY)",
+    "name": null,
+    "exception": null
+  },
+  {
+    "sql": "SELECT name FROM pragma_table_list WHERE schema <> 'temp' AND name NOT IN ('sqlite_sequence', 'sqlite_schema') AND name = 'ar_internal_metadata' AND type IN ('table')",
+    "name": "SCHEMA",
+    "exception": null
+  },
+  {
+    "sql": "CREATE TABLE \"ar_internal_metadata\" (\"key\" varchar NOT NULL PRIMARY KEY, \"value\" varchar, \"created_at\" datetime(6) NOT NULL, \"updated_at\" datetime(6) NOT NULL)",
+    "name": null,
+    "exception": null
+  },
+  {
+    "sql": "SELECT * FROM \"ar_internal_metadata\" WHERE \"ar_internal_metadata\".\"key\" = ? ORDER BY \"ar_internal_metadata\".\"key\" ASC LIMIT 1",
+    "name": "ActiveRecord::InternalMetadata Load",
+    "exception": null
+  },
+  {
+    "sql": "SELECT name FROM pragma_table_list WHERE schema <> 'temp' AND name NOT IN ('sqlite_sequence', 'sqlite_schema') AND type IN ('table','view')",
+    "name": "SCHEMA",
+    "exception": null
+  },
+  {
+    "sql": "WITH master AS (\n  SELECT name, type, sql FROM sqlite_master\n  UNION ALL\n  SELECT name, type, sql FROM sqlite_temp_master\n)\n\nSELECT m.name AS table_name, CASE WHEN m.type = 'table' THEN m.sql END AS create_table_sql,\n       t.\"name\", t.\"type\", t.\"notnull\", t.\"dflt_value\", t.\"pk\", t.\"hidden\"\nFROM master m\nJOIN pragma_table_xinfo(m.name) t\nWHERE m.type IN ('table', 'view')\n  AND m.name IN ('ar_internal_metadata')\nORDER BY m.name, t.cid\n",
+    "name": "SCHEMA",
+    "exception": null
+  },
+  {
+    "sql": "INSERT INTO \"ar_internal_metadata\" (\"key\", \"value\", \"created_at\", \"updated_at\") VALUES ('environment', 'default_env', '2026-10-09 23:39:49.948262', '2026-10-09 23:39:49.948264') RETURNING \"key\"",
+    "name": "ActiveRecord::InternalMetadata Create",
+    "exception": null
+  },
+  {
+    "sql": "SELECT \"schema_migrations\".\"version\" FROM \"schema_migrations\" ORDER BY \"schema_migrations\".\"version\" ASC",
+    "name": "ActiveRecord::SchemaMigration Load",
+    "exception": null
+  },
+  {
+    "sql": "BEGIN immediate TRANSACTION",
+    "name": "TRANSACTION",
+    "exception": null
+  },
+  {
+    "sql": "ALTER TABLE \"parents\" ADD \"note\" text",
+    "name": null,
+    "exception": null
+  },
+  {
+    "sql": "INSERT INTO \"schema_migrations\" (\"version\") VALUES ('20260101000001')",
+    "name": "ActiveRecord::SchemaMigration Create",
+    "exception": null
+  },
+  {
+    "sql": "COMMIT TRANSACTION",
+    "name": "TRANSACTION",
+    "exception": null
+  }
+]

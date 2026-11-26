@@ -1,0 +1,28 @@
+{
+  "repo": "bradymholt/snoozer",
+  "commit": "71b56c1b2ff1c264ba2af4737368f4dc5c50a2e9",
+  "migration_file": "migrations/0003_green_ink.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/bradymholt/snoozer/git/trees/71b56c1b2ff1c264ba2af4737368f4dc5c50a2e9?recursive=1",
+  "tree_sha": "71b56c1b2ff1c264ba2af4737368f4dc5c50a2e9",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/bradymholt__snoozer/LICENSE",
+      "url": "https://raw.githubusercontent.com/bradymholt/snoozer/71b56c1b2ff1c264ba2af4737368f4dc5c50a2e9/LICENSE",
+      "git_blob": "e6c98f85933634278fc38d5c243ba60693c44b23",
+      "sha256": "6987e0aabf1034eda728d5875ea143201fbfe2c7c86521f5dad5690422ccf87d",
+      "bytes": 1067,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/031-87a996f7b17ef7fc.json.gz",
+      "sha256": "27325651bdefee612b5b181130300cfdcd9aea3afccaff736c4b08f1ae01bae1"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{"id": "alembic#1021", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "generator_bug", "silent": false, "production_impact": false}
+{"id": "alembic#1120", "relevant": true, "consequence": "column_data_lost_or_corrupted", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "alembic#1768", "relevant": true, "consequence": "other", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "alembic#1838", "relevant": false}
+{"id": "alembic#1844", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "alembic#1845", "relevant": true, "consequence": "other", "mechanism": "reflection_omission", "silent": true, "production_impact": false}
+{"id": "alembic#1846", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "reflection_omission", "silent": true, "production_impact": false}
+{"id": "alembic#249", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "generator_bug", "silent": false, "production_impact": false}
+{"id": "alembic#289", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "generator_bug", "silent": false, "production_impact": false}
+{"id": "alembic#316", "relevant": false}
+{"id": "alembic#345", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "alembic#380", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "reflection_omission", "silent": true, "production_impact": false}
+{"id": "alembic#697", "relevant": true, "consequence": "column_data_lost_or_corrupted", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "alembic#896", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "generator_bug", "silent": false, "production_impact": false}
+{"id": "django-gh#10539", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "django-gh#10744", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "django-gh#15417", "relevant": false}
+{"id": "django-gh#20492", "relevant": false}
+{"id": "django-gh#20548", "relevant": false}
+{"id": "drizzle#1239", "relevant": false}
+{"id": "drizzle#1433", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "copy_mapping_or_order", "silent": false, "production_impact": false}
+{"id": "drizzle#3718", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "driver_or_runtime", "silent": false, "production_impact": false}
+{"id": "drizzle#4932", "relevant": true, "consequence": "column_data_lost_or_corrupted", "mechanism": "copy_mapping_or_order", "silent": true, "production_impact": false}
+{"id": "drizzle#5268", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "generator_bug", "silent": false, "production_impact": false}
+{"id": "drizzle#5634", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "generator_bug", "silent": false, "production_impact": false}
+{"id": "drizzle#5652", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "generator_bug", "silent": false, "production_impact": false}
+{"id": "drizzle#5782", "relevant": true, "consequence": "child_rows_deleted", "mechanism": "pragma_in_transaction", "silent": true, "production_impact": true}
+{"id": "drizzle#5907", "relevant": false}
+{"id": "drizzle#6063", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "drizzle#6082", "relevant": false}
+{"id": "drizzle#6308", "relevant": true, "consequence": "schema_object_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "drizzle#6420", "relevant": false}
+{"id": "drizzle#887", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "generator_bug", "silent": false, "production_impact": false}
+{"id": "prisma#13885", "relevant": false}
+{"id": "prisma#28032", "relevant": false}
+{"id": "prisma#29844", "relevant": false}
+{"id": "prisma#29977", "relevant": false}
+{"id": "prisma#29985", "relevant": false}
+{"id": "prisma#30086", "relevant": false}
+{"id": "prisma#30102", "relevant": false}
+{"id": "prisma#30379", "relevant": false}
+{"id": "prisma#30451", "relevant": false}
+{"id": "prisma#30648", "relevant": false}
+{"id": "prisma#4703", "relevant": false}
+{"id": "rails#10720", "relevant": false}
+{"id": "rails#11094", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "copy_mapping_or_order", "silent": false, "production_impact": false}
+{"id": "rails#2312", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "rails#31521", "relevant": false}
+{"id": "rails#31603", "relevant": true, "consequence": "schema_object_lost", "mechanism": "reflection_omission", "silent": true, "production_impact": false}
+{"id": "rails#31607", "relevant": true, "consequence": "schema_object_lost", "mechanism": "reflection_omission", "silent": true, "production_impact": false}
+{"id": "rails#3489", "relevant": true, "consequence": "schema_object_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "rails#40325", "relevant": true, "consequence": "migration_fails_loudly", "mechanism": "generator_bug", "silent": false, "production_impact": false}
+{"id": "rails#45430", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "rails#46690", "relevant": false}
+{"id": "rails#49121", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "generator_bug", "silent": true, "production_impact": false}
+{"id": "rails#52702", "relevant": false}
+{"id": "rails#55907", "relevant": true, "consequence": "child_rows_deleted", "mechanism": "copy_mapping_or_order", "silent": true, "production_impact": false}
+{"id": "rails#57565", "relevant": false}
+{"id": "rails#58105", "relevant": true, "consequence": "constraint_or_property_lost", "mechanism": "reflection_omission", "silent": true, "production_impact": false}
+{"id": "rails#58709", "relevant": true, "consequence": "child_rows_deleted", "mechanism": "pragma_in_transaction", "silent": true, "production_impact": false}

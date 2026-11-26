@@ -1,0 +1,51 @@
+orm	repository	query
+rails	rails/rails	repo:rails/rails sqlite recreate table
+rails	rails/rails	repo:rails/rails sqlite rebuild table
+rails	rails/rails	repo:rails/rails sqlite table redefinition
+rails	rails/rails	repo:rails/rails sqlite batch alter
+rails	rails/rails	repo:rails/rails sqlite data loss migration
+rails	rails/rails	repo:rails/rails sqlite cascade migration
+rails	rails/rails	repo:rails/rails sqlite foreign_keys pragma migration
+rails	rails/rails	repo:rails/rails sqlite trigger dropped
+rails	rails/rails	repo:rails/rails sqlite index dropped migration
+rails	rails/rails	repo:rails/rails sqlite alter table copy
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite recreate table
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite rebuild table
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite table redefinition
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite batch alter
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite data loss migration
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite cascade migration
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite foreign_keys pragma migration
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite trigger dropped
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite index dropped migration
+drizzle	drizzle-team/drizzle-orm	repo:drizzle-team/drizzle-orm sqlite alter table copy
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite recreate table
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite rebuild table
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite table redefinition
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite batch alter
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite data loss migration
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite cascade migration
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite foreign_keys pragma migration
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite trigger dropped
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite index dropped migration
+alembic	sqlalchemy/alembic	repo:sqlalchemy/alembic sqlite alter table copy
+prisma	prisma/orm	repo:prisma/orm sqlite recreate table
+prisma	prisma/orm	repo:prisma/orm sqlite rebuild table
+prisma	prisma/orm	repo:prisma/orm sqlite table redefinition
+prisma	prisma/orm	repo:prisma/orm sqlite batch alter
+prisma	prisma/orm	repo:prisma/orm sqlite data loss migration
+prisma	prisma/orm	repo:prisma/orm sqlite cascade migration
+prisma	prisma/orm	repo:prisma/orm sqlite foreign_keys pragma migration
+prisma	prisma/orm	repo:prisma/orm sqlite trigger dropped
+prisma	prisma/orm	repo:prisma/orm sqlite index dropped migration
+prisma	prisma/orm	repo:prisma/orm sqlite alter table copy
+django-gh	django/django	repo:django/django sqlite recreate table
+django-gh	django/django	repo:django/django sqlite rebuild table
+django-gh	django/django	repo:django/django sqlite table redefinition
+django-gh	django/django	repo:django/django sqlite batch alter
+django-gh	django/django	repo:django/django sqlite data loss migration
+django-gh	django/django	repo:django/django sqlite cascade migration
+django-gh	django/django	repo:django/django sqlite foreign_keys pragma migration
+django-gh	django/django	repo:django/django sqlite trigger dropped
+django-gh	django/django	repo:django/django sqlite index dropped migration
+django-gh	django/django	repo:django/django sqlite alter table copy

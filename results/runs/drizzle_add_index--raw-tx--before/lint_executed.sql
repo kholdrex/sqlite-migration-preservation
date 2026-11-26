@@ -1,0 +1,3 @@
+BEGIN;
+CREATE INDEX `idx_parents_tenant` ON `parents` (`tenant_id`);
+COMMIT;

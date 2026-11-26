@@ -1,0 +1,28 @@
+{
+  "repo": "vaibhavrxj/-vaibhav-asset-intelligence",
+  "commit": "10d799c850557a3303809a3375be6182dceaf197",
+  "migration_file": "migrations/0001_windy_blizzard.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/vaibhavrxj/-vaibhav-asset-intelligence/git/trees/10d799c850557a3303809a3375be6182dceaf197?recursive=1",
+  "tree_sha": "10d799c850557a3303809a3375be6182dceaf197",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/vaibhavrxj__-vaibhav-asset-intelligence/LICENSE",
+      "url": "https://raw.githubusercontent.com/vaibhavrxj/-vaibhav-asset-intelligence/10d799c850557a3303809a3375be6182dceaf197/LICENSE",
+      "git_blob": "87f4d3ec2122322a1a7e6fe492262c083287ad51",
+      "sha256": "2e8ea958322e29e85167ded69366e08ba232a72a03b81a65bc063e05ca27c4cd",
+      "bytes": 1063,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/038-e9abb3238db7bbb8.json.gz",
+      "sha256": "26611e7fb4c8ebe35b149420ce40fffe661d132ca8c8f6842913e663b120a30b"
+    }
+  ]
+}

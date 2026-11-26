@@ -1,0 +1,1 @@
+ALTER TABLE "parents" ADD "note" text;

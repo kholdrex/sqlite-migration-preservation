@@ -1,0 +1,28 @@
+{
+  "repo": "BatthewZ/cadence-public",
+  "commit": "0f07383719c43fb55acc97c6fc6d942d6d785716",
+  "migration_file": "migrations/0016_shocking_kabuki.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/BatthewZ/cadence-public/git/trees/0f07383719c43fb55acc97c6fc6d942d6d785716?recursive=1",
+  "tree_sha": "0f07383719c43fb55acc97c6fc6d942d6d785716",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/BatthewZ__cadence-public/LICENSE",
+      "url": "https://raw.githubusercontent.com/BatthewZ/cadence-public/0f07383719c43fb55acc97c6fc6d942d6d785716/LICENSE",
+      "git_blob": "f5d614a26c86f94fa564db99c9e77fbdb5229b73",
+      "sha256": "296a6cf706c3e2a70448f07a7dce29d470c6870bf3ea03b4572d16abacb3aa9c",
+      "bytes": 1069,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/055-dfd2ea7cd9e34106.json.gz",
+      "sha256": "aa91e118f405cab9f6a67c87dced577f53cbd40630507c55c785b834093389a6"
+    }
+  ]
+}

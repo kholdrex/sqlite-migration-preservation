@@ -1,0 +1,58 @@
+{
+  "seed_rows": {
+    "a_first": 1,
+    "parents": 2,
+    "children": 3
+  },
+  "sqlite": "3.41.2",
+  "results": [
+    {
+      "label": "current",
+      "pins": {
+        "drizzle-orm": "0.45.4",
+        "drizzle-kit": "0.31.11",
+        "better-sqlite3": "12.4.1"
+      },
+      "upgrade_sql": "PRAGMA foreign_keys=OFF;--> statement-breakpoint\nCREATE TABLE `__new_a_first` (\n\t`id` integer PRIMARY KEY NOT NULL,\n\t`name` text DEFAULT 'b'\n);\n--> statement-breakpoint\nINSERT INTO `__new_a_first`(\"id\", \"name\") SELECT \"id\", \"name\" FROM `a_first`;--> statement-breakpoint\nDROP TABLE `a_first`;--> statement-breakpoint\nALTER TABLE `__new_a_first` RENAME TO `a_first`;--> statement-breakpoint\nPRAGMA foreign_keys=ON;--> statement-breakpoint\nCREATE TABLE `__new_parents` (\n\t`id` integer PRIMARY KEY NOT NULL,\n\t`name` text DEFAULT 'b'\n);\n--> statement-breakpoint\nINSERT INTO `__new_parents`(\"id\", \"name\") SELECT \"id\", \"name\" FROM `parents`;--> statement-breakpoint\nDROP TABLE `parents`;--> statement-breakpoint\nALTER TABLE `__new_parents` RENAME TO `parents`;",
+      "pragma_statements": 2,
+      "drop_with_foreign_keys_disabled": {
+        "a_first": true,
+        "parents": false
+      },
+      "autocommit": {
+        "a_first": 1,
+        "parents": 2,
+        "children": 0
+      },
+      "transaction": {
+        "a_first": 1,
+        "parents": 2,
+        "children": 0
+      }
+    },
+    {
+      "label": "v1-rc5",
+      "pins": {
+        "drizzle-orm": "1.0.0-rc.5",
+        "drizzle-kit": "1.0.0-rc.5",
+        "better-sqlite3": "12.4.1"
+      },
+      "upgrade_sql": "PRAGMA foreign_keys=OFF;--> statement-breakpoint\nCREATE TABLE `__new_a_first` (\n\t`id` integer PRIMARY KEY,\n\t`name` text DEFAULT 'b'\n);\n--> statement-breakpoint\nINSERT INTO `__new_a_first`(`id`, `name`) SELECT `id`, `name` FROM `a_first`;--> statement-breakpoint\nDROP TABLE `a_first`;--> statement-breakpoint\nALTER TABLE `__new_a_first` RENAME TO `a_first`;--> statement-breakpoint\nPRAGMA foreign_keys=ON;--> statement-breakpoint\nPRAGMA foreign_keys=OFF;--> statement-breakpoint\nCREATE TABLE `__new_parents` (\n\t`id` integer PRIMARY KEY,\n\t`name` text DEFAULT 'b'\n);\n--> statement-breakpoint\nINSERT INTO `__new_parents`(`id`, `name`) SELECT `id`, `name` FROM `parents`;--> statement-breakpoint\nDROP TABLE `parents`;--> statement-breakpoint\nALTER TABLE `__new_parents` RENAME TO `parents`;--> statement-breakpoint\nPRAGMA foreign_keys=ON;",
+      "pragma_statements": 4,
+      "drop_with_foreign_keys_disabled": {
+        "a_first": true,
+        "parents": true
+      },
+      "autocommit": {
+        "a_first": 1,
+        "parents": 2,
+        "children": 3
+      },
+      "transaction": {
+        "a_first": 1,
+        "parents": 2,
+        "children": 0
+      }
+    }
+  ]
+}

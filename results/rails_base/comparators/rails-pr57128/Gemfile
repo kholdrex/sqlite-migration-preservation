@@ -1,0 +1,3 @@
+source "https://rubygems.org"
+gem "activerecord", git: "https://github.com/emirn/rails.git", ref: "8823c1370c7bc8910e609d1b6f27f4fc34f3d81d", glob: "{activerecord,activemodel,activesupport}/*.gemspec"
+gem "sqlite3", "2.9.6"

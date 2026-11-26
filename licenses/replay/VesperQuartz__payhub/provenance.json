@@ -1,0 +1,28 @@
+{
+  "repo": "VesperQuartz/payhub",
+  "commit": "23b58005cc121af5c0dfef8de853b56d40456442",
+  "migration_file": "migrations/0009_violet_black_tarantula.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/VesperQuartz/payhub/git/trees/23b58005cc121af5c0dfef8de853b56d40456442?recursive=1",
+  "tree_sha": "23b58005cc121af5c0dfef8de853b56d40456442",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/VesperQuartz__payhub/LICENSE",
+      "url": "https://raw.githubusercontent.com/VesperQuartz/payhub/23b58005cc121af5c0dfef8de853b56d40456442/LICENSE",
+      "git_blob": "98cb6f3ebd5b929f7f0370f5880328f526fd710c",
+      "sha256": "106b0c64fd2e4ad0d688a5688261979153f870d1be668282cc08217944d67947",
+      "bytes": 1068,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/059-6b20ac1360f6f0d0.json.gz",
+      "sha256": "0bdcac7c9c2528998a4d51822d1671f2ca3b64f8d86cb8b6b2cdfcdcd674467a"
+    }
+  ]
+}

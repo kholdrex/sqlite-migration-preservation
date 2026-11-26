@@ -1,0 +1,28 @@
+{
+  "repo": "kuranai/dovari",
+  "commit": "89af16260e71e0d0f6a46981da2c188dfafab2f1",
+  "migration_file": "migrations/0009_aromatic_the_order.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/kuranai/dovari/git/trees/89af16260e71e0d0f6a46981da2c188dfafab2f1?recursive=1",
+  "tree_sha": "89af16260e71e0d0f6a46981da2c188dfafab2f1",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/kuranai__dovari/LICENSE",
+      "url": "https://raw.githubusercontent.com/kuranai/dovari/89af16260e71e0d0f6a46981da2c188dfafab2f1/LICENSE",
+      "git_blob": "27f2933c785bcb8e5bdb2fe75e7d68e1355be479",
+      "sha256": "2f7a1f631215f0b61666fd828ef3faa0af320cd9ed7f57eaabdcfd8faad96c39",
+      "bytes": 1076,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/076-95022638ed17e463.json.gz",
+      "sha256": "e0c57698df8d7987aaf93a741d4fa3b811ec3a06ba62a3051c0086350b77032f"
+    }
+  ]
+}

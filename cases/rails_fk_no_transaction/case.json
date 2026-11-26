@@ -1,0 +1,22 @@
+{
+  "id": "rails_fk_no_transaction",
+  "framework": "rails",
+  "role": "diagnostic",
+  "schema": "schema.sql",
+  "seed": "seed.sql",
+  "tables": [
+    "tenants",
+    "parents",
+    "children",
+    "audit"
+  ],
+  "expected": {
+    "kind": "foreign_key",
+    "table": "parents",
+    "column": "tenant_id",
+    "target": "tenants"
+  },
+  "provenance": "https://github.com/rails/rails/pull/55907",
+  "description": "Same foreign key addition with disable_ddl_transaction! to isolate the adapter fix.",
+  "migration": "migrations"
+}

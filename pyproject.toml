@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlite-migration-preservation"
+version = "1.0.0"
+description = "Experiment harness and data for SQLite migration preservation"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+paper = ["matplotlib==3.10.9", "numpy==2.4.6", "fonttools==4.66.0"]
+
+[project.scripts]
+smp = "smp.cli:main"
+
+[tool.setuptools]
+packages = ["smp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,28 @@
+{
+  "repo": "jtk5aw/committed",
+  "commit": "82b97fa333e7872440a5322c2b469054085d2ffc",
+  "migration_file": "migrations/0004_reflective_argent.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/jtk5aw/committed/git/trees/82b97fa333e7872440a5322c2b469054085d2ffc?recursive=1",
+  "tree_sha": "82b97fa333e7872440a5322c2b469054085d2ffc",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/jtk5aw__committed/LICENSE",
+      "url": "https://raw.githubusercontent.com/jtk5aw/committed/82b97fa333e7872440a5322c2b469054085d2ffc/LICENSE",
+      "git_blob": "f001752edfb6e83648681a6f3230c6438ef36e6f",
+      "sha256": "0bfd9b622fbe4ebd9f242bbd16011be8187c7e6f72bf0668458229c36ce4e7fa",
+      "bytes": 1072,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/071-24b6c3efb6af74f9.json.gz",
+      "sha256": "fb3fc509288e27457596bc7ffb4a030eb757550efd3b759158c33ff5dcc3355c"
+    }
+  ]
+}

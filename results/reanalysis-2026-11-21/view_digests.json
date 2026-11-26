@@ -1,0 +1,14 @@
+{
+ "artifacts_without_full_evidence": [],
+ "evidence_run": "results/realworld-rerun-2026-11-02",
+ "format_version": 1,
+ "recorded_view_findings": {
+  "results/realworld-rerun-2026-11-02/realworld.json": 0,
+  "results/realworld.json": 0
+ },
+ "summary": {
+  "artifacts": 93,
+  "snapshots": 560
+ },
+ "views": []
+}

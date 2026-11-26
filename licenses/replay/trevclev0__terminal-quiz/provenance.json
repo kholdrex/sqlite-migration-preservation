@@ -1,0 +1,28 @@
+{
+  "repo": "trevclev0/terminal-quiz",
+  "commit": "5a92afeed96c25df83ed6d1b7ece80e391f090a3",
+  "migration_file": "migrations/0003_melodic_jane_foster.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/trevclev0/terminal-quiz/git/trees/5a92afeed96c25df83ed6d1b7ece80e391f090a3?recursive=1",
+  "tree_sha": "5a92afeed96c25df83ed6d1b7ece80e391f090a3",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/trevclev0__terminal-quiz/LICENSE",
+      "url": "https://raw.githubusercontent.com/trevclev0/terminal-quiz/5a92afeed96c25df83ed6d1b7ece80e391f090a3/LICENSE",
+      "git_blob": "339fa5673f3bea0b60bbd7eac9cc1a34e8800bed",
+      "sha256": "6a71e44c36b53ff323ae62993d70e4f65d1b1941aa0148512d5926c53208fec5",
+      "bytes": 1066,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/047-07a4ec8080a4da23.json.gz",
+      "sha256": "a051cd973ea3d18cb4d3f18ad9b1fec91295b963aca13a46b2d15f99b93e24e4"
+    }
+  ]
+}

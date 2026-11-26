@@ -1,0 +1,28 @@
+{
+  "repo": "dynamicagents/slack-gatekeeper",
+  "commit": "c28aaf2c253533d92afdca567548238d30d8ce69",
+  "migration_file": "migrations/0004_agents_endpoint_notnull.sql",
+  "recorded_license": "Apache-2.0",
+  "tree_url": "https://api.github.com/repos/dynamicagents/slack-gatekeeper/git/trees/c28aaf2c253533d92afdca567548238d30d8ce69?recursive=1",
+  "tree_sha": "c28aaf2c253533d92afdca567548238d30d8ce69",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/dynamicagents__slack-gatekeeper/LICENSE",
+      "url": "https://raw.githubusercontent.com/dynamicagents/slack-gatekeeper/c28aaf2c253533d92afdca567548238d30d8ce69/LICENSE",
+      "git_blob": "a26f82253fa7d6d21a36caa2917ab5e664374420",
+      "sha256": "013341087b8732edc78c134edfb6650e9f5932cb391bb7b5c00f8450ab935d9a",
+      "bytes": 10934,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/084-20a0c663a43f43cf.json.gz",
+      "sha256": "9cf9001f96420600d62c923fca0f5b6a0cf75d20ee4b7001accee9c079661f4e"
+    }
+  ]
+}

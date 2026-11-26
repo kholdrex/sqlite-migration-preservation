@@ -1,0 +1,28 @@
+{
+  "repo": "XeinTDM/MeatFlicks",
+  "commit": "c0bd316872ec36b47ce8135f0faa0a1868382511",
+  "migration_file": "migrations/0001_unique_ghost_rider.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/XeinTDM/MeatFlicks/git/trees/c0bd316872ec36b47ce8135f0faa0a1868382511?recursive=1",
+  "tree_sha": "c0bd316872ec36b47ce8135f0faa0a1868382511",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/XeinTDM__MeatFlicks/LICENSE",
+      "url": "https://raw.githubusercontent.com/XeinTDM/MeatFlicks/c0bd316872ec36b47ce8135f0faa0a1868382511/LICENSE",
+      "git_blob": "adfe338939d04c2063142426afc60a0bd36807ff",
+      "sha256": "837af3a93253c7498c24b1c02c796b4e1f99b74c385c6261f115a69847add768",
+      "bytes": 1064,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/012-e49015a0cfc50c34.json.gz",
+      "sha256": "01dc009aeaf21105041138186da95199ad1ef416acc891ee38ea3ef10f67d6ed"
+    }
+  ]
+}

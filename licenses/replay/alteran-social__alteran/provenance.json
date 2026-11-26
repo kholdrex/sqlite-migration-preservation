@@ -1,0 +1,28 @@
+{
+  "repo": "alteran-social/alteran",
+  "commit": "6bfa4be0fc79aaee55fb35d48dada5f70788d360",
+  "migration_file": "migrations/0005_odd_bishop.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/alteran-social/alteran/git/trees/6bfa4be0fc79aaee55fb35d48dada5f70788d360?recursive=1",
+  "tree_sha": "6bfa4be0fc79aaee55fb35d48dada5f70788d360",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/alteran-social__alteran/LICENSE",
+      "url": "https://raw.githubusercontent.com/alteran-social/alteran/6bfa4be0fc79aaee55fb35d48dada5f70788d360/LICENSE",
+      "git_blob": "696b7b56c9143cd15e4abe572a3406b23f562dbd",
+      "sha256": "6802a0e402a45d3f9bba5e86b3bc3696b9bef1e36b9ac9ca5cf65439f1cc9f47",
+      "bytes": 1072,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/019-e0d64e55a73b9915.json.gz",
+      "sha256": "35812705d55cca2e8faeded00a64c9287ed135438ccb3d8e856ad0f35cba1083"
+    }
+  ]
+}

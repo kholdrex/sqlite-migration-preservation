@@ -1,0 +1,59 @@
+{
+  "url": "https://api.github.com/repos/aka-nez/rails/compare/704aa9785156f3b52f825b8c4dae8460e669bc97...7ddc17783418454c0e406181ae442d0aaf558ad8",
+  "status": "diverged",
+  "ahead_by": 1,
+  "behind_by": 2,
+  "total_commits": 1,
+  "base_commit": {
+    "sha": "704aa9785156f3b52f825b8c4dae8460e669bc97"
+  },
+  "merge_base_commit": {
+    "sha": "3faf056f240966b268dd6fa52c559e241a370d06"
+  },
+  "commits": [
+    {
+      "sha": "7ddc17783418454c0e406181ae442d0aaf558ad8",
+      "parents": [
+        "3faf056f240966b268dd6fa52c559e241a370d06"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "filename": "activerecord/CHANGELOG.md",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "sha": "268eb5257c7743cb81388cbfb65ec496db80b564"
+    },
+    {
+      "filename": "activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb",
+      "status": "modified",
+      "additions": 10,
+      "deletions": 0,
+      "changes": 10,
+      "sha": "45dfd714cb5890475d5db24392c3e009e9e7fbff"
+    },
+    {
+      "filename": "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "sha": "5fd22bd5019eca50bbb702d761c04f93c744487d"
+    },
+    {
+      "filename": "activerecord/test/cases/adapters/sqlite3/sqlite3_adapter_test.rb",
+      "status": "modified",
+      "additions": 123,
+      "deletions": 0,
+      "changes": 123,
+      "sha": "72416022d5c062f0171a6eb42cea0793e289358d"
+    }
+  ],
+  "response": {
+    "sha256": "82badcfa9cbebdd818b9dd3e42953404890cb39a25b6ae05d584fa489fbb3d85",
+    "bytes": 27143
+  }
+}

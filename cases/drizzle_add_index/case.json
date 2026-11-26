@@ -1,0 +1,22 @@
+{
+  "id": "drizzle_add_index",
+  "framework": "drizzle",
+  "role": "control",
+  "schema": "schema.sql",
+  "seed": "seed.sql",
+  "tables": [
+    "tenants",
+    "parents",
+    "children",
+    "audit"
+  ],
+  "expected": {
+    "kind": "index",
+    "name": "idx_parents_tenant",
+    "sql": "CREATE INDEX idx_parents_tenant ON parents(tenant_id)"
+  },
+  "provenance": "control",
+  "description": "Add an index without rebuilding the parent.",
+  "before": "before.ts",
+  "after": "after.ts"
+}

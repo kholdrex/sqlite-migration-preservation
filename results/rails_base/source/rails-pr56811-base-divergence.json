@@ -1,0 +1,42 @@
+{
+  "url": "https://api.github.com/repos/rails/rails/compare/3faf056f240966b268dd6fa52c559e241a370d06...704aa9785156f3b52f825b8c4dae8460e669bc97",
+  "status": "ahead",
+  "ahead_by": 2,
+  "behind_by": 0,
+  "total_commits": 2,
+  "base_commit": {
+    "sha": "3faf056f240966b268dd6fa52c559e241a370d06"
+  },
+  "merge_base_commit": {
+    "sha": "3faf056f240966b268dd6fa52c559e241a370d06"
+  },
+  "commits": [
+    {
+      "sha": "c46d32f4d291178944499b4f49be725cfc5c38d3",
+      "parents": [
+        "4a7396cb7297471e080b1863f7430ae45a292c7a"
+      ]
+    },
+    {
+      "sha": "704aa9785156f3b52f825b8c4dae8460e669bc97",
+      "parents": [
+        "3faf056f240966b268dd6fa52c559e241a370d06",
+        "c46d32f4d291178944499b4f49be725cfc5c38d3"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "filename": "activerecord/test/cases/adapters/postgresql/bytea_test.rb",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 0,
+      "changes": 2,
+      "sha": "d3c28059902f728bade6714786624d7477e5ccd7"
+    }
+  ],
+  "response": {
+    "sha256": "92952f98caef56d7bf09d526e65d5b085130ce9866ba21334aa73fd08fdeb780",
+    "bytes": 24521
+  }
+}

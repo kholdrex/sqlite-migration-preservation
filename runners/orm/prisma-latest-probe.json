@@ -1,0 +1,15 @@
+{
+  "version": "8.0.0-rc.22",
+  "command": [
+    "prisma",
+    "migrate",
+    "diff",
+    "--help"
+  ],
+  "exit_code": 0,
+  "observed_behavior": "Top-level help, no migrate subcommand. Migration commands are under migration and db; the requested migrate diff/deploy workflow is absent.",
+  "available_migration_commands": [
+    "migration",
+    "db"
+  ]
+}

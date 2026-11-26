@@ -1,0 +1,11 @@
+{
+  "name": "smp-drizzle-pr5074",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "drizzle-orm": "0.45.4",
+    "drizzle-kit": "file:../../artifacts/drizzle-kit-0.31.8-smp.pr5074.tgz",
+    "better-sqlite3": "12.4.1"
+  }
+}

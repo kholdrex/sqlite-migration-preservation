@@ -1,0 +1,25 @@
+{
+  "id": "drizzle_objects",
+  "framework": "drizzle",
+  "role": "hazard",
+  "schema": "schema.sql",
+  "seed": "seed.sql",
+  "tables": [
+    "tenants",
+    "parents",
+    "children",
+    "audit"
+  ],
+  "expected": {
+    "kind": "column",
+    "table": "parents",
+    "name": "name",
+    "attributes": {
+      "default": "'b'"
+    }
+  },
+  "provenance": "https://www.sqlite.org/lang_altertable.html#otheralter",
+  "description": "Rebuild with a manually created parent trigger and index; children reference tenants to isolate object loss.",
+  "before": "before.ts",
+  "after": "after.ts"
+}

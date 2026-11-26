@@ -1,0 +1,28 @@
+{
+  "repo": "tijptjik/hype",
+  "commit": "6ee39e249f1b42013b8b49530509b0f2e74dd2d4",
+  "migration_file": "migrations/0007_capabilities.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/tijptjik/hype/git/trees/6ee39e249f1b42013b8b49530509b0f2e74dd2d4?recursive=1",
+  "tree_sha": "6ee39e249f1b42013b8b49530509b0f2e74dd2d4",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "file": "licenses/replay/tijptjik__hype/LICENSE.md",
+      "url": "https://raw.githubusercontent.com/tijptjik/hype/6ee39e249f1b42013b8b49530509b0f2e74dd2d4/LICENSE.md",
+      "git_blob": "d7d2e89671f9eaea010169b26e65ae65bbd530fb",
+      "sha256": "c6bc196fb05cad396f05c70e7f071a074766a2606134dfc7d0ec7b14c02b1116",
+      "bytes": 1063,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/048-72af059ff8e213aa.json.gz",
+      "sha256": "844fac7bff94e378a452b2040224fbf72f0657ab609255301f5925aed0e7d468"
+    }
+  ]
+}

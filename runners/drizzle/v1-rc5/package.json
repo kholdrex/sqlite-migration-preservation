@@ -1,0 +1,11 @@
+{
+  "name": "smp-drizzle-v1-rc5",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "drizzle-orm": "1.0.0-rc.5",
+    "drizzle-kit": "1.0.0-rc.5",
+    "better-sqlite3": "12.4.1"
+  }
+}

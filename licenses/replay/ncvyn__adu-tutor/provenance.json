@@ -1,0 +1,28 @@
+{
+  "repo": "ncvyn/adu-tutor",
+  "commit": "96475068d8ba7455f742e98d6f2ae149039f3ea0",
+  "migration_file": "migrations/0001_good_mister_fear.sql",
+  "recorded_license": "MIT",
+  "tree_url": "https://api.github.com/repos/ncvyn/adu-tutor/git/trees/96475068d8ba7455f742e98d6f2ae149039f3ea0?recursive=1",
+  "tree_sha": "96475068d8ba7455f742e98d6f2ae149039f3ea0",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/ncvyn__adu-tutor/LICENSE",
+      "url": "https://raw.githubusercontent.com/ncvyn/adu-tutor/96475068d8ba7455f742e98d6f2ae149039f3ea0/LICENSE",
+      "git_blob": "22397a43e2c58f11564480bb7f1d27b8d01b9d92",
+      "sha256": "509babe68bc84cf0b3a2563be9b05351d6d9362f227a0c11f5260e442dfe7c2f",
+      "bytes": 1075,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/014-82e717ab52d6d32b.json.gz",
+      "sha256": "b05695110e9c87337b3be644e47768ba3c5f53bf050cb7e74cd0fc04faf94823"
+    }
+  ]
+}

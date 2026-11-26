@@ -1,0 +1,67 @@
+{
+  "url": "https://api.github.com/repos/nicolasva/rails/compare/bd885faee983c6986da1919d96ee6f671a35164c...428884a88b3a42c914f5227819b6b672325b3312",
+  "status": "ahead",
+  "ahead_by": 1,
+  "behind_by": 0,
+  "total_commits": 1,
+  "base_commit": {
+    "sha": "bd885faee983c6986da1919d96ee6f671a35164c"
+  },
+  "merge_base_commit": {
+    "sha": "bd885faee983c6986da1919d96ee6f671a35164c"
+  },
+  "commits": [
+    {
+      "sha": "428884a88b3a42c914f5227819b6b672325b3312",
+      "parents": [
+        "bd885faee983c6986da1919d96ee6f671a35164c"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "filename": "activerecord/CHANGELOG.md",
+      "status": "modified",
+      "additions": 5,
+      "deletions": 0,
+      "changes": 5,
+      "sha": "032dd9942db390eaad6852c4387283ac40156362"
+    },
+    {
+      "filename": "activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 0,
+      "changes": 4,
+      "sha": "04231c8061febff66a6982dfae64a2dfa77e4734"
+    },
+    {
+      "filename": "activerecord/lib/active_record/connection_adapters/sqlite3_adapter.rb",
+      "status": "modified",
+      "additions": 6,
+      "deletions": 0,
+      "changes": 6,
+      "sha": "f08490e4a83acfb51480fa5518c727d221d198c4"
+    },
+    {
+      "filename": "activerecord/lib/active_record/migration.rb",
+      "status": "modified",
+      "additions": 1,
+      "deletions": 1,
+      "changes": 2,
+      "sha": "89ebf12acca35743513afeba473dad3931ed42e6"
+    },
+    {
+      "filename": "activerecord/test/cases/migration_test.rb",
+      "status": "modified",
+      "additions": 46,
+      "deletions": 0,
+      "changes": 46,
+      "sha": "d502df7e0c27f924aa4bf352beac562a5306de77"
+    }
+  ],
+  "response": {
+    "sha256": "f8833bf3b406fa0aed4efb247ad3cebaa563ad9bbeb69e439ddbecc57f80acff",
+    "bytes": 23835
+  }
+}

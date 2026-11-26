@@ -1,0 +1,10 @@
+{
+  "node": "v22.22.2",
+  "drizzle-orm": "0.45.3-smp.pr5784",
+  "drizzle-kit": "0.31.11",
+  "better-sqlite3": "12.4.1",
+  "sqlite": "3.50.4",
+  "foreign_keys_before": 1,
+  "success": true,
+  "foreign_keys_after": 1
+}

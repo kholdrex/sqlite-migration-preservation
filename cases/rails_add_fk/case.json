@@ -1,0 +1,22 @@
+{
+  "id": "rails_add_fk",
+  "framework": "rails",
+  "role": "hazard",
+  "schema": "schema.sql",
+  "seed": "seed.sql",
+  "tables": [
+    "tenants",
+    "parents",
+    "children",
+    "audit"
+  ],
+  "expected": {
+    "kind": "foreign_key",
+    "table": "parents",
+    "column": "tenant_id",
+    "target": "tenants"
+  },
+  "provenance": "https://github.com/rails/rails/issues/55866",
+  "description": "Add a foreign key to a parent with cascade children.",
+  "migration": "migrations"
+}

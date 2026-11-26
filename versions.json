@@ -1,0 +1,76 @@
+{
+  "rails": {
+    "before": {
+      "activerecord": "8.0.3",
+      "sqlite3": "2.9.6"
+    },
+    "current": {
+      "activerecord": "8.1.4",
+      "sqlite3": "2.9.6"
+    },
+    "rails-pr57128": {
+      "activerecord": "8.2.0.alpha",
+      "sqlite3": "2.9.6"
+    },
+    "rails-pr56811": {
+      "activerecord": "8.2.0.alpha",
+      "sqlite3": "2.9.6"
+    },
+    "rails-pr58709": {
+      "activerecord": "8.2.0.alpha",
+      "sqlite3": "2.9.6"
+    },
+    "rails-pr57128+56811": {
+      "activerecord": "8.2.0.alpha",
+      "sqlite3": "2.9.6"
+    },
+    "rails-pr58709+56811": {
+      "activerecord": "8.2.0.alpha",
+      "sqlite3": "2.9.6"
+    },
+    "rails-base-b8725ee9a909": {
+      "activerecord": "8.2.0.alpha",
+      "sqlite3": "2.9.6"
+    },
+    "rails-base-bd885faee983": {
+      "activerecord": "8.2.0.alpha",
+      "sqlite3": "2.9.6"
+    },
+    "rails-base-704aa9785156": {
+      "activerecord": "8.2.0.alpha",
+      "sqlite3": "2.9.6"
+    }
+  },
+  "drizzle": {
+    "before": {
+      "drizzle-orm": "0.44.2",
+      "drizzle-kit": "0.31.4",
+      "better-sqlite3": "12.4.1"
+    },
+    "current": {
+      "drizzle-orm": "0.45.4",
+      "drizzle-kit": "0.31.11",
+      "better-sqlite3": "12.4.1"
+    },
+    "drizzle-pr5784": {
+      "drizzle-orm": "0.45.3-smp.pr5784",
+      "drizzle-kit": "0.31.11",
+      "better-sqlite3": "12.4.1"
+    },
+    "drizzle-pr5074": {
+      "drizzle-orm": "0.45.4",
+      "drizzle-kit": "0.31.8-smp.pr5074",
+      "better-sqlite3": "12.4.1"
+    },
+    "drizzle-pr5784+5074": {
+      "drizzle-orm": "0.45.3-smp.pr5784",
+      "drizzle-kit": "0.31.8-smp.pr5074",
+      "better-sqlite3": "12.4.1"
+    },
+    "v1-rc5": {
+      "drizzle-orm": "1.0.0-rc.5",
+      "drizzle-kit": "1.0.0-rc.5",
+      "better-sqlite3": "12.4.1"
+    }
+  }
+}

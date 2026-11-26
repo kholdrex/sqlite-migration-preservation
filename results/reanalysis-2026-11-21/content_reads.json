@@ -1,0 +1,118 @@
+{
+ "families": {
+  "operation_matrix": {
+   "content_comparisons": 13104,
+   "content_unread_after": 70,
+   "trials": 4914,
+   "view_rows_comparisons": 546,
+   "view_rows_unread_after": 70,
+   "violations_changed": 0
+  },
+  "orm_matrix": {
+   "content_comparisons": 14112,
+   "content_unread_after": 159,
+   "trials": 5292,
+   "view_rows_comparisons": 588,
+   "view_rows_unread_after": 164,
+   "violations_changed": 0
+  },
+  "rails_base": {
+   "content_comparisons": 2304,
+   "trials": 864,
+   "view_rows_comparisons": 96,
+   "violations_changed": 0
+  },
+  "rails_fixes": {
+   "content_comparisons": 3072,
+   "trials": 1152,
+   "view_rows_comparisons": 128,
+   "violations_changed": 0
+  },
+  "rerun_drizzle": {
+   "content_comparisons": 4320,
+   "content_unread_after": 32,
+   "trials": 1620,
+   "view_rows_comparisons": 180,
+   "view_rows_unread_after": 32,
+   "violations_changed": 0
+  },
+  "rerun_rails": {
+   "content_comparisons": 768,
+   "trials": 288,
+   "view_rows_comparisons": 32,
+   "violations_changed": 0
+  }
+ },
+ "format_version": 1,
+ "masked_comparisons": [],
+ "oracle_controls": {
+  "recorded_content_error_trials": 4,
+  "recorded_summary": {
+   "FN": 3,
+   "FP": 0,
+   "TN": 441,
+   "TP": 16
+  },
+  "sha256": "2bf5f699860befe10da0833c47bc2ec17e623fcc067d6d02964c86f5a7f1edc3",
+  "source": "results/oracle_validation/controls.json",
+  "trials": 460,
+  "verdict_changes_on_recorded_observations": [
+   {
+    "control": "heap_overwrite",
+    "corrected_violations": [
+     {
+      "kind": "content_digest",
+      "table": "heap"
+     }
+    ],
+    "expected_label": "lossy",
+    "population": "populated",
+    "recorded_confusion": "FN",
+    "recorded_violations": [],
+    "scope": "limitation"
+   },
+   {
+    "control": "heap_overwrite",
+    "corrected_violations": [
+     {
+      "kind": "content_digest",
+      "table": "heap"
+     }
+    ],
+    "expected_label": "safe",
+    "population": "empty",
+    "recorded_confusion": "TN",
+    "recorded_violations": [],
+    "scope": "limitation"
+   },
+   {
+    "control": "safe_heap",
+    "corrected_violations": [
+     {
+      "kind": "content_digest",
+      "table": "heap"
+     }
+    ],
+    "expected_label": "safe",
+    "population": "populated",
+    "recorded_confusion": "TN",
+    "recorded_violations": [],
+    "scope": "derived"
+   },
+   {
+    "control": "safe_heap",
+    "corrected_violations": [
+     {
+      "kind": "content_digest",
+      "table": "heap"
+     }
+    ],
+    "expected_label": "safe",
+    "population": "empty",
+    "recorded_confusion": "TN",
+    "recorded_violations": [],
+    "scope": "derived"
+   }
+  ]
+ }
+}

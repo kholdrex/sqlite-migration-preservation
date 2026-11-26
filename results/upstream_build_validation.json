@@ -1,0 +1,12 @@
+{
+  "drizzle-pr5784": {
+    "sha256": "6a936a15399e4c8c4da0b418487c61eab9889b3646e39a8b3eed71f7f1fe32ca",
+    "bytes": 1237306,
+    "independent_rebuild_identical": true
+  },
+  "drizzle-pr5074": {
+    "sha256": "ecb296b29cc288f8edaf8e786cc7da64c7ec8df892df164adfcfebb950e41d52",
+    "bytes": 2020493,
+    "independent_rebuild_identical": true
+  }
+}

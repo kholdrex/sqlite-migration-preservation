@@ -1,0 +1,24 @@
+[
+  {
+    "aggregate": "results/realworld.json",
+    "directory": "sources/replay-validation/original",
+    "source_hashes": {
+      "smp/realworld.py": "5a7477c7c70124c39d3d05bb3fd6210acdfb9ad8850c27b27f429b9c8a80130a",
+      "smp/realworld_seed.py": "a3ae4e6673cb267ebd7b59eb6681ce4931d7d42e03601d1ab08dcc22a204c616",
+      "runners/realworld/run.cjs": "869d59956b2627ad0a7e6a31db37868e89f15f480ca9d60adc85d420474f76f1"
+    }
+  },
+  {
+    "aggregate": "results/realworld-rerun-2026-11-02/realworld.json",
+    "directory": "sources/replay-validation/2026-11-02",
+    "source_hashes": {
+      "smp/realworld.py": "bf51452914cb04514347e353a875de70817dce3cb5bcd1dfda7cae1363b4e067",
+      "smp/realworld_seed.py": "a3ae4e6673cb267ebd7b59eb6681ce4931d7d42e03601d1ab08dcc22a204c616",
+      "smp/realworld_evidence.py": "f9fa66c093ab32eb520fb2ab2b0aea8b2880e04ffc2c5505c110dad2fea78235",
+      "runners/realworld/run.cjs": "7e05f093e4cca4a9db6774e384d425c41461c64fe26078d6f9950c92f61d5079",
+      "scripts/rebuild_realworld_evidence.py": "49281bcdf1f4451d701af6e023f516de1d2bfdd5ec21ee4cf42941cd17f8671d",
+      "scripts/finalize_realworld_rerun.py": "d06f2c752eed849d85573f5438a52b56fa05e6d0427768b7df0ce1bc75cd88e5",
+      "scripts/paper_numbers.py": "803c81ab5d20a03fbcdd71fd92feb0a739222865563aa6d6d3bd0dab88a13a4b"
+    }
+  }
+]

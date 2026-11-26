@@ -1,0 +1,28 @@
+{
+  "repo": "choyiny/saasmail",
+  "commit": "1be56eb77246b3f355469983a970265f63b7c47c",
+  "migration_file": "migrations/0017_windy_sister_grimm.sql",
+  "recorded_license": "Apache-2.0",
+  "tree_url": "https://api.github.com/repos/choyiny/saasmail/git/trees/1be56eb77246b3f355469983a970265f63b7c47c?recursive=1",
+  "tree_sha": "1be56eb77246b3f355469983a970265f63b7c47c",
+  "tree_truncated": false,
+  "files": [
+    {
+      "path": "LICENSE",
+      "file": "licenses/replay/choyiny__saasmail/LICENSE",
+      "url": "https://raw.githubusercontent.com/choyiny/saasmail/1be56eb77246b3f355469983a970265f63b7c47c/LICENSE",
+      "git_blob": "43aaabe2bbcd98fb5bebfaabd35033f1658e3f57",
+      "sha256": "393e1d8078f62d0b7be541c1e1608bea37ad128c6440f89ff6d590d0796a5af7",
+      "bytes": 10772,
+      "ancestor_of_migration": true
+    }
+  ],
+  "mode": "full",
+  "reason": "Pinned license text accompanies project SQL",
+  "artifacts": [
+    {
+      "file": "results/realworld-rerun-2026-11-02/evidence/016-d1d1b5ae9956b911.json.gz",
+      "sha256": "e72e14123825a401f964dd603652e05f64b87e8667985486c9d2c13b3a2da276"
+    }
+  ]
+}

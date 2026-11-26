@@ -1,0 +1,42 @@
+[
+  {
+    "file": "licenses/drizzle-pr5784.txt",
+    "url": "https://raw.githubusercontent.com/Zelys-DFKH/drizzle-orm/2b3f6d8c4b016cb470fa06caa883038d1a93babb/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "file": "licenses/rails-pr57128.txt",
+    "url": "https://raw.githubusercontent.com/emirn/rails/8823c1370c7bc8910e609d1b6f27f4fc34f3d81d/activerecord/MIT-LICENSE",
+    "sha256": "49d631ffc4d5030497f77944a6af865d03a1253d26b5c513e2a024b0ba6583d7"
+  },
+  {
+    "file": "licenses/rails-pr58709.txt",
+    "url": "https://raw.githubusercontent.com/nicolasva/rails/428884a88b3a42c914f5227819b6b672325b3312/activerecord/MIT-LICENSE",
+    "sha256": "49d631ffc4d5030497f77944a6af865d03a1253d26b5c513e2a024b0ba6583d7"
+  },
+  {
+    "file": "licenses/rails-pr56811.txt",
+    "url": "https://raw.githubusercontent.com/aka-nez/rails/7ddc17783418454c0e406181ae442d0aaf558ad8/activerecord/MIT-LICENSE",
+    "sha256": "49d631ffc4d5030497f77944a6af865d03a1253d26b5c513e2a024b0ba6583d7"
+  },
+  {
+    "file": "licenses/drizzle-pr5074-source.txt",
+    "url": "https://raw.githubusercontent.com/ZerGo0/drizzle-orm/72e975734e73d4bc7f4c80a7b4f411a4ff60437e/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+  },
+  {
+    "file": "licenses/MIT.txt",
+    "url": "https://raw.githubusercontent.com/spdx/license-list-data/31846481de7ea17d92f2f46fad76abe58b2e9bb0/text/MIT.txt",
+    "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5"
+  },
+  {
+    "file": "licenses/ISC.txt",
+    "url": "https://raw.githubusercontent.com/spdx/license-list-data/31846481de7ea17d92f2f46fad76abe58b2e9bb0/text/ISC.txt",
+    "sha256": "521c6f0ed8e64736684f89843d16a4df6b4b7449acbcfc6ca6630a3037ca8c53"
+  },
+  {
+    "file": "licenses/PSF-2.0.txt",
+    "url": "https://raw.githubusercontent.com/spdx/license-list-data/31846481de7ea17d92f2f46fad76abe58b2e9bb0/text/PSF-2.0.txt",
+    "sha256": "ab745c5061d1dea43a3885e5b4b6befc7e983954954775c5736debeefcdfd89b"
+  }
+]

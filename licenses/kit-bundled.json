@@ -1,0 +1,1599 @@
+[
+  {
+    "package": "@aws-sdk/client-rds-data",
+    "version": "3.1148.0",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "clients/client-rds-data"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/client-rds-data/-/client-rds-data-3.1148.0.tgz",
+    "integrity": "sha512-26Q9gjXtFYrw8wjy7xQHYfhA5vHqbo1ESOOrqG6m6HXJhfHtxBPl6qZpUk0tqdCJHpe6TYT8OmNn/VYLyFiEUQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__client-rds-data-3.1148.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "e345c2ee7df4446e739de7b91535f0c10ddcd909b9753889e943ee637b05db8c"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/core",
+    "version": "3.978.1",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/core"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/core/-/core-3.978.1.tgz",
+    "integrity": "sha512-LbY9aGsEiznDWmUc30Nwv3aIX/+dbwTx8KfS0yOC3NPYMO+O91e6jkT1azf34FwjOndq8/Q+RcVVZz5xnerwdg==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__core-3.978.1/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "edea91454b811f127fbdea3d86f378f6719bd372ed440abf82b232f6fca06c3d"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/credential-provider-env",
+    "version": "3.972.72",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/credential-provider-env"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-env/-/credential-provider-env-3.972.72.tgz",
+    "integrity": "sha512-xTKO/FWJPozTIXbozVnVGoNBhaGba8TBcx+KyUjRVeOlXE+dUc7GTR1cLvu0uTdIdmemzaFbqqCshXeZA1fZew==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__credential-provider-env-3.972.72/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d82ceb8cbd004a2d4834085c557d55459f528e30268d95159ee1e4030a693a6e"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/credential-provider-http",
+    "version": "3.972.74",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/credential-provider-http"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-http/-/credential-provider-http-3.972.74.tgz",
+    "integrity": "sha512-u91E/hT8f4d1xy0Jl7VG4nVKJ3lxbrZkoBTeSVoJdWBiSEUMwMS/9+e0H/aJVQV//Lt5wuzP+E69v4aRSsNTmw==",
+    "files": [],
+    "revision": null,
+    "metadata_url": "https://registry.npmjs.org/%40aws-sdk%2Fcredential-provider-http/3.972.74",
+    "notice_status": "Exact published archive checked: no LICENSE, LICENCE, COPYING, NOTICE or COPYRIGHT file is published. No copyright holder inferred.",
+    "license_text": "licenses/drizzle-pr5074-source.txt",
+    "archive_review": {
+      "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-http/-/credential-provider-http-3.972.74.tgz",
+      "sha256": "d721daed3118c28ce3c6af624695e0872ae4baa763ba8066a3ded282113cd1a5",
+      "integrity_verified": true,
+      "members": [
+        "package/README.md",
+        "package/dist-cjs/index.js",
+        "package/dist-es/fromHttp/checkUrl.js",
+        "package/dist-es/fromHttp/fromHttp.browser.js",
+        "package/dist-es/fromHttp/fromHttp.js",
+        "package/dist-es/fromHttp/fromHttpTypes.js",
+        "package/dist-es/fromHttp/requestHelpers.js",
+        "package/dist-es/fromHttp/retry-wrapper.js",
+        "package/dist-es/index.browser.js",
+        "package/dist-es/index.js",
+        "package/dist-types/fromHttp/checkUrl.d.ts",
+        "package/dist-types/fromHttp/fromHttp.browser.d.ts",
+        "package/dist-types/fromHttp/fromHttp.d.ts",
+        "package/dist-types/fromHttp/fromHttpTypes.d.ts",
+        "package/dist-types/fromHttp/requestHelpers.d.ts",
+        "package/dist-types/fromHttp/retry-wrapper.d.ts",
+        "package/dist-types/index.browser.d.ts",
+        "package/dist-types/index.d.ts",
+        "package/dist-types/ts3.4/fromHttp/checkUrl.d.ts",
+        "package/dist-types/ts3.4/fromHttp/fromHttp.browser.d.ts",
+        "package/dist-types/ts3.4/fromHttp/fromHttp.d.ts",
+        "package/dist-types/ts3.4/fromHttp/fromHttpTypes.d.ts",
+        "package/dist-types/ts3.4/fromHttp/requestHelpers.d.ts",
+        "package/dist-types/ts3.4/fromHttp/retry-wrapper.d.ts",
+        "package/dist-types/ts3.4/index.browser.d.ts",
+        "package/dist-types/ts3.4/index.d.ts",
+        "package/package.json"
+      ],
+      "notice_members": [],
+      "readme_license_sections": []
+    }
+  },
+  {
+    "package": "@aws-sdk/credential-provider-ini",
+    "version": "3.973.17",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/credential-provider-ini"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-ini/-/credential-provider-ini-3.973.17.tgz",
+    "integrity": "sha512-ged4KXdBkvIC81bLvNHHuQKdKak/VXhQTR1NWYTTqW0474nlmsxy9O/vlgTIohDDWH3xpBdtVMZRyjb+DnocDA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__credential-provider-ini-3.973.17/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d82ceb8cbd004a2d4834085c557d55459f528e30268d95159ee1e4030a693a6e"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/credential-provider-login",
+    "version": "3.972.79",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/credential-provider-login"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-login/-/credential-provider-login-3.972.79.tgz",
+    "integrity": "sha512-L+Z85anONJd8MaiuraO4wRxATCdEejBZ3K3eymzWI5JPXa9sOS9CkIm72PBKqXKX+Z9p9NGMX5AIMXm0LEflgw==",
+    "files": [],
+    "revision": null,
+    "metadata_url": "https://registry.npmjs.org/%40aws-sdk%2Fcredential-provider-login/3.972.79",
+    "notice_status": "Exact published archive checked: no LICENSE, LICENCE, COPYING, NOTICE or COPYRIGHT file is published. No copyright holder inferred.",
+    "license_text": "licenses/drizzle-pr5074-source.txt",
+    "archive_review": {
+      "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-login/-/credential-provider-login-3.972.79.tgz",
+      "sha256": "a6e6626b97e1799f77bdbaa384e32bfe0334343088c2e58c259116d48f64dfe5",
+      "integrity_verified": true,
+      "members": [
+        "package/README.md",
+        "package/dist-cjs/index.js",
+        "package/dist-es/LoginCredentialsFetcher.js",
+        "package/dist-es/fromLoginCredentials.js",
+        "package/dist-es/index.js",
+        "package/dist-es/types.js",
+        "package/dist-types/LoginCredentialsFetcher.d.ts",
+        "package/dist-types/fromLoginCredentials.d.ts",
+        "package/dist-types/index.d.ts",
+        "package/dist-types/ts3.4/LoginCredentialsFetcher.d.ts",
+        "package/dist-types/ts3.4/fromLoginCredentials.d.ts",
+        "package/dist-types/ts3.4/index.d.ts",
+        "package/dist-types/ts3.4/types.d.ts",
+        "package/dist-types/types.d.ts",
+        "package/package.json"
+      ],
+      "notice_members": [],
+      "readme_license_sections": []
+    }
+  },
+  {
+    "package": "@aws-sdk/credential-provider-node",
+    "version": "3.972.84",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/credential-provider-node"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-node/-/credential-provider-node-3.972.84.tgz",
+    "integrity": "sha512-oHt854odINVwzwsh+c5x69j0ajm4DbqqqVJ+O1ECsCIZeMDAbzFpXItaqP7UZstJj/ATdTk/KFSH0LaNAgV+kA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__credential-provider-node-3.972.84/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d82ceb8cbd004a2d4834085c557d55459f528e30268d95159ee1e4030a693a6e"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/credential-provider-process",
+    "version": "3.972.72",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/credential-provider-process"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-process/-/credential-provider-process-3.972.72.tgz",
+    "integrity": "sha512-rLIp2xbMjX/k9/od7APpqq1ZgXXnV0pOL1Th3ZsL8Wu0TRtBsDTVS8iPqcfRFcHakFxPvR04OSTv2ka2qOb/2A==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__credential-provider-process-3.972.72/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "2ef1e48ea743d9c82313e6887858f7c1feaddd636f5a3f43926aab0143e67ebd"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/credential-provider-sso",
+    "version": "3.973.16",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/credential-provider-sso"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-sso/-/credential-provider-sso-3.973.16.tgz",
+    "integrity": "sha512-IGihaJfFZYacJJr/odqILCoK7W/mvrZ7cuK7ECn3sAu4vLC6u0V8bS7mCGbdugJ8Aum2tnvqmx0F2MRFp2rn9g==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__credential-provider-sso-3.973.16/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "2ef1e48ea743d9c82313e6887858f7c1feaddd636f5a3f43926aab0143e67ebd"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/credential-provider-web-identity",
+    "version": "3.972.78",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/credential-provider-web-identity"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/credential-provider-web-identity/-/credential-provider-web-identity-3.972.78.tgz",
+    "integrity": "sha512-/y9WvNtlcPBGLR0qc1a+9J/xtYZfVczvLUOuXaVWylzttH7ewsxwHtjmiJSolNrVSDorIxHGHMU61CbonRkmwA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__credential-provider-web-identity-3.972.78/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "2ef1e48ea743d9c82313e6887858f7c1feaddd636f5a3f43926aab0143e67ebd"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/nested-clients",
+    "version": "3.997.46",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages/nested-clients"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/nested-clients/-/nested-clients-3.997.46.tgz",
+    "integrity": "sha512-oRxtBcka/JGHGs9l9p9IVajGoTP8vTPmoAzdHGy4Qcy9P5vPnDf6nhIeM/COQNY9k/OahImTRaLkHftoXvfcmQ==",
+    "files": [],
+    "revision": null,
+    "metadata_url": "https://registry.npmjs.org/%40aws-sdk%2Fnested-clients/3.997.46",
+    "notice_status": "Exact published archive checked: no LICENSE, LICENCE, COPYING, NOTICE or COPYRIGHT file is published. No copyright holder inferred.",
+    "license_text": "licenses/drizzle-pr5074-source.txt",
+    "archive_review": {
+      "url": "https://registry.npmjs.org/@aws-sdk/nested-clients/-/nested-clients-3.997.46.tgz",
+      "sha256": "32c9bfdcdd100106fb86e9c8aae6835030cfde6219acd02c03b547ac7c64a72a",
+      "integrity_verified": true,
+      "members": [
+        "package/README.md",
+        "package/cognito-identity.d.ts",
+        "package/cognito-identity.js",
+        "package/dist-cjs/index.js",
+        "package/dist-cjs/submodules/cognito-identity/index.js",
+        "package/dist-cjs/submodules/signin/index.js",
+        "package/dist-cjs/submodules/sso-oidc/index.js",
+        "package/dist-cjs/submodules/sso/index.js",
+        "package/dist-cjs/submodules/sts/index.js",
+        "package/dist-es/index.js",
+        "package/dist-es/submodules/cognito-identity/CognitoIdentity.js",
+        "package/dist-es/submodules/cognito-identity/CognitoIdentityClient.js",
+        "package/dist-es/submodules/cognito-identity/auth/httpAuthExtensionConfiguration.js",
+        "package/dist-es/submodules/cognito-identity/auth/httpAuthSchemeProvider.js",
+        "package/dist-es/submodules/cognito-identity/commandBuilder.js",
+        "package/dist-es/submodules/cognito-identity/commands/GetCredentialsForIdentityCommand.js",
+        "package/dist-es/submodules/cognito-identity/commands/GetIdCommand.js",
+        "package/dist-es/submodules/cognito-identity/commands/index.js",
+        "package/dist-es/submodules/cognito-identity/endpoint/EndpointParameters.js",
+        "package/dist-es/submodules/cognito-identity/endpoint/bdd.js",
+        "package/dist-es/submodules/cognito-identity/endpoint/endpointResolver.js",
+        "package/dist-es/submodules/cognito-identity/extensionConfiguration.js",
+        "package/dist-es/submodules/cognito-identity/index.js",
+        "package/dist-es/submodules/cognito-identity/models/CognitoIdentityServiceException.js",
+        "package/dist-es/submodules/cognito-identity/models/errors.js",
+        "package/dist-es/submodules/cognito-identity/models/models_0.js",
+        "package/dist-es/submodules/cognito-identity/runtimeConfig.browser.js",
+        "package/dist-es/submodules/cognito-identity/runtimeConfig.js",
+        "package/dist-es/submodules/cognito-identity/runtimeConfig.native.js",
+        "package/dist-es/submodules/cognito-identity/runtimeConfig.shared.js",
+        "package/dist-es/submodules/cognito-identity/runtimeExtensions.js",
+        "package/dist-es/submodules/cognito-identity/schemas/schemas_0.js",
+        "package/dist-es/submodules/signin/Signin.js",
+        "package/dist-es/submodules/signin/SigninClient.js",
+        "package/dist-es/submodules/signin/auth/httpAuthExtensionConfiguration.js",
+        "package/dist-es/submodules/signin/auth/httpAuthSchemeProvider.js",
+        "package/dist-es/submodules/signin/commandBuilder.js",
+        "package/dist-es/submodules/signin/commands/CreateOAuth2TokenCommand.js",
+        "package/dist-es/submodules/signin/commands/CreateOAuth2TokenWithIAMCommand.js",
+        "package/dist-es/submodules/signin/commands/index.js",
+        "package/dist-es/submodules/signin/endpoint/EndpointParameters.js",
+        "package/dist-es/submodules/signin/endpoint/bdd.js",
+        "package/dist-es/submodules/signin/endpoint/endpointResolver.js",
+        "package/dist-es/submodules/signin/extensionConfiguration.js",
+        "package/dist-es/submodules/signin/index.js",
+        "package/dist-es/submodules/signin/models/SigninServiceException.js",
+        "package/dist-es/submodules/signin/models/enums.js",
+        "package/dist-es/submodules/signin/models/errors.js",
+        "package/dist-es/submodules/signin/models/models_0.js",
+        "package/dist-es/submodules/signin/runtimeConfig.browser.js",
+        "package/dist-es/submodules/signin/runtimeConfig.js",
+        "package/dist-es/submodules/signin/runtimeConfig.native.js",
+        "package/dist-es/submodules/signin/runtimeConfig.shared.js",
+        "package/dist-es/submodules/signin/runtimeExtensions.js",
+        "package/dist-es/submodules/signin/schemas/schemas_0.js",
+        "package/dist-es/submodules/sso-oidc/SSOOIDC.js",
+        "package/dist-es/submodules/sso-oidc/SSOOIDCClient.js",
+        "package/dist-es/submodules/sso-oidc/auth/httpAuthExtensionConfiguration.js",
+        "package/dist-es/submodules/sso-oidc/auth/httpAuthSchemeProvider.js",
+        "package/dist-es/submodules/sso-oidc/commandBuilder.js",
+        "package/dist-es/submodules/sso-oidc/commands/CreateTokenCommand.js",
+        "package/dist-es/submodules/sso-oidc/commands/index.js",
+        "package/dist-es/submodules/sso-oidc/endpoint/EndpointParameters.js",
+        "package/dist-es/submodules/sso-oidc/endpoint/bdd.js",
+        "package/dist-es/submodules/sso-oidc/endpoint/endpointResolver.js",
+        "package/dist-es/submodules/sso-oidc/extensionConfiguration.js",
+        "package/dist-es/submodules/sso-oidc/index.js",
+        "package/dist-es/submodules/sso-oidc/models/SSOOIDCServiceException.js",
+        "package/dist-es/submodules/sso-oidc/models/enums.js",
+        "package/dist-es/submodules/sso-oidc/models/errors.js",
+        "package/dist-es/submodules/sso-oidc/models/models_0.js",
+        "package/dist-es/submodules/sso-oidc/runtimeConfig.browser.js",
+        "package/dist-es/submodules/sso-oidc/runtimeConfig.js",
+        "package/dist-es/submodules/sso-oidc/runtimeConfig.native.js",
+        "package/dist-es/submodules/sso-oidc/runtimeConfig.shared.js",
+        "package/dist-es/submodules/sso-oidc/runtimeExtensions.js",
+        "package/dist-es/submodules/sso-oidc/schemas/schemas_0.js",
+        "package/dist-es/submodules/sso/SSO.js",
+        "package/dist-es/submodules/sso/SSOClient.js",
+        "package/dist-es/submodules/sso/auth/httpAuthExtensionConfiguration.js",
+        "package/dist-es/submodules/sso/auth/httpAuthSchemeProvider.js",
+        "package/dist-es/submodules/sso/commandBuilder.js",
+        "package/dist-es/submodules/sso/commands/GetRoleCredentialsCommand.js",
+        "package/dist-es/submodules/sso/commands/index.js",
+        "package/dist-es/submodules/sso/endpoint/EndpointParameters.js",
+        "package/dist-es/submodules/sso/endpoint/bdd.js",
+        "package/dist-es/submodules/sso/endpoint/endpointResolver.js",
+        "package/dist-es/submodules/sso/extensionConfiguration.js",
+        "package/dist-es/submodules/sso/index.js",
+        "package/dist-es/submodules/sso/models/SSOServiceException.js",
+        "package/dist-es/submodules/sso/models/errors.js",
+        "package/dist-es/submodules/sso/models/models_0.js",
+        "package/dist-es/submodules/sso/runtimeConfig.browser.js",
+        "package/dist-es/submodules/sso/runtimeConfig.js",
+        "package/dist-es/submodules/sso/runtimeConfig.native.js",
+        "package/dist-es/submodules/sso/runtimeConfig.shared.js",
+        "package/dist-es/submodules/sso/runtimeExtensions.js",
+        "package/dist-es/submodules/sso/schemas/schemas_0.js",
+        "package/dist-es/submodules/sts/STS.js",
+        "package/dist-es/submodules/sts/STSClient.js",
+        "package/dist-es/submodules/sts/auth/httpAuthExtensionConfiguration.js",
+        "package/dist-es/submodules/sts/auth/httpAuthSchemeProvider.js",
+        "package/dist-es/submodules/sts/commandBuilder.js",
+        "package/dist-es/submodules/sts/commands/AssumeRoleCommand.js",
+        "package/dist-es/submodules/sts/commands/AssumeRoleWithWebIdentityCommand.js",
+        "package/dist-es/submodules/sts/commands/index.js",
+        "package/dist-es/submodules/sts/defaultRoleAssumers.js",
+        "package/dist-es/submodules/sts/defaultStsRoleAssumers.js",
+        "package/dist-es/submodules/sts/endpoint/EndpointParameters.js",
+        "package/dist-es/submodules/sts/endpoint/bdd.js",
+        "package/dist-es/submodules/sts/endpoint/endpointResolver.js",
+        "package/dist-es/submodules/sts/extensionConfiguration.js",
+        "package/dist-es/submodules/sts/index.js",
+        "package/dist-es/submodules/sts/models/STSServiceException.js",
+        "package/dist-es/submodules/sts/models/errors.js",
+        "package/dist-es/submodules/sts/models/models_0.js",
+        "package/dist-es/submodules/sts/runtimeConfig.browser.js",
+        "package/dist-es/submodules/sts/runtimeConfig.js",
+        "package/dist-es/submodules/sts/runtimeConfig.native.js",
+        "package/dist-es/submodules/sts/runtimeConfig.shared.js",
+        "package/dist-es/submodules/sts/runtimeExtensions.js",
+        "package/dist-es/submodules/sts/schemas/schemas_0.js",
+        "package/dist-types/index.d.ts",
+        "package/dist-types/submodules/cognito-identity/CognitoIdentity.d.ts",
+        "package/dist-types/submodules/cognito-identity/CognitoIdentityClient.d.ts",
+        "package/dist-types/submodules/cognito-identity/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/submodules/cognito-identity/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/submodules/cognito-identity/commandBuilder.d.ts",
+        "package/dist-types/submodules/cognito-identity/commands/GetCredentialsForIdentityCommand.d.ts",
+        "package/dist-types/submodules/cognito-identity/commands/GetIdCommand.d.ts",
+        "package/dist-types/submodules/cognito-identity/commands/index.d.ts",
+        "package/dist-types/submodules/cognito-identity/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/submodules/cognito-identity/endpoint/bdd.d.ts",
+        "package/dist-types/submodules/cognito-identity/endpoint/endpointResolver.d.ts",
+        "package/dist-types/submodules/cognito-identity/extensionConfiguration.d.ts",
+        "package/dist-types/submodules/cognito-identity/index.d.ts",
+        "package/dist-types/submodules/cognito-identity/models/CognitoIdentityServiceException.d.ts",
+        "package/dist-types/submodules/cognito-identity/models/errors.d.ts",
+        "package/dist-types/submodules/cognito-identity/models/models_0.d.ts",
+        "package/dist-types/submodules/cognito-identity/runtimeConfig.browser.d.ts",
+        "package/dist-types/submodules/cognito-identity/runtimeConfig.d.ts",
+        "package/dist-types/submodules/cognito-identity/runtimeConfig.native.d.ts",
+        "package/dist-types/submodules/cognito-identity/runtimeConfig.shared.d.ts",
+        "package/dist-types/submodules/cognito-identity/runtimeExtensions.d.ts",
+        "package/dist-types/submodules/cognito-identity/schemas/schemas_0.d.ts",
+        "package/dist-types/submodules/signin/Signin.d.ts",
+        "package/dist-types/submodules/signin/SigninClient.d.ts",
+        "package/dist-types/submodules/signin/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/submodules/signin/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/submodules/signin/commandBuilder.d.ts",
+        "package/dist-types/submodules/signin/commands/CreateOAuth2TokenCommand.d.ts",
+        "package/dist-types/submodules/signin/commands/CreateOAuth2TokenWithIAMCommand.d.ts",
+        "package/dist-types/submodules/signin/commands/index.d.ts",
+        "package/dist-types/submodules/signin/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/submodules/signin/endpoint/bdd.d.ts",
+        "package/dist-types/submodules/signin/endpoint/endpointResolver.d.ts",
+        "package/dist-types/submodules/signin/extensionConfiguration.d.ts",
+        "package/dist-types/submodules/signin/index.d.ts",
+        "package/dist-types/submodules/signin/models/SigninServiceException.d.ts",
+        "package/dist-types/submodules/signin/models/enums.d.ts",
+        "package/dist-types/submodules/signin/models/errors.d.ts",
+        "package/dist-types/submodules/signin/models/models_0.d.ts",
+        "package/dist-types/submodules/signin/runtimeConfig.browser.d.ts",
+        "package/dist-types/submodules/signin/runtimeConfig.d.ts",
+        "package/dist-types/submodules/signin/runtimeConfig.native.d.ts",
+        "package/dist-types/submodules/signin/runtimeConfig.shared.d.ts",
+        "package/dist-types/submodules/signin/runtimeExtensions.d.ts",
+        "package/dist-types/submodules/signin/schemas/schemas_0.d.ts",
+        "package/dist-types/submodules/sso-oidc/SSOOIDC.d.ts",
+        "package/dist-types/submodules/sso-oidc/SSOOIDCClient.d.ts",
+        "package/dist-types/submodules/sso-oidc/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/submodules/sso-oidc/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/submodules/sso-oidc/commandBuilder.d.ts",
+        "package/dist-types/submodules/sso-oidc/commands/CreateTokenCommand.d.ts",
+        "package/dist-types/submodules/sso-oidc/commands/index.d.ts",
+        "package/dist-types/submodules/sso-oidc/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/submodules/sso-oidc/endpoint/bdd.d.ts",
+        "package/dist-types/submodules/sso-oidc/endpoint/endpointResolver.d.ts",
+        "package/dist-types/submodules/sso-oidc/extensionConfiguration.d.ts",
+        "package/dist-types/submodules/sso-oidc/index.d.ts",
+        "package/dist-types/submodules/sso-oidc/models/SSOOIDCServiceException.d.ts",
+        "package/dist-types/submodules/sso-oidc/models/enums.d.ts",
+        "package/dist-types/submodules/sso-oidc/models/errors.d.ts",
+        "package/dist-types/submodules/sso-oidc/models/models_0.d.ts",
+        "package/dist-types/submodules/sso-oidc/runtimeConfig.browser.d.ts",
+        "package/dist-types/submodules/sso-oidc/runtimeConfig.d.ts",
+        "package/dist-types/submodules/sso-oidc/runtimeConfig.native.d.ts",
+        "package/dist-types/submodules/sso-oidc/runtimeConfig.shared.d.ts",
+        "package/dist-types/submodules/sso-oidc/runtimeExtensions.d.ts",
+        "package/dist-types/submodules/sso-oidc/schemas/schemas_0.d.ts",
+        "package/dist-types/submodules/sso/SSO.d.ts",
+        "package/dist-types/submodules/sso/SSOClient.d.ts",
+        "package/dist-types/submodules/sso/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/submodules/sso/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/submodules/sso/commandBuilder.d.ts",
+        "package/dist-types/submodules/sso/commands/GetRoleCredentialsCommand.d.ts",
+        "package/dist-types/submodules/sso/commands/index.d.ts",
+        "package/dist-types/submodules/sso/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/submodules/sso/endpoint/bdd.d.ts",
+        "package/dist-types/submodules/sso/endpoint/endpointResolver.d.ts",
+        "package/dist-types/submodules/sso/extensionConfiguration.d.ts",
+        "package/dist-types/submodules/sso/index.d.ts",
+        "package/dist-types/submodules/sso/models/SSOServiceException.d.ts",
+        "package/dist-types/submodules/sso/models/errors.d.ts",
+        "package/dist-types/submodules/sso/models/models_0.d.ts",
+        "package/dist-types/submodules/sso/runtimeConfig.browser.d.ts",
+        "package/dist-types/submodules/sso/runtimeConfig.d.ts",
+        "package/dist-types/submodules/sso/runtimeConfig.native.d.ts",
+        "package/dist-types/submodules/sso/runtimeConfig.shared.d.ts",
+        "package/dist-types/submodules/sso/runtimeExtensions.d.ts",
+        "package/dist-types/submodules/sso/schemas/schemas_0.d.ts",
+        "package/dist-types/submodules/sts/STS.d.ts",
+        "package/dist-types/submodules/sts/STSClient.d.ts",
+        "package/dist-types/submodules/sts/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/submodules/sts/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/submodules/sts/commandBuilder.d.ts",
+        "package/dist-types/submodules/sts/commands/AssumeRoleCommand.d.ts",
+        "package/dist-types/submodules/sts/commands/AssumeRoleWithWebIdentityCommand.d.ts",
+        "package/dist-types/submodules/sts/commands/index.d.ts",
+        "package/dist-types/submodules/sts/defaultRoleAssumers.d.ts",
+        "package/dist-types/submodules/sts/defaultStsRoleAssumers.d.ts",
+        "package/dist-types/submodules/sts/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/submodules/sts/endpoint/bdd.d.ts",
+        "package/dist-types/submodules/sts/endpoint/endpointResolver.d.ts",
+        "package/dist-types/submodules/sts/extensionConfiguration.d.ts",
+        "package/dist-types/submodules/sts/index.d.ts",
+        "package/dist-types/submodules/sts/models/STSServiceException.d.ts",
+        "package/dist-types/submodules/sts/models/errors.d.ts",
+        "package/dist-types/submodules/sts/models/models_0.d.ts",
+        "package/dist-types/submodules/sts/runtimeConfig.browser.d.ts",
+        "package/dist-types/submodules/sts/runtimeConfig.d.ts",
+        "package/dist-types/submodules/sts/runtimeConfig.native.d.ts",
+        "package/dist-types/submodules/sts/runtimeConfig.shared.d.ts",
+        "package/dist-types/submodules/sts/runtimeExtensions.d.ts",
+        "package/dist-types/submodules/sts/schemas/schemas_0.d.ts",
+        "package/dist-types/ts3.4/index.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/CognitoIdentity.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/CognitoIdentityClient.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/commandBuilder.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/commands/GetCredentialsForIdentityCommand.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/commands/GetIdCommand.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/commands/index.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/endpoint/bdd.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/endpoint/endpointResolver.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/extensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/index.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/models/CognitoIdentityServiceException.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/models/errors.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/models/models_0.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/runtimeConfig.browser.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/runtimeConfig.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/runtimeConfig.native.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/runtimeConfig.shared.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/runtimeExtensions.d.ts",
+        "package/dist-types/ts3.4/submodules/cognito-identity/schemas/schemas_0.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/Signin.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/SigninClient.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/commandBuilder.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/commands/CreateOAuth2TokenCommand.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/commands/CreateOAuth2TokenWithIAMCommand.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/commands/index.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/endpoint/bdd.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/endpoint/endpointResolver.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/extensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/index.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/models/SigninServiceException.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/models/enums.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/models/errors.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/models/models_0.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/runtimeConfig.browser.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/runtimeConfig.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/runtimeConfig.native.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/runtimeConfig.shared.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/runtimeExtensions.d.ts",
+        "package/dist-types/ts3.4/submodules/signin/schemas/schemas_0.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/SSOOIDC.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/SSOOIDCClient.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/commandBuilder.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/commands/CreateTokenCommand.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/commands/index.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/endpoint/bdd.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/endpoint/endpointResolver.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/extensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/index.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/models/SSOOIDCServiceException.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/models/enums.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/models/errors.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/models/models_0.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/runtimeConfig.browser.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/runtimeConfig.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/runtimeConfig.native.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/runtimeConfig.shared.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/runtimeExtensions.d.ts",
+        "package/dist-types/ts3.4/submodules/sso-oidc/schemas/schemas_0.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/SSO.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/SSOClient.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/commandBuilder.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/commands/GetRoleCredentialsCommand.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/commands/index.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/endpoint/bdd.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/endpoint/endpointResolver.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/extensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/index.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/models/SSOServiceException.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/models/errors.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/models/models_0.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/runtimeConfig.browser.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/runtimeConfig.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/runtimeConfig.native.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/runtimeConfig.shared.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/runtimeExtensions.d.ts",
+        "package/dist-types/ts3.4/submodules/sso/schemas/schemas_0.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/STS.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/STSClient.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/auth/httpAuthExtensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/auth/httpAuthSchemeProvider.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/commandBuilder.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/commands/AssumeRoleCommand.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/commands/AssumeRoleWithWebIdentityCommand.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/commands/index.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/defaultRoleAssumers.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/defaultStsRoleAssumers.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/endpoint/EndpointParameters.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/endpoint/bdd.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/endpoint/endpointResolver.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/extensionConfiguration.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/index.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/models/STSServiceException.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/models/errors.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/models/models_0.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/runtimeConfig.browser.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/runtimeConfig.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/runtimeConfig.native.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/runtimeConfig.shared.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/runtimeExtensions.d.ts",
+        "package/dist-types/ts3.4/submodules/sts/schemas/schemas_0.d.ts",
+        "package/package.json",
+        "package/signin.d.ts",
+        "package/signin.js",
+        "package/sso-oidc.d.ts",
+        "package/sso-oidc.js",
+        "package/sso.d.ts",
+        "package/sso.js",
+        "package/sts.d.ts",
+        "package/sts.js"
+      ],
+      "notice_members": [],
+      "readme_license_sections": []
+    }
+  },
+  {
+    "package": "@aws-sdk/signature-v4-multi-region",
+    "version": "3.996.47",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages/signature-v4-multi-region"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/signature-v4-multi-region/-/signature-v4-multi-region-3.996.47.tgz",
+    "integrity": "sha512-Zk08macMvQTHzQJCLJVkOlviVoqwYMrpXv4lmLN7b7sAbiMoOK7Go0NYdR5UeF+MW8LIbRmwrNy9u/5VvX1U5g==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__signature-v4-multi-region-3.996.47/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "07364a5f7d0177a59a05a0002187431f8f899320983c0dc049d72df015e8064c"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/token-providers",
+    "version": "3.1138.0",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages/token-providers"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/token-providers/-/token-providers-3.1138.0.tgz",
+    "integrity": "sha512-GpyAr0DD63YOEmYFM6Df+gJuIgC92MMTiBK4FTKfxii5MJ9ge20epR7LyroulscYlG89J+ZB2ivFDPjvfQhzdw==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__token-providers-3.1138.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d82ceb8cbd004a2d4834085c557d55459f528e30268d95159ee1e4030a693a6e"
+      }
+    ]
+  },
+  {
+    "package": "@aws-sdk/xml-builder",
+    "version": "3.972.41",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/aws/aws-sdk-js-v3.git",
+      "directory": "packages-internal/xml-builder"
+    },
+    "url": "https://registry.npmjs.org/@aws-sdk/xml-builder/-/xml-builder-3.972.41.tgz",
+    "integrity": "sha512-ctjVSyCMegrWfXlx6VqzSBFI6UqmQ5ZlnfMhdLIiWmhoH8UAQxSCP5N3OpG7X3k4LnS7ou74C4mt20+bfTW2aQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws-sdk__xml-builder-3.972.41/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d82ceb8cbd004a2d4834085c557d55459f528e30268d95159ee1e4030a693a6e"
+      }
+    ]
+  },
+  {
+    "package": "@aws/lambda-invoke-store",
+    "version": "0.3.0",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/awslabs/aws-lambda-invoke-store.git"
+    },
+    "url": "https://registry.npmjs.org/@aws/lambda-invoke-store/-/lambda-invoke-store-0.3.0.tgz",
+    "integrity": "sha512-sl4Bm6yiMNYrZKkqqDFWN0UfnWhlS8ivKxrYl+6t0gCLrqr8y3B2IqZZbFRkfaVVp7C/baApyh71P+LeE1A2sQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@aws__lambda-invoke-store-0.3.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+      }
+    ]
+  },
+  {
+    "package": "@drizzle-team/brocli",
+    "version": "0.10.2",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/drizzle-team/brocli.git"
+    },
+    "url": "https://registry.npmjs.org/@drizzle-team/brocli/-/brocli-0.10.2.tgz",
+    "integrity": "sha512-z33Il7l5dKjUgGULTqBsQBQwckHh5AbIuxhdsIxDDiZAzBOrZO6q9ogcWC65kU382AfynTfgNumVcNIjuIua6w==",
+    "files": [],
+    "revision": null,
+    "metadata_url": "https://registry.npmjs.org/%40drizzle-team%2Fbrocli/0.10.2",
+    "notice_status": "Exact published archive checked: no LICENSE, LICENCE, COPYING, NOTICE or COPYRIGHT file is published. No copyright holder inferred.",
+    "license_text": "licenses/drizzle-pr5074-source.txt",
+    "archive_review": {
+      "url": "https://registry.npmjs.org/@drizzle-team/brocli/-/brocli-0.10.2.tgz",
+      "sha256": "154d5e631b08243f7fe12216d7789f71bec950b58c7ea91c47c9f08b72db2fe6",
+      "integrity_verified": true,
+      "members": [
+        "package/README.md",
+        "package/index.cjs",
+        "package/index.cjs.map",
+        "package/index.d.cts",
+        "package/index.d.ts",
+        "package/index.js",
+        "package/index.js.map",
+        "package/package.json"
+      ],
+      "notice_members": [],
+      "readme_license_sections": []
+    }
+  },
+  {
+    "package": "@ewoudenberg/difflib",
+    "version": "0.1.0",
+    "license": "PSF-2.0",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/ewoudenberg/difflib.js.git"
+    },
+    "url": "https://registry.npmjs.org/@ewoudenberg/difflib/-/difflib-0.1.0.tgz",
+    "integrity": "sha512-OU5P5mJyD3OoWYMWY+yIgwvgNS9cFAU10f+DDuvtogcWQOoJIsQ4Hy2McSfUfhKjq8L0FuWVb4Rt7kgA+XK86A==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@ewoudenberg__difflib-0.1.0/LICENSE-from-README.md",
+        "url": "https://raw.githubusercontent.com/ewoudenberg/difflib.js/18759e19897526e19163b071693b14e679ecc16e/README.md",
+        "extraction": "License section to end of README",
+        "sha256": "b30a2a7ae2151abfeccda83710ffe758a2572d081f1bcad567453a3243afef36"
+      }
+    ],
+    "revision": "18759e19897526e19163b071693b14e679ecc16e",
+    "metadata_url": "https://registry.npmjs.org/%40ewoudenberg%2Fdifflib/0.1.0",
+    "modifications": "Upstream JavaScript port of Python difflib; bundled without harness source edits."
+  },
+  {
+    "package": "@hono/node-server",
+    "version": "1.19.17",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/honojs/node-server.git"
+    },
+    "url": "https://registry.npmjs.org/@hono/node-server/-/node-server-1.19.17.tgz",
+    "integrity": "sha512-dSneS5qhiauZWGDCeK4o695Xd9nUNjviSZCMQrj10eetr8Uln1ucn6bbphOM6UynAMMtNIzZNSpL9vnASJwrPQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@hono__node-server-1.19.17/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "6895190430d809c4c57a7582ecc2f99acbc2ea39a5dfad20262a41d5b3e91733"
+      }
+    ]
+  },
+  {
+    "package": "@hono/zod-validator",
+    "version": "0.2.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/honojs/middleware.git"
+    },
+    "url": "https://registry.npmjs.org/@hono/zod-validator/-/zod-validator-0.2.2.tgz",
+    "integrity": "sha512-dSDxaPV70Py8wuIU2QNpoVEIOSzSXZ/6/B/h4xA7eOMz7+AarKTSGV8E6QwrdcCbBLkpqfJ4Q2TmBO0eP1tCBQ==",
+    "files": [],
+    "revision": "1b641bee14a3f9294640834c3ce6de7298e2f255",
+    "metadata_url": "https://registry.npmjs.org/%40hono%2Fzod-validator/0.2.2",
+    "notice_status": "Exact published archive checked: no LICENSE, LICENCE, COPYING, NOTICE or COPYRIGHT file is published. No copyright holder inferred.",
+    "license_text": "licenses/MIT.txt",
+    "archive_review": {
+      "url": "https://registry.npmjs.org/@hono/zod-validator/-/zod-validator-0.2.2.tgz",
+      "sha256": "218a2d39f99983cd0afe9e69eaddb05ad2b71a544425bedcf3f796654846391c",
+      "integrity_verified": true,
+      "members": [
+        "package/README.md",
+        "package/dist/cjs/index.js",
+        "package/dist/cjs/package.json",
+        "package/dist/esm/index.d.ts",
+        "package/dist/esm/index.js",
+        "package/package.json"
+      ],
+      "notice_members": [],
+      "readme_license_sections": [
+        {
+          "member": "package/README.md",
+          "text": "## License\n\nMIT\n"
+        }
+      ]
+    }
+  },
+  {
+    "package": "@petamoriken/float16",
+    "version": "3.9.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/petamoriken/float16.git"
+    },
+    "url": "https://registry.npmjs.org/@petamoriken/float16/-/float16-3.9.3.tgz",
+    "integrity": "sha512-8awtpHXCx/bNpFt4mt2xdkgtgVvKqty8VbjHI/WWWQuEw+KLzFot3f4+LkQY9YmOtq7A5GdOnqoIC8Pdygjk2g==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@petamoriken__float16-3.9.3/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "3b833441ea7e5766f591a927e9f26960be46670a8fbc302732b72afd5623c0e9"
+      }
+    ]
+  },
+  {
+    "package": "@smithy/core",
+    "version": "3.35.2",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/smithy-lang/smithy-typescript.git",
+      "directory": "packages/core"
+    },
+    "url": "https://registry.npmjs.org/@smithy/core/-/core-3.35.2.tgz",
+    "integrity": "sha512-ejTukBuP/Pg3t9N8Ux+0zKsXeHWm7p6W3HbXFOyltKasSxZwCFmvTut7kBdZSCF3m9y1bXXyVu6p2xuMFcsTyQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@smithy__core-3.35.2/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "07364a5f7d0177a59a05a0002187431f8f899320983c0dc049d72df015e8064c"
+      }
+    ]
+  },
+  {
+    "package": "@smithy/credential-provider-imds",
+    "version": "4.5.2",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/smithy-lang/smithy-typescript.git",
+      "directory": "packages/credential-provider-imds"
+    },
+    "url": "https://registry.npmjs.org/@smithy/credential-provider-imds/-/credential-provider-imds-4.5.2.tgz",
+    "integrity": "sha512-A9uSdn72ozbRUSit0eib0TW7nXuNPlaeM0zcGkJ+nE6tFcSDbnmtwoxbTCFBukVQcszDAyvsd7+rTduPTXpygg==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@smithy__credential-provider-imds-4.5.2/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d82ceb8cbd004a2d4834085c557d55459f528e30268d95159ee1e4030a693a6e"
+      }
+    ]
+  },
+  {
+    "package": "@smithy/node-http-handler",
+    "version": "4.12.1",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/smithy-lang/smithy-typescript.git",
+      "directory": "packages/node-http-handler"
+    },
+    "url": "https://registry.npmjs.org/@smithy/node-http-handler/-/node-http-handler-4.12.1.tgz",
+    "integrity": "sha512-ThMkboGeONWXAelq9FvGsuJC4rOi+qyC4/zhUF58xYpxUg5sQKx2VXZYJmtNjr4dSuBJ1HeJXETQILCz3wOHvw==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@smithy__node-http-handler-4.12.1/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d82ceb8cbd004a2d4834085c557d55459f528e30268d95159ee1e4030a693a6e"
+      }
+    ]
+  },
+  {
+    "package": "@smithy/signature-v4",
+    "version": "5.7.4",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/smithy-lang/smithy-typescript.git",
+      "directory": "packages/signature-v4"
+    },
+    "url": "https://registry.npmjs.org/@smithy/signature-v4/-/signature-v4-5.7.4.tgz",
+    "integrity": "sha512-tHy0K0VtqNd5Y7Y41h0a0Lhh0L1GzC08dTWg0F7vRJWFtTENg7IZikf3wQkanYIRdb7ngoIPMTmqgUi401fEeQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@smithy__signature-v4-5.7.4/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d82ceb8cbd004a2d4834085c557d55459f528e30268d95159ee1e4030a693a6e"
+      }
+    ]
+  },
+  {
+    "package": "@smithy/types",
+    "version": "4.19.0",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/smithy-lang/smithy-typescript.git",
+      "directory": "packages/types"
+    },
+    "url": "https://registry.npmjs.org/@smithy/types/-/types-4.19.0.tgz",
+    "integrity": "sha512-r7jh49VJxGerfAcTQA6gXcKc+98zOp/tqRwzYjgOE+iSQsP6cEU1hq2QzbuipmP68QtYdY9wKEhiCQZIzHgZ4Q==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/@smithy__types-4.19.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "07364a5f7d0177a59a05a0002187431f8f899320983c0dc049d72df015e8064c"
+      }
+    ]
+  },
+  {
+    "package": "balanced-match",
+    "version": "1.0.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/juliangruber/balanced-match.git"
+    },
+    "url": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz",
+    "integrity": "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/balanced-match-1.0.2/LICENSE.md",
+        "member": "package/LICENSE.md",
+        "sha256": "a1bd5deadb6a06dd74efa852c1b8b23f63b67f2214fbe9c8bd591da51da69268"
+      }
+    ]
+  },
+  {
+    "package": "bowser",
+    "version": "2.14.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/bowser-js/bowser.git"
+    },
+    "url": "https://registry.npmjs.org/bowser/-/bowser-2.14.1.tgz",
+    "integrity": "sha512-tzPjzCxygAKWFOJP011oxFHs57HzIhOEracIgAePE4pqB3LikALKnSzUyU4MGs9/iCEUuHlAJTjTc5M+u7YEGg==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/bowser-2.14.1/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "dfde54fedc270c2a305d9a9f993d93f706d34624455a2fd2d2a05ca34d8ae8c3"
+      }
+    ]
+  },
+  {
+    "package": "brace-expansion",
+    "version": "2.1.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/juliangruber/brace-expansion.git"
+    },
+    "url": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-2.1.7.tgz",
+    "integrity": "sha512-uZbew1NqdmPDTMJ8ah1y+b+9QEJrfkXFk3RcTQw3X0jW/xRUvFKsg1CfQdSYGdTbXZWExtU3J3ccxtnfw1Fi0g==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/brace-expansion-2.1.7/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "68f12f6e2c33688699249c01d8f9623c534da20aa71989c57b061b7bc1676d14"
+      }
+    ]
+  },
+  {
+    "package": "camelcase",
+    "version": "7.0.1",
+    "license": "MIT",
+    "repository": "sindresorhus/camelcase",
+    "url": "https://registry.npmjs.org/camelcase/-/camelcase-7.0.1.tgz",
+    "integrity": "sha512-xlx1yCK2Oc1APsPXDL2LdlNP6+uu8OCDdhOBSVT279M/S+y75O30C2VuD8T2ogdePBBl7PfPF4504tnLgX3zfw==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/camelcase-7.0.1/license",
+        "member": "package/license",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "package": "chalk",
+    "version": "5.6.2",
+    "license": "MIT",
+    "repository": "chalk/chalk",
+    "url": "https://registry.npmjs.org/chalk/-/chalk-5.6.2.tgz",
+    "integrity": "sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/chalk-5.6.2/license",
+        "member": "package/license",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "package": "colors",
+    "version": "1.4.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "http://github.com/Marak/colors.js.git"
+    },
+    "url": "https://registry.npmjs.org/colors/-/colors-1.4.0.tgz",
+    "integrity": "sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/colors-1.4.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "77ffe84006509949525fd57df06f4a6a80ad862c5314b66ab5bb6ac4cee6280b"
+      }
+    ],
+    "source_notices": {
+      "file": "licenses/kit-bundled/colors-1.4.0/SOURCE-NOTICES.txt",
+      "url": "https://registry.npmjs.org/colors/-/colors-1.4.0.tgz",
+      "sha256": "19930b69ec45d6b21852896b7089ffd7c2f9843d32b8c321659e58cd6bb7ada6",
+      "extraction": "Legal comment blocks in contributing source files, with package-relative filenames"
+    }
+  },
+  {
+    "package": "data-uri-to-buffer",
+    "version": "4.0.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/TooTallNate/node-data-uri-to-buffer.git"
+    },
+    "url": "https://registry.npmjs.org/data-uri-to-buffer/-/data-uri-to-buffer-4.0.1.tgz",
+    "integrity": "sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/data-uri-to-buffer-4.0.1/LICENSE-from-README.md",
+        "url": "https://raw.githubusercontent.com/TooTallNate/node-data-uri-to-buffer/85cd8c854aefbf1bb636789d80364cfac8ea1583/README.md",
+        "extraction": "License section to end of README",
+        "sha256": "9b7a157a0079ef346f3215b964071fa460d0dd251ca93cbf581bcc91595066ca"
+      }
+    ],
+    "revision": "85cd8c854aefbf1bb636789d80364cfac8ea1583",
+    "metadata_url": "https://registry.npmjs.org/data-uri-to-buffer/4.0.1"
+  },
+  {
+    "package": "debug",
+    "version": "4.4.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/debug-js/debug.git"
+    },
+    "url": "https://registry.npmjs.org/debug/-/debug-4.4.3.tgz",
+    "integrity": "sha512-RGwwWnwQvkVfavKVt22FGLw+xYSdzARwm0ru6DhTVA3umU5hZc28V3kO4stgYryrTlLpuvgI9GiijltAjNbcqA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/debug-4.4.3/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "3a61c6c96caf5c1d9b623fb9b04c822b783dfcb78aa7e49c76a3f643e6ed7f95"
+      }
+    ]
+  },
+  {
+    "package": "dotenv",
+    "version": "16.6.1",
+    "license": "BSD-2-Clause",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/motdotla/dotenv.git"
+    },
+    "url": "https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz",
+    "integrity": "sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/dotenv-16.6.1/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "74b629b24865e1e83c5277ee84590b7937644d6fd959d0c7bdce758676cd2ced"
+      }
+    ]
+  },
+  {
+    "package": "env-paths",
+    "version": "3.0.0",
+    "license": "MIT",
+    "repository": "sindresorhus/env-paths",
+    "url": "https://registry.npmjs.org/env-paths/-/env-paths-3.0.0.tgz",
+    "integrity": "sha512-dtJUTepzMW3Lm/NPxRf3wP4642UWhjL2sQxc+ym2YMj1m/H2zDNQOlezafzkHwn6sMstjHTwG6iQQsctDW/b1A==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/env-paths-3.0.0/license",
+        "member": "package/license",
+        "sha256": "5c932d88256b4ab958f64a856fa48e8bd1f55bc1d96b8149c65689e0c61789d3"
+      }
+    ]
+  },
+  {
+    "package": "esbuild-register",
+    "version": "3.6.0",
+    "license": "MIT",
+    "repository": null,
+    "url": "https://registry.npmjs.org/esbuild-register/-/esbuild-register-3.6.0.tgz",
+    "integrity": "sha512-H2/S7Pm8a9CL1uhp9OvjwrBh5Pvx0H8qVOxNu8Wed9Y7qv56MPtq+GGM8RJpq6glYJn9Wspr8uw7l55uyinNeg==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/esbuild-register-3.6.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "4a6ab1f41bbf070dcf47104128d101d444f4a6767af8169e2c44430473285b5c"
+      }
+    ]
+  },
+  {
+    "package": "fetch-blob",
+    "version": "3.2.0",
+    "license": "MIT",
+    "repository": "https://github.com/node-fetch/fetch-blob.git",
+    "url": "https://registry.npmjs.org/fetch-blob/-/fetch-blob-3.2.0.tgz",
+    "integrity": "sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/fetch-blob-3.2.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "a5edccac92c3aa845694dcfaa72a0c098c1ae40d5ca6a37e4e59d778cf8e29bd"
+      }
+    ]
+  },
+  {
+    "package": "formdata-polyfill",
+    "version": "4.0.10",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://jimmywarting@github.com/jimmywarting/FormData.git"
+    },
+    "url": "https://registry.npmjs.org/formdata-polyfill/-/formdata-polyfill-4.0.10.tgz",
+    "integrity": "sha512-buewHzMvYL29jdeQTVILecSaZKnt/RJWjoZCF5OW60Z67/GmSLBkOFM7qh1PI3zFNtJbaZL5eQu1vLfazOwj4g==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/formdata-polyfill-4.0.10/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "435a6437e47e5e479942255680e7fbe5f333d55234ada1c35f6115ca641d5bb4"
+      }
+    ]
+  },
+  {
+    "package": "fs.realpath",
+    "version": "1.0.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/isaacs/fs.realpath.git"
+    },
+    "url": "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz",
+    "integrity": "sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/fs.realpath-1.0.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "8465b04b67f473341171b5c9c8b2c741a4a395b3f6ed58339b3a4f4db3db7472"
+      }
+    ],
+    "source_notices": {
+      "file": "licenses/kit-bundled/fs.realpath-1.0.0/SOURCE-NOTICES.txt",
+      "url": "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz",
+      "sha256": "b606c8c052780f66626b61ee4120a85c5b3d82bec35b0a9b48ed431f063a7b5a",
+      "extraction": "Legal comment blocks in contributing source files, with package-relative filenames"
+    }
+  },
+  {
+    "package": "gel",
+    "version": "2.2.1",
+    "license": "Apache-2.0",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/geldata/gel-js.git",
+      "directory": "packages/gel"
+    },
+    "url": "https://registry.npmjs.org/gel/-/gel-2.2.1.tgz",
+    "integrity": "sha512-rdT62pmRnfnOto902T6axKaLgnrXJBJBEt7AQljICIxXvBDHdSc7LALYeFoGZy/LEgUHWsvOU8C72HbFbry/oA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/gel-2.2.1/UPSTREAM-LICENSE",
+        "url": "https://raw.githubusercontent.com/geldata/gel-js/2cb25dbb313dfd056efd2fcc3356c6f9b7f01249/LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+      }
+    ],
+    "revision": "2cb25dbb313dfd056efd2fcc3356c6f9b7f01249",
+    "metadata_url": "https://registry.npmjs.org/gel/2.2.1",
+    "source_notices": {
+      "file": "licenses/kit-bundled/gel-2.2.1/SOURCE-NOTICES.txt",
+      "url": "https://registry.npmjs.org/gel/-/gel-2.2.1.tgz",
+      "sha256": "03bf63d36824f0d4c7c55fe7badb2516de312674ed1db14381a4434c3e3d44a8",
+      "extraction": "Legal comment blocks in contributing source files, with package-relative filenames"
+    }
+  },
+  {
+    "package": "glob",
+    "version": "8.1.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/isaacs/node-glob.git"
+    },
+    "url": "https://registry.npmjs.org/glob/-/glob-8.1.0.tgz",
+    "integrity": "sha512-r8hpEjiQEYlF2QU0df3dS+nxxSIreXQS1qRhMJM0Q5NDdR386C7jb7Hwwod8Fgiuex+k0GFjgft18yvxm5XoCQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/glob-8.1.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "dedc5ba48845093da9bbe6f2bb0b3cc87d9829c7d49d55c2dfe661671364d821"
+      }
+    ]
+  },
+  {
+    "package": "hanji",
+    "version": "0.0.5",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/drizzle-team/hanji"
+    },
+    "url": "https://registry.npmjs.org/hanji/-/hanji-0.0.5.tgz",
+    "integrity": "sha512-Abxw1Lq+TnYiL4BueXqMau222fPSPMFtya8HdpWsz/xVAhifXou71mPh/kY2+08RgFcVccjG3uZHs6K5HAe3zw==",
+    "files": [],
+    "revision": null,
+    "metadata_url": "https://registry.npmjs.org/hanji/0.0.5",
+    "notice_status": "Exact published archive checked: no LICENSE, LICENCE, COPYING, NOTICE or COPYRIGHT file is published. No copyright holder inferred.",
+    "license_text": "licenses/ISC.txt",
+    "archive_review": {
+      "url": "https://registry.npmjs.org/hanji/-/hanji-0.0.5.tgz",
+      "sha256": "7b3f952f87d438b626cb416f6de3d34305dddf69219a2b15bba26ebb23724632",
+      "integrity_verified": true,
+      "members": [
+        "package/index.d.ts",
+        "package/index.js",
+        "package/package.json",
+        "package/readline.d.ts",
+        "package/readline.js",
+        "package/readme.md",
+        "package/utils.d.ts",
+        "package/utils.js"
+      ],
+      "notice_members": [],
+      "readme_license_sections": []
+    }
+  },
+  {
+    "package": "heap",
+    "version": "0.2.7",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/qiao/heap.js.git"
+    },
+    "url": "https://registry.npmjs.org/heap/-/heap-0.2.7.tgz",
+    "integrity": "sha512-2bsegYkkHO+h/9MGbn6KWcE45cHZgPANo5LXF7EvWdT0yT2EguSVO1nDgU5c8+ZOPwp2vMNa7YFsJhVcDR9Sdg==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/heap-0.2.7/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "e78f28382ac236a42dcbc16caaaaf2e76da55ddc67053a8bcb3aabdfc72df9cc"
+      }
+    ]
+  },
+  {
+    "package": "hono",
+    "version": "4.13.13",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/honojs/hono.git"
+    },
+    "url": "https://registry.npmjs.org/hono/-/hono-4.13.13.tgz",
+    "integrity": "sha512-CQ46U0ZkAGmbT/4UxdzzGJpacP2IeKgY4a5/tOI9AABbpOMfK739wfDXmv1usCk+3RkKj1hQy4/fjhiwa2xlrA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/hono-4.13.13/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "a6ab98e5c77b9070c443eaff2ff81034a6f8cc05a7524d5098eb0f24defa0115"
+      }
+    ]
+  },
+  {
+    "package": "inflight",
+    "version": "1.0.6",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/npm/inflight.git"
+    },
+    "url": "https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz",
+    "integrity": "sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/inflight-1.0.6/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "05dc4d785ac3a488676d3ed10e901b75ad89dafcc63f8e66610fd4a39cc5c7e8"
+      }
+    ]
+  },
+  {
+    "package": "inherits",
+    "version": "2.0.4",
+    "license": "ISC",
+    "repository": "git://github.com/isaacs/inherits",
+    "url": "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz",
+    "integrity": "sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/inherits-2.0.4/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "5ffe28e7ade7d8f10d85d5337a73fd793dac5c462fb9a28fbf8c5046c7fbca3b"
+      }
+    ]
+  },
+  {
+    "package": "json-diff",
+    "version": "1.0.6",
+    "license": "MIT",
+    "repository": {
+      "url": "git@github.com:andreyvit/json-diff.git"
+    },
+    "url": "https://registry.npmjs.org/json-diff/-/json-diff-1.0.6.tgz",
+    "integrity": "sha512-tcFIPRdlc35YkYdGxcamJjllUhXWv4n2rK9oJ2RsAzV4FBkuV4ojKEDgcZ+kpKxDmJKv+PFK65+1tVVOnSeEqA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/json-diff-1.0.6/LICENSE-MIT",
+        "member": "package/LICENSE-MIT",
+        "sha256": "34741f44ba166ae46ee3ffe7eec599a5d7fbcdf4519e28c6de6bf14342c0fb25"
+      }
+    ]
+  },
+  {
+    "package": "lodash.throttle",
+    "version": "4.1.1",
+    "license": "MIT",
+    "repository": "lodash/lodash",
+    "url": "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz",
+    "integrity": "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/lodash.throttle-4.1.1/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "ffd8b33b354585f4ce119f19c53728281e48a97b074491eb6bf6d5c5ff305272"
+      }
+    ],
+    "source_notices": {
+      "file": "licenses/kit-bundled/lodash.throttle-4.1.1/SOURCE-NOTICES.txt",
+      "url": "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz",
+      "sha256": "38e77fb3330adfc469f88f0679501b1bd0a9721d1995640a21d21c744d0154a3",
+      "extraction": "Legal comment blocks in contributing source files, with package-relative filenames"
+    }
+  },
+  {
+    "package": "minimatch",
+    "version": "5.1.9",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/isaacs/minimatch.git"
+    },
+    "url": "https://registry.npmjs.org/minimatch/-/minimatch-5.1.9.tgz",
+    "integrity": "sha512-7o1wEA2RyMP7Iu7GNba9vc0RWWGACJOCZBJX2GJWip0ikV+wcOsgVuY9uE8CPiyQhkGFSlhuSkZPavN7u1c2Fw==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/minimatch-5.1.9/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d11323827fa4edeaafc437cc5b91b6971b335f0127efeeb42bf5122fe8657e8f"
+      }
+    ]
+  },
+  {
+    "package": "minimatch",
+    "version": "7.4.9",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/isaacs/minimatch.git"
+    },
+    "url": "https://registry.npmjs.org/minimatch/-/minimatch-7.4.9.tgz",
+    "integrity": "sha512-Brg/fp/iAVDOQoHxkuN5bEYhyQlZhxddI78yWsCbeEwTHXQjlNLtiJDUsp1GIptVqMI7/gkJMz4vVAc01mpoBw==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/minimatch-7.4.9/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "d11323827fa4edeaafc437cc5b91b6971b335f0127efeeb42bf5122fe8657e8f"
+      }
+    ]
+  },
+  {
+    "package": "ms",
+    "version": "2.1.3",
+    "license": "MIT",
+    "repository": "vercel/ms",
+    "url": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+    "integrity": "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/ms-2.1.3/license.md",
+        "member": "package/license.md",
+        "sha256": "1662fae9b5314d11cf51284e2dcd1f006a354f7343f08712a730fcff9a359801"
+      }
+    ]
+  },
+  {
+    "package": "node-domexception",
+    "version": "1.0.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/jimmywarting/node-domexception.git"
+    },
+    "url": "https://registry.npmjs.org/node-domexception/-/node-domexception-1.0.0.tgz",
+    "integrity": "sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/node-domexception-1.0.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "8ec1386f7f078b0c7cd25341cd80f332df902371cda9f40c10ec2b4007b420b7"
+      }
+    ]
+  },
+  {
+    "package": "node-fetch",
+    "version": "3.3.2",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/node-fetch/node-fetch.git"
+    },
+    "url": "https://registry.npmjs.org/node-fetch/-/node-fetch-3.3.2.tgz",
+    "integrity": "sha512-dRB78srN/l6gqWulah9SrxeYnxeddIG30+GOqK/9OlLVyLg3HPnr6SqOWTWOXKRwC2eGYCkZ59NNuSgvSrpgOA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/node-fetch-3.3.2/LICENSE.md",
+        "member": "package/LICENSE.md",
+        "sha256": "3e2c11dcf3f17ab585baab8faba54772d7872f1c6e026022acd4b4006665efb0"
+      }
+    ]
+  },
+  {
+    "package": "once",
+    "version": "1.4.0",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/isaacs/once"
+    },
+    "url": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",
+    "integrity": "sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/once-1.4.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+      }
+    ]
+  },
+  {
+    "package": "pluralize",
+    "version": "8.0.0",
+    "license": "MIT",
+    "repository": "https://github.com/blakeembrey/pluralize.git",
+    "url": "https://registry.npmjs.org/pluralize/-/pluralize-8.0.0.tgz",
+    "integrity": "sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/pluralize-8.0.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "5822e0d816e53e3537b306a4132cb7a70881897cf51bf483282148a602979076"
+      }
+    ]
+  },
+  {
+    "package": "semver",
+    "version": "7.8.5",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/npm/node-semver.git"
+    },
+    "url": "https://registry.npmjs.org/semver/-/semver-7.8.5.tgz",
+    "integrity": "sha512-Y7/KDsb8LjooZpwaqGyulO6DQlksgCncchHGk+sZIY4SBvUocMBEFH5Ur1fI4dV+Jvl0w6cjvucaIi40puRioA==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/semver-7.8.5/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+      }
+    ]
+  },
+  {
+    "package": "sisteransi",
+    "version": "1.0.5",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/terkelg/sisteransi"
+    },
+    "url": "https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz",
+    "integrity": "sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/sisteransi-1.0.5/license",
+        "member": "package/license",
+        "sha256": "ade66f698fd417addc4d948a85ef33e8abb302daff6453feda18b191d250e54d"
+      }
+    ]
+  },
+  {
+    "package": "web-streams-polyfill",
+    "version": "3.3.3",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MattiasBuelens/web-streams-polyfill.git"
+    },
+    "url": "https://registry.npmjs.org/web-streams-polyfill/-/web-streams-polyfill-3.3.3.tgz",
+    "integrity": "sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/web-streams-polyfill-3.3.3/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "81008a3fb78f69f3c4a72a9e005c8582342ab62864371b3ab8e1b6af9041e080"
+      }
+    ],
+    "source_notices": {
+      "file": "licenses/kit-bundled/web-streams-polyfill-3.3.3/SOURCE-NOTICES.txt",
+      "url": "https://registry.npmjs.org/web-streams-polyfill/-/web-streams-polyfill-3.3.3.tgz",
+      "sha256": "978fe9b3fc686e4cd723e7928bec69b2573db2274860d69b408a8e5412129d7d",
+      "extraction": "Legal comment blocks in contributing source files, with package-relative filenames"
+    }
+  },
+  {
+    "package": "wrappy",
+    "version": "1.0.2",
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/npm/wrappy"
+    },
+    "url": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz",
+    "integrity": "sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/wrappy-1.0.2/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b"
+      }
+    ]
+  },
+  {
+    "package": "ws",
+    "version": "8.22.0",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/websockets/ws.git"
+    },
+    "url": "https://registry.npmjs.org/ws/-/ws-8.22.0.tgz",
+    "integrity": "sha512-Ydggc987+RO0AnWtZ/7Wq9FtNvcrL1b/RO0ud9mWjUPgDrsAAwQSF51sm2hm1XofbU/4jkpGEsLFsZZxU+1DOg==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/ws-8.22.0/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "2b29dcfe0d6471f7e8c92c5fb38c9f93edee10330937055440192f1832b1ecef"
+      }
+    ]
+  },
+  {
+    "package": "zod",
+    "version": "3.25.76",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/colinhacks/zod.git"
+    },
+    "url": "https://registry.npmjs.org/zod/-/zod-3.25.76.tgz",
+    "integrity": "sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==",
+    "files": [
+      {
+        "file": "licenses/kit-bundled/zod-3.25.76/LICENSE",
+        "member": "package/LICENSE",
+        "sha256": "3f1189b28e3866e0d979968d466b78f813f76827cfdca1fbb124cc0a5c8841f8"
+      }
+    ]
+  }
+]

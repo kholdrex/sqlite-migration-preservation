@@ -1,0 +1,24 @@
+{
+  "id": "rails_default",
+  "framework": "rails",
+  "role": "hazard",
+  "schema": "schema.sql",
+  "seed": "seed.sql",
+  "tables": [
+    "tenants",
+    "parents",
+    "children",
+    "audit"
+  ],
+  "expected": {
+    "kind": "column",
+    "table": "parents",
+    "name": "name",
+    "attributes": {
+      "default": "'b'"
+    }
+  },
+  "provenance": "https://github.com/rails/rails/pull/57128",
+  "description": "Change a parent column default while retaining cascade children.",
+  "migration": "migrations"
+}
